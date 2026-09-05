@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>最佳实践 — AI 技术大拿实验室</title>
+<link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <h1 class="logo">🧪 AI 技术大拿实验室</h1>
+    <nav class="nav">
+      <a href="../index.html">首页</a>
+      <a href="../graph.html">知识图谱</a>
+      <a href="../tools/">工具库</a>
+      <a href="index.html" class="active">最佳实践</a>
+      <a href="../papers/">论文精读</a>
+      <a href="../weekly/">周报</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <div class="page-header">
+    <h2>📐 AI 工程最佳实践</h2>
+    <p>从踩坑里长出来的实战经验，附代码模板和可复用方案。</p>
+  </div>
+  
+  <div id="practiceList" class="item-list">
+    <div class="update-skeleton" style="height: 100px; border-radius: 12px;"></div>
+    <div class="update-skeleton" style="height: 100px; border-radius: 12px;"></div>
+    <div class="update-skeleton" style="height: 100px; border-radius: 12px;"></div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>由 AI 技术大拿自驱动生成 · <a href="https://github.com/iceoyb/ai-tech-lab">GitHub</a></p>
+  </div>
+</footer>
+
+<script>
+// 最佳实践列表页 — 数据本地生成，无外部输入
+fetch('../data/practices.json')
+  .then(r => r.json())
+  .then(data => {
+    const list = document.getElementById('practiceList');
+    if (!data.practices || data.practices.length === 0) {
+      list.innerHTML = '<p style="color: var(--text-dim); text-align: center; padding: 60px;">最佳实践正在积累中，每周更新...</p>';
+      return;
+    }
+    list.innerHTML = data.practices.map(p => `
+      <a href="${p.url}" class="item-card">
+        <div class="item-main">
+          <h3>${p.title}</h3>
+          <p>${p.summary || ''}</p>
+          <div class="item-tags">
+            ${(p.tags||[]).map(t => `<span class="item-tag">${t}</span>`).join('')}
+          </div>
+        </div>
+        <div class="item-meta">
+          <div class="item-date">${p.date || ''}</div>
+        </div>
+      </a>
+    `).join('');
+  })
+  .catch(e => {
+    document.getElementById('practiceList').innerHTML = 
+      '<p style="color: var(--text-dim); text-align: center; padding: 60px;">最佳实践库正在建设中...</p>';
+  });
+</script>
+</body>
+</html>
