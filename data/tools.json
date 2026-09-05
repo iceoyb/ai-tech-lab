@@ -1,16 +1,6 @@
 {
   "tools": [
     {
-      "name": "nl2func.py",
-      "id": "nl2func-v1",
-      "description": "自然语言文本函数生成器——用大模型把自然语言描述转成可用的Python函数",
-      "category": "AI工具",
-      "usage_count": 1,
-      "success_rate": 1.0,
-      "last_used": "2026-09-05T14:14:34.710346",
-      "notes": "灵感来自 Compile by Training 论文，轻量版用代码生成替代模型训练"
-    },
-    {
       "id": "8de59538e520",
       "name": "LangChain",
       "description": "LLM应用开发框架",
