@@ -1,55 +1,55 @@
 {
   "tools_count": 5,
-  "insights_count": 166,
+  "insights_count": 3,
   "updates": [
     {
-      "type": "insight",
-      "title": "开源生态正在加速AI民主化，但商业模式仍在探索中",
-      "summary": "深度评分：3/5 · 触发：生态观察",
-      "date": "2026-09-05",
-      "category": "开源 / 商业模式",
-      "url": "weekly/"
-    },
-    {
-      "type": "insight",
-      "title": "多模态是下一个爆发点，但真正的挑战在于模态间的语义对齐",
-      "summary": "深度评分：4/5 · 触发：技术判断",
-      "date": "2026-09-05",
-      "category": "多模态 / 语义理解",
-      "url": "weekly/"
-    },
-    {
-      "type": "insight",
-      "title": "多模态是下一个爆发点，但真正的挑战在于模态间的语义对齐",
-      "summary": "深度评分：4/5 · 触发：技术判断",
-      "date": "2026-09-04",
-      "category": "多模态 / 语义理解",
-      "url": "weekly/"
-    },
-    {
       "type": "paper",
-      "title": "TokenMatch: 3D Mesh Correspondence Transformer with Curvature-Guided Tokenisation",
-      "summary": "架构 · ⭐⭐⭐",
-      "date": "2026-09-04",
-      "category": "架构",
+      "title": "🗞️ U.S. government limits exports of artificial intelligence software",
+      "summary": "趋势 · ⭐⭐",
+      "date": "2026-09-05",
+      "category": "趋势",
       "url": "graph.html"
     },
     {
       "type": "paper",
-      "title": "Thinking in Pictures: A Systematic Benchmark for Reasoning-driven Image Generation",
-      "summary": "工程 · ⭐⭐⭐",
-      "date": "2026-09-04",
+      "title": "AI训练数据质量：垃圾进，垃圾出",
+      "summary": "工程 · ⭐⭐",
+      "date": "2026-09-05",
       "category": "工程",
       "url": "graph.html"
     },
     {
       "type": "paper",
-      "title": "Configurable Semantic Chunking for Biomedical Information Extraction in Retrieval-Augmented Generation",
-      "summary": "架构 · ⭐⭐⭐",
-      "date": "2026-09-02",
-      "category": "架构",
+      "title": "Prompt Engineering 2.0：从技巧到方法论",
+      "summary": "工程 · ⭐⭐",
+      "date": "2026-09-05",
+      "category": "工程",
       "url": "graph.html"
+    },
+    {
+      "type": "insight",
+      "title": "多模态是下一个爆发点，但真正的挑战在于模态间的语义对齐",
+      "summary": "深度评分：4/5 · 触发：技术判断",
+      "date": "2026-08-27",
+      "category": "多模态 / 语义理解",
+      "url": "weekly/"
+    },
+    {
+      "type": "insight",
+      "title": "AI技术正在从'能用'向'好用'转变，关键差异在于工程化能力",
+      "summary": "深度评分：4/5 · 触发：趋势观察",
+      "date": "2026-08-16",
+      "category": "工程化 / 产品化",
+      "url": "weekly/"
+    },
+    {
+      "type": "insight",
+      "title": "开源生态正在加速AI民主化，但商业模式仍在探索中",
+      "summary": "深度评分：3/5 · 触发：生态观察",
+      "date": "2026-08-02",
+      "category": "开源 / 商业模式",
+      "url": "weekly/"
     }
   ],
-  "latest_date": "2026-09-04"
+  "latest_date": "2026-09-05"
 }
