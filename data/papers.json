@@ -1,6 +1,19 @@
 {
   "papers": [
     {
+      "title": "TokenMatch: 3D Mesh Correspondence Transformer with Curvature-Guided Tokenisation",
+      "summary": "TokenMatch: 基于曲率引导标记化的3D网格对应Transformer深度解析 一、研究背景与动机 三维形状对应（3D Shape Correspond...",
+      "tags": [
+        "架构",
+        "推理",
+        "训练",
+        "评估"
+      ],
+      "date": "2026-09-05",
+      "url": "papers/2026-w36-paper.html",
+      "deep_url": "papers/2026-w36-paper-deep.html"
+    },
+    {
       "title": "Compile by Training: Turning Natural-Language Specifications into Local Neural Functions",
       "summary": "Many recurring text functions are easy to describe but difficult to implement with rules, while calling a large remote m...",
       "venue": "arXiv / Yuntian Deng, Pengyu Nie, Stuart Shieber",
