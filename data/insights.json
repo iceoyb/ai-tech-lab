@@ -1,0 +1,604 @@
+{
+  "insights": [
+    {
+      "id": "da26647eab98",
+      "insight": "开源生态正在加速AI民主化，但商业模式仍在探索中",
+      "trigger": "生态观察",
+      "depth_score": 3,
+      "tags": [
+        "开源",
+        "商业模式"
+      ],
+      "created_at": "2026-09-05T07:00:32.843946",
+      "validated": true
+    },
+    {
+      "id": "0cbd239b65f2",
+      "insight": "多模态是下一个爆发点，但真正的挑战在于模态间的语义对齐",
+      "trigger": "技术判断",
+      "depth_score": 4,
+      "tags": [
+        "多模态",
+        "语义理解"
+      ],
+      "created_at": "2026-09-05T07:00:32.843219",
+      "validated": true
+    },
+    {
+      "id": "0ad7b0ea159f",
+      "insight": "多模态是下一个爆发点，但真正的挑战在于模态间的语义对齐",
+      "trigger": "技术判断",
+      "depth_score": 4,
+      "tags": [
+        "多模态",
+        "语义理解"
+      ],
+      "created_at": "2026-09-04T07:00:34.805412",
+      "validated": true
+    },
+    {
+      "id": "441907da452c",
+      "insight": "开源生态正在加速AI民主化，但商业模式仍在探索中",
+      "trigger": "生态观察",
+      "depth_score": 3,
+      "tags": [
+        "开源",
+        "商业模式"
+      ],
+      "created_at": "2026-09-04T07:00:34.804662",
+      "validated": true
+    },
+    {
+      "id": "e5cffeb5ab56",
+      "insight": "多模态是下一个爆发点，但真正的挑战在于模态间的语义对齐",
+      "trigger": "技术判断",
+      "depth_score": 4,
+      "tags": [
+        "多模态",
+        "语义理解"
+      ],
+      "created_at": "2026-09-03T07:00:13.797684",
+      "validated": false
+    },
+    {
+      "id": "4bccdfcc7d01",
+      "insight": "开源生态正在加速AI民主化，但商业模式仍在探索中",
+      "trigger": "生态观察",
+      "depth_score": 3,
+      "tags": [
+        "开源",
+        "商业模式"
+      ],
+      "created_at": "2026-09-03T07:00:13.796981",
+      "validated": false
+    },
+    {
+      "id": "8619a00da470",
+      "insight": "AI技术正在从'能用'向'好用'转变，关键差异在于工程化能力",
+      "trigger": "趋势观察",
+      "depth_score": 4,
+      "tags": [
+        "工程化",
+        "产品化"
+      ],
+      "created_at": "2026-09-02T07:00:59.547781",
+      "validated": true
+    },
+    {
+      "id": "ec3a21ea2c71",
+      "insight": "多模态是下一个爆发点，但真正的挑战在于模态间的语义对齐",
+      "trigger": "技术判断",
+      "depth_score": 4,
+      "tags": [
+        "多模态",
+        "语义理解"
+      ],
+      "created_at": "2026-09-02T07:00:59.547004",
+      "validated": false
+    },
+    {
+      "id": "bf9497fc251e",
+      "insight": "开源生态正在加速AI民主化，但商业模式仍在探索中",
+      "trigger": "生态观察",
+      "depth_score": 3,
+      "tags": [
+        "开源",
+        "商业模式"
+      ],
+      "created_at": "2026-09-01T07:00:25.011541",
+      "validated": true
+    },
+    {
+      "id": "51a62b3da326",
+      "insight": "AI技术正在从'能用'向'好用'转变，关键差异在于工程化能力",
+      "trigger": "趋势观察",
+      "depth_score": 4,
+      "tags": [
+        "工程化",
+        "产品化"
+      ],
+      "created_at": "2026-09-01T07:00:25.010834",
+      "validated": true
+    },
+    {
+      "id": "edd5883c2df3",
+      "insight": "开源生态正在加速AI民主化，但商业模式仍在探索中",
+      "trigger": "生态观察",
+      "depth_score": 3,
+      "tags": [
+        "开源",
+        "商业模式"
+      ],
+      "created_at": "2026-08-31T08:06:34.951496",
+      "validated": false
+    },
+    {
+      "id": "a4d26a3c3092",
+      "insight": "多模态是下一个爆发点，但真正的挑战在于模态间的语义对齐",
+      "trigger": "技术判断",
+      "depth_score": 4,
+      "tags": [
+        "多模态",
+        "语义理解"
+      ],
+      "created_at": "2026-08-31T08:06:34.950705",
+      "validated": false
+    },
+    {
+      "id": "50c8988435e9",
+      "insight": "开源生态正在加速AI民主化，但商业模式仍在探索中",
+      "trigger": "生态观察",
+      "depth_score": 3,
+      "tags": [
+        "开源",
+        "商业模式"
+      ],
+      "created_at": "2026-08-31T07:00:41.254329",
+      "validated": true
+    },
+    {
+      "id": "7df93e6a015e",
+      "insight": "多模态是下一个爆发点，但真正的挑战在于模态间的语义对齐",
+      "trigger": "技术判断",
+      "depth_score": 4,
+      "tags": [
+        "多模态",
+        "语义理解"
+      ],
+      "created_at": "2026-08-31T07:00:41.253713",
+      "validated": false
+    },
+    {
+      "id": "43b725efa58a",
+      "insight": "AI技术正在从'能用'向'好用'转变，关键差异在于工程化能力",
+      "trigger": "趋势观察",
+      "depth_score": 4,
+      "tags": [
+        "工程化",
+        "产品化"
+      ],
+      "created_at": "2026-08-30T07:00:24.223426",
+      "validated": false
+    },
+    {
+      "id": "7011d887b913",
+      "insight": "多模态是下一个爆发点，但真正的挑战在于模态间的语义对齐",
+      "trigger": "技术判断",
+      "depth_score": 4,
+      "tags": [
+        "多模态",
+        "语义理解"
+      ],
+      "created_at": "2026-08-30T07:00:24.220701",
+      "validated": true
+    },
+    {
+      "id": "33949fc31f1b",
+      "insight": "开源生态正在加速AI民主化，但商业模式仍在探索中",
+      "trigger": "生态观察",
+      "depth_score": 3,
+      "tags": [
+        "开源",
+        "商业模式"
+      ],
+      "created_at": "2026-08-29T07:00:38.773121",
+      "validated": false
+    },
+    {
+      "id": "1b8597a56f26",
+      "insight": "AI技术正在从'能用'向'好用'转变，关键差异在于工程化能力",
+      "trigger": "趋势观察",
+      "depth_score": 4,
+      "tags": [
+        "工程化",
+        "产品化"
+      ],
+      "created_at": "2026-08-29T07:00:38.771554",
+      "validated": true
+    },
+    {
+      "id": "ddee01f4d04c",
+      "insight": "AI技术正在从'能用'向'好用'转变，关键差异在于工程化能力",
+      "trigger": "趋势观察",
+      "depth_score": 4,
+      "tags": [
+        "工程化",
+        "产品化"
+      ],
+      "created_at": "2026-08-28T07:00:06.021301",
+      "validated": false
+    },
+    {
+      "id": "c13f8f6c4b9f",
+      "insight": "开源生态正在加速AI民主化，但商业模式仍在探索中",
+      "trigger": "生态观察",
+      "depth_score": 3,
+      "tags": [
+        "开源",
+        "商业模式"
+      ],
+      "created_at": "2026-08-28T07:00:06.019778",
+      "validated": true
+    },
+    {
+      "id": "012547a3f469",
+      "insight": "多模态是下一个爆发点，但真正的挑战在于模态间的语义对齐",
+      "trigger": "技术判断",
+      "depth_score": 4,
+      "tags": [
+        "多模态",
+        "语义理解"
+      ],
+      "created_at": "2026-08-27T07:00:34.038684",
+      "validated": true
+    },
+    {
+      "id": "175ad9a924e2",
+      "insight": "AI技术正在从'能用'向'好用'转变，关键差异在于工程化能力",
+      "trigger": "趋势观察",
+      "depth_score": 4,
+      "tags": [
+        "工程化",
+        "产品化"
+      ],
+      "created_at": "2026-08-27T07:00:34.037231",
+      "validated": false
+    },
+    {
+      "id": "46d536711ea2",
+      "insight": "AI技术正在从'能用'向'好用'转变，关键差异在于工程化能力",
+      "trigger": "趋势观察",
+      "depth_score": 4,
+      "tags": [
+        "工程化",
+        "产品化"
+      ],
+      "created_at": "2026-08-26T07:00:58.713025",
+      "validated": false
+    },
+    {
+      "id": "293ad96c6501",
+      "insight": "开源生态正在加速AI民主化，但商业模式仍在探索中",
+      "trigger": "生态观察",
+      "depth_score": 3,
+      "tags": [
+        "开源",
+        "商业模式"
+      ],
+      "created_at": "2026-08-26T07:00:58.711286",
+      "validated": true
+    },
+    {
+      "id": "743be353597b",
+      "insight": "多模态是下一个爆发点，但真正的挑战在于模态间的语义对齐",
+      "trigger": "技术判断",
+      "depth_score": 4,
+      "tags": [
+        "多模态",
+        "语义理解"
+      ],
+      "created_at": "2026-08-25T07:00:33.846893",
+      "validated": true
+    },
+    {
+      "id": "64f49be5b6aa",
+      "insight": "AI技术正在从'能用'向'好用'转变，关键差异在于工程化能力",
+      "trigger": "趋势观察",
+      "depth_score": 4,
+      "tags": [
+        "工程化",
+        "产品化"
+      ],
+      "created_at": "2026-08-25T07:00:33.845611",
+      "validated": true
+    },
+    {
+      "id": "1efe9e3bd437",
+      "insight": "AI技术正在从'能用'向'好用'转变，关键差异在于工程化能力",
+      "trigger": "趋势观察",
+      "depth_score": 4,
+      "tags": [
+        "工程化",
+        "产品化"
+      ],
+      "created_at": "2026-08-24T07:00:07.565786",
+      "validated": false
+    },
+    {
+      "id": "10467cc592cb",
+      "insight": "开源生态正在加速AI民主化，但商业模式仍在探索中",
+      "trigger": "生态观察",
+      "depth_score": 3,
+      "tags": [
+        "开源",
+        "商业模式"
+      ],
+      "created_at": "2026-08-24T07:00:07.564360",
+      "validated": true
+    },
+    {
+      "id": "ccf960de9159",
+      "insight": "AI技术正在从'能用'向'好用'转变，关键差异在于工程化能力",
+      "trigger": "趋势观察",
+      "depth_score": 4,
+      "tags": [
+        "工程化",
+        "产品化"
+      ],
+      "created_at": "2026-08-23T07:00:23.592480",
+      "validated": true
+    },
+    {
+      "id": "efbfa6aac077",
+      "insight": "开源生态正在加速AI民主化，但商业模式仍在探索中",
+      "trigger": "生态观察",
+      "depth_score": 3,
+      "tags": [
+        "开源",
+        "商业模式"
+      ],
+      "created_at": "2026-08-23T07:00:23.590446",
+      "validated": false
+    },
+    {
+      "id": "f0abbf001a99",
+      "insight": "开源生态正在加速AI民主化，但商业模式仍在探索中",
+      "trigger": "生态观察",
+      "depth_score": 3,
+      "tags": [
+        "开源",
+        "商业模式"
+      ],
+      "created_at": "2026-08-22T07:00:03.103914",
+      "validated": false
+    },
+    {
+      "id": "d8f9dc75d370",
+      "insight": "多模态是下一个爆发点，但真正的挑战在于模态间的语义对齐",
+      "trigger": "技术判断",
+      "depth_score": 4,
+      "tags": [
+        "多模态",
+        "语义理解"
+      ],
+      "created_at": "2026-08-22T07:00:03.102511",
+      "validated": false
+    },
+    {
+      "id": "5c29c319fe29",
+      "insight": "AI技术正在从'能用'向'好用'转变，关键差异在于工程化能力",
+      "trigger": "趋势观察",
+      "depth_score": 4,
+      "tags": [
+        "工程化",
+        "产品化"
+      ],
+      "created_at": "2026-08-21T07:00:29.614951",
+      "validated": false
+    },
+    {
+      "id": "d07db93d797b",
+      "insight": "多模态是下一个爆发点，但真正的挑战在于模态间的语义对齐",
+      "trigger": "技术判断",
+      "depth_score": 4,
+      "tags": [
+        "多模态",
+        "语义理解"
+      ],
+      "created_at": "2026-08-21T07:00:29.613850",
+      "validated": false
+    },
+    {
+      "id": "badd3b3a96c0",
+      "insight": "AI技术正在从'能用'向'好用'转变，关键差异在于工程化能力",
+      "trigger": "趋势观察",
+      "depth_score": 4,
+      "tags": [
+        "工程化",
+        "产品化"
+      ],
+      "created_at": "2026-08-20T07:00:06.185394",
+      "validated": true
+    },
+    {
+      "id": "909aa0fe98f2",
+      "insight": "开源生态正在加速AI民主化，但商业模式仍在探索中",
+      "trigger": "生态观察",
+      "depth_score": 3,
+      "tags": [
+        "开源",
+        "商业模式"
+      ],
+      "created_at": "2026-08-20T07:00:06.184208",
+      "validated": false
+    },
+    {
+      "id": "6e053dd081c7",
+      "insight": "AI技术正在从'能用'向'好用'转变，关键差异在于工程化能力",
+      "trigger": "趋势观察",
+      "depth_score": 4,
+      "tags": [
+        "工程化",
+        "产品化"
+      ],
+      "created_at": "2026-08-19T07:00:20.068889",
+      "validated": false
+    },
+    {
+      "id": "8c2aa81ef78e",
+      "insight": "多模态是下一个爆发点，但真正的挑战在于模态间的语义对齐",
+      "trigger": "技术判断",
+      "depth_score": 4,
+      "tags": [
+        "多模态",
+        "语义理解"
+      ],
+      "created_at": "2026-08-19T07:00:20.067087",
+      "validated": true
+    },
+    {
+      "id": "bba790286789",
+      "insight": "开源生态正在加速AI民主化，但商业模式仍在探索中",
+      "trigger": "生态观察",
+      "depth_score": 3,
+      "tags": [
+        "开源",
+        "商业模式"
+      ],
+      "created_at": "2026-08-18T07:00:17.911072",
+      "validated": false
+    },
+    {
+      "id": "4c3f6982ab50",
+      "insight": "多模态是下一个爆发点，但真正的挑战在于模态间的语义对齐",
+      "trigger": "技术判断",
+      "depth_score": 4,
+      "tags": [
+        "多模态",
+        "语义理解"
+      ],
+      "created_at": "2026-08-18T07:00:17.909874",
+      "validated": true
+    },
+    {
+      "id": "ebc505111a2d",
+      "insight": "AI技术正在从'能用'向'好用'转变，关键差异在于工程化能力",
+      "trigger": "趋势观察",
+      "depth_score": 4,
+      "tags": [
+        "工程化",
+        "产品化"
+      ],
+      "created_at": "2026-08-17T07:00:08.870460",
+      "validated": true
+    },
+    {
+      "id": "23a3b3a4388e",
+      "insight": "多模态是下一个爆发点，但真正的挑战在于模态间的语义对齐",
+      "trigger": "技术判断",
+      "depth_score": 4,
+      "tags": [
+        "多模态",
+        "语义理解"
+      ],
+      "created_at": "2026-08-17T07:00:08.869407",
+      "validated": false
+    },
+    {
+      "id": "01e1dc0565f9",
+      "insight": "AI技术正在从'能用'向'好用'转变，关键差异在于工程化能力",
+      "trigger": "趋势观察",
+      "depth_score": 4,
+      "tags": [
+        "工程化",
+        "产品化"
+      ],
+      "created_at": "2026-08-16T07:00:29.246045",
+      "validated": false
+    },
+    {
+      "id": "afafe2ca51d3",
+      "insight": "开源生态正在加速AI民主化，但商业模式仍在探索中",
+      "trigger": "生态观察",
+      "depth_score": 3,
+      "tags": [
+        "开源",
+        "商业模式"
+      ],
+      "created_at": "2026-08-16T07:00:29.244093",
+      "validated": true
+    },
+    {
+      "id": "e203a53b3c1c",
+      "insight": "多模态是下一个爆发点，但真正的挑战在于模态间的语义对齐",
+      "trigger": "技术判断",
+      "depth_score": 4,
+      "tags": [
+        "多模态",
+        "语义理解"
+      ],
+      "created_at": "2026-08-15T07:00:05.214067",
+      "validated": false
+    },
+    {
+      "id": "ea150d1a69aa",
+      "insight": "开源生态正在加速AI民主化，但商业模式仍在探索中",
+      "trigger": "生态观察",
+      "depth_score": 3,
+      "tags": [
+        "开源",
+        "商业模式"
+      ],
+      "created_at": "2026-08-15T07:00:05.213033",
+      "validated": true
+    },
+    {
+      "id": "169cec090939",
+      "insight": "AI技术正在从'能用'向'好用'转变，关键差异在于工程化能力",
+      "trigger": "趋势观察",
+      "depth_score": 4,
+      "tags": [
+        "工程化",
+        "产品化"
+      ],
+      "created_at": "2026-08-14T07:00:30.762072",
+      "validated": false
+    },
+    {
+      "id": "5ac0265a3240",
+      "insight": "开源生态正在加速AI民主化，但商业模式仍在探索中",
+      "trigger": "生态观察",
+      "depth_score": 3,
+      "tags": [
+        "开源",
+        "商业模式"
+      ],
+      "created_at": "2026-08-14T07:00:30.761016",
+      "validated": true
+    },
+    {
+      "id": "36f5c434273a",
+      "insight": "AI技术正在从'能用'向'好用'转变，关键差异在于工程化能力",
+      "trigger": "趋势观察",
+      "depth_score": 4,
+      "tags": [
+        "工程化",
+        "产品化"
+      ],
+      "created_at": "2026-08-13T07:00:13.966774",
+      "validated": false
+    },
+    {
+      "id": "b3be5fbb48d3",
+      "insight": "多模态是下一个爆发点，但真正的挑战在于模态间的语义对齐",
+      "trigger": "技术判断",
+      "depth_score": 4,
+      "tags": [
+        "多模态",
+        "语义理解"
+      ],
+      "created_at": "2026-08-13T07:00:13.965275",
+      "validated": true
+    }
+  ]
+}
