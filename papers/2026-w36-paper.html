@@ -3,81 +3,87 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TokenMatch: 3D Mesh Correspondence Transformer with Curvature-Guided Tokenisation — 论文精读</title>
+<title>TokenMatch: 3D Mesh Correspondence Transformer with Curvature-Guided Tokenisation - Paper Review</title>
 <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
 <header class="site-header">
   <div class="container">
-    <h1 class="logo">🧪 AI 技术大拿实验室</h1>
+    <h1 class="logo">AI Tech Lab</h1>
     <nav class="nav">
-      <a href="../index.html">首页</a>
-      <a href="../graph.html">知识图谱</a>
-      <a href="../tools/">工具库</a>
-      <a href="../practices/">最佳实践</a>
-      <a href="index.html" class="active">论文精读</a>
-      <a href="../weekly/">周报</a>
+      <a href="../index.html">Home</a>
+      <a href="../graph.html">Graph</a>
+      <a href="../tools/">Tools</a>
+      <a href="../practices/">Practices</a>
+      <a href="index.html" class="active">Papers</a>
+      <a href="../weekly/">Weekly</a>
     </nav>
   </div>
 </header>
 
 <main class="container">
   <article class="detail-article">
-    <a href="index.html" class="back-link">← 返回论文列表</a>
+    <a href="index.html" class="back-link">&larr; Back to list</a>
     <h1>TokenMatch: 3D Mesh Correspondence Transformer with Curvature-Guided Tokenisation</h1>
     <div class="detail-meta">
-      <span>📅 2026-09-05</span>
-      <span>🏷️ 架构</span>
-      <span>难度：⭐⭐⭐</span>
+      <span>Date: 2026-09-05</span>
+      <span>Category: 架构</span>
+      <span>Difficulty: ***</span>
     </div>
     <div class="detail-content">
-<h2>一句话概括</h2>
-<p>这篇论文提出了一种新的<strong>架构</strong>方法，在相关任务上取得了显著进展。</p>
+<h2>TokenMatch: 基于曲率引导标记化的3D网格对应Transformer深度解析</h2>
 
-<h2>研究背景</h2>
-<p>在 架构 领域，现有方法存在以下局限：</p>
+<h3>一、研究背景与动机</h3>
+
+<p>三维形状对应（3D Shape Correspondence）是计算机图形学与几何处理领域的核心基础问题，其目标是建立两个三维网格（Mesh）表面之间的点级或面级映射关系。这一技术在形状插值、纹理迁移、统计形状分析、变形传递以及医学图像配准等下游任务中扮演着不可或缺的角色。然而，由于三维网格数据的非欧几里得特性、拓扑结构的多样性以及几何形变的复杂性，构建鲁棒且精确的对应关系始终是一个极具挑战性的课题。</p>
+
+<p>传统的三维对应方法主要依赖于手工设计的几何描述符，如热核签名（Heat Kernel Signature, HKS）、波核签名（Wave Kernel Signature, WKS）以及基于测地距离的特征。这些方法在等距形变（Isometric Deformation）场景下表现尚可，但面对非等距形变、拓扑噪声或部分缺失时往往失效。近年来，随着深度学习在规则网格数据（如图像）上的成功，研究者们开始探索将神经网络应用于不规则的三维网格数据。PointNet、DGCNN等基于点云的方法虽然取得了一定进展，但点云采样丢失了网格的固有拓扑连接信息；而基于谱方法（Spectral Methods）的深度网络，如FMNet及其后续工作，虽然利用了拉普拉斯-贝尔特拉米算子（LBO）的特征基，但在处理高频几何细节和大规模网格时面临计算瓶颈。</p>
+
+<p>Transformer架构凭借其强大的全局依赖建模能力，在自然语言处理和二维视觉领域取得了革命性突破。然而，将标准Transformer直接应用于三维网格面临两大核心障碍：其一，网格顶点数量庞大且不规则，标准的自注意力机制具有O(N²)的计算复杂度，难以处理高分辨率网格；其二，三维网格缺乏类似图像像素的规则网格结构，如何有效地进行标记化（Tokenization）并保留几何细节成为关键难题。现有的基于Transformer的方法往往采用均匀采样或最远点采样（FPS）进行标记化，这种策略虽然降低了计算复杂度，但容易在几何细节丰富区域（如手指、面部特征）造成信息丢失，同时在平坦区域浪费计算资源。</p>
+
+<p>TokenMatch的提出正是为了解决上述矛盾。该论文的核心洞察在于：<strong>网格的几何重要性并非均匀分布，曲率作为局部几何复杂度的内在度量，应当指导标记化过程</strong>。通过引入曲率引导的标记化策略，TokenMatch能够在保留关键几何特征的同时，将计算资源集中于形状判别性区域，从而实现高效且精确的对应关系建立。这一设计哲学体现了"几何感知"与"数据驱动"的深度融合，为三维视觉Transformer的设计提供了新的范式。</p>
+
+<h3>二、核心方法与技术架构</h3>
+
+<p>TokenMatch的整体架构遵循"编码-匹配-解码"的三阶段范式，但在每个环节都融入了几何先验与效率优化。以下从曲率引导标记化、几何感知Transformer编码器、可微分匹配层三个维度进行详细剖析。</p>
+
+<h4>2.1 曲率引导的自适应标记化（Curvature-Guided Tokenization）</h4>
+
+<p>标记化是TokenMatch的核心创新点。与均匀采样不同，该方法基于离散微分几何中的曲率估计来动态调整标记密度。具体而言，对于输入网格M = (V, E, F)，其中V为顶点集，E为边集，F为面片集，算法首先计算每个顶点v_i的离散高斯曲率K(v_i)和平均曲率H(v_i)。</p>
+
+<p>离散高斯曲率的计算基于角度亏缺（Angle Deficit）公式：</p>
+
+<pre><code>K(v_i) = (2π - Σ_j θ_ij) / A_i</code></pre>
+
+<p>其中θ_ij为顶点v_i处相邻面片的内角，A_i为顶点v_i的Voronoi面积或混合面积（Mixed Area）。平均曲率则通过拉普拉斯-贝尔特拉米算子的对角元估计：</p>
+
+<pre><code>H(v_i) = (1/2) ||Δx_i||</code></pre>
+
+<p>其中Δx_i为顶点v_i的拉普拉斯坐标。综合曲率响应函数定义为R(v_i) = α·|K(v_i)| + β·|H(v_i)|，其中α和β为可学习或预设的权重系数，用于平衡高斯曲率（反映内在几何）与平均曲率（反映外在弯曲）的贡献。</p>
+
+<p>基于曲率响应，TokenMatch采用分层采样策略：首先根据R(v_i)的累积分布函数（CDF）进行逆变换采样（Inverse Transform Sampling），确保高曲率区域被采样的概率正比于其几何复杂度；然后对采样点进行k-均值聚类或基于测地距离的Voronoi划分，将原始网格划分为N个自适应面片（Adaptive Patches）。每个面片作为一个"视觉标记"（Visual Token），其特征通过该面片内顶点特征的加权平均聚合得到，权重由顶点曲率响应归一化后确定。这种设计使得标记化过程本身即保留了显著的几何语义信息。</p>
+
+<h4>2.2 几何感知Transformer编码器</h4>
+
+<p>在获得自适应标记后，TokenMatch构建了层次化的Transformer编码器。与标准ViT不同，该编码器在位置编码和注意力机制中显式融入了三维几何信息。</p>
+
+<p><strong>几何位置编码（Geometric Positional Encoding）：</strong>传统的正弦位置编码无法直接适用于三维流形。TokenMatch采用基于测地距离的位置编码方案。对于第i个标记，其位置编码PE_i通过以下方式构建：计算该标记中心到网格上K个锚点（Anchor Points）的测地距离向量[d_i1, d_i2, ..., d_iK]，然后通过可学习的MLP映射到高维空间。测地距离采用热方法（Heat Method）近似计算，以保证可微分性。这种编码方式使得模型能够感知标记在流形上的相对位置关系，而非欧几里得空间中的绝对坐标。</p>
+
+<p><strong>曲率调制注意力（Curvature-Modulated Attention）：</strong>在自注意力计算中，TokenMatch引入了几何偏置项。标准注意力权重A_ij = softmax(Q_i·K_j^T/√d)被修改为：</p>
+
+<pre><code>A_ij = softmax((Q_i·K_j^T)/√d + λ·G_ij)</code></pre>
+
+<p>其中G_ij为几何亲和力矩阵，定义为G_ij = exp(-d_g(i,j)²/2σ²)，d_g(i,j)为标记i与j之间的测地距离，σ为可学习的带宽参数，λ控制几何先验的强度。这种设计使得空间上邻近且几何相似的标记具有更高的注意力权重，符合形状对应的局部连续性假设。</p>
+
+<h4>2.3 可微分匹配与解码</h4>
+
+<p>在特征提取阶段，源网格S和目标网格T分别通过共享权重的编码器生成标记特征F_S 
+
+<h2>Paper Info</h2>
 <ul>
-  <li>计算复杂度高，难以扩展到大规模场景</li>
-  <li>泛化能力有限，在不同分布数据上表现下降</li>
-  <li>可解释性不足，难以理解模型决策过程</li>
-</ul>
-
-<h2>核心方法</h2>
-<p>论文的核心创新点在于：</p>
-<ol>
-  <li><strong>架构设计</strong>：提出了新的网络结构，有效解决了长期依赖问题</li>
-  <li><strong>训练策略</strong>：设计了渐进式训练方案，显著提升了收敛速度</li>
-  <li><strong>理论分析</strong>：提供了收敛性证明，为方法提供了理论保障</li>
-</ol>
-
-<h2>关键结果</h2>
-<p>在多个基准数据集上的实验结果表明：</p>
-<ul>
-  <li>主指标提升：相比 SOTA 提升 5-15%</li>
-  <li>效率提升：推理速度提升 2x，参数量减少 30%</li>
-  <li>鲁棒性增强：在分布偏移场景下表现更加稳定</li>
-</ul>
-
-<h2>我的思考</h2>
-<blockquote>
-  <p>💡 这篇论文的核心贡献不在于提出了全新的范式，而在于将已有的想法巧妙结合，在工程层面做到了极致。这种"组合创新"在当前 AI 发展阶段具有重要的实践价值。</p>
-</blockquote>
-
-<p>可能的改进方向：</p>
-<ul>
-  <li>探索在更多模态（视频、音频）上的适用性</li>
-  <li>研究与强化学习结合的可能性</li>
-  <li>优化部署方案，降低落地门槛</li>
-</ul>
-
-<h2>相关技术</h2>
-<p><span class="item-tag">推理</span> <span class="item-tag">训练</span> <span class="item-tag">评估</span></p>
-
-<h2>论文信息</h2>
-<ul>
-  <li>知识图谱 ID：<code>4c2ace5eb88b</code></li>
-  <li>分类：架构</li>
-  <li>难度等级：3/4</li>
+  <li>KG Node ID: <code>4c2ace5eb88b</code></li>
+  <li>Category: 架构</li>
+  <li>Tags: <span class="item-tag">推理</span> <span class="item-tag">训练</span> <span class="item-tag">评估</span></li>
 </ul>
     </div>
   </article>
@@ -85,7 +91,7 @@
 
 <footer class="site-footer">
   <div class="container">
-    <p>由 AI 技术大拿自驱动生成 · <a href="https://github.com/iceoyb/ai-tech-lab">GitHub</a></p>
+    <p>Generated by AI Tech Guru &middot; <a href="https://github.com/iceoyb/ai-tech-lab">GitHub</a></p>
   </div>
 </footer>
 </body>
