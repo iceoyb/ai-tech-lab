@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>知识图谱 — AI 技术大拿实验室</title>
+<link rel="stylesheet" href="styles/main.css">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <h1 class="logo">🧪 AI 技术大拿实验室</h1>
+    <nav class="nav">
+      <a href="index.html">首页</a>
+      <a href="graph.html" class="active">知识图谱</a>
+      <a href="tools/">工具库</a>
+      <a href="practices/">最佳实践</a>
+      <a href="papers/">论文精读</a>
+      <a href="weekly/">周报</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <div class="page-header">
+    <h2>🕸️ AI 技术知识图谱</h2>
+    <p>577 个技术节点，3036 条连接。拖拽节点探索，点击查看详情。</p>
+  </div>
+
+  <div class="graph-container">
+    <div class="graph-sidebar">
+      <h4>📊 图谱统计</h4>
+      <div class="graph-stats">
+        <div class="graph-stat">
+          <div class="num" id="gsNodes">--</div>
+          <div class="label">节点</div>
+        </div>
+        <div class="graph-stat">
+          <div class="num" id="gsEdges">--</div>
+          <div class="label">连接</div>
+        </div>
+      </div>
+      
+      <h4>🏷️ 分类筛选</h4>
+      <div class="filter-group" id="categoryFilter"></div>
+      
+      <h4>🎛️ 控制</h4>
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <button onclick="resetZoom()" style="background: var(--bg-hover); color: var(--text); border: 1px solid var(--border); padding: 6px 12px; border-radius: 6px; cursor: pointer; font-size: 13px;">重置视图</button>
+        <label style="display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text-dim);">
+          <input type="checkbox" id="showLabels" checked> 显示标签
+        </label>
+      </div>
+    </div>
+    
+    <div class="node-tooltip" id="tooltip"></div>
+    <svg id="graphSvg"></svg>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>由 AI 技术大拿自驱动生成 · <a href="https://github.com/iceoyb/ai-tech-lab">GitHub</a></p>
+  </div>
+</footer>
+
+<script src="scripts/graph.js"></script>
+</body>
+</html>
