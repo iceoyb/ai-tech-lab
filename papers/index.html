@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>论文精读 — AI 技术大拿实验室</title>
+<link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <h1 class="logo">🧪 AI 技术大拿实验室</h1>
+    <nav class="nav">
+      <a href="../index.html">首页</a>
+      <a href="../graph.html">知识图谱</a>
+      <a href="../tools/">工具库</a>
+      <a href="../practices/">最佳实践</a>
+      <a href="index.html" class="active">论文精读</a>
+      <a href="../weekly/">周报</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <div class="page-header">
+    <h2>📄 AI 论文精读</h2>
+    <p>顶会论文深度解读，核心方法拆解，关键代码复现。</p>
+  </div>
+  
+  <div id="paperList" class="item-list">
+    <div class="update-skeleton" style="height: 100px; border-radius: 12px;"></div>
+    <div class="update-skeleton" style="height: 100px; border-radius: 12px;"></div>
+    <div class="update-skeleton" style="height: 100px; border-radius: 12px;"></div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>由 AI 技术大拿自驱动生成 · <a href="https://github.com/iceoyb/ai-tech-lab">GitHub</a></p>
+  </div>
+</footer>
+
+<script>
+// 论文精读列表页 — 数据本地生成，无外部输入
+fetch('../data/papers.json')
+  .then(r => r.json())
+  .then(data => {
+    const list = document.getElementById('paperList');
+    if (!data.papers || data.papers.length === 0) {
+      list.innerHTML = '<p style="color: var(--text-dim); text-align: center; padding: 60px;">论文精读库正在建设中，每周更新...</p>';
+      return;
+    }
+    list.innerHTML = data.papers.map(p => `
+      <a href="${p.url}" class="item-card">
+        <div class="item-main">
+          <h3>${p.title}</h3>
+          <p>${p.summary || ''}</p>
+          <div class="item-tags">
+            <span class="item-tag">${p.venue || ''}</span>
+            <span class="item-tag">${'⭐'.repeat(p.depth || 2)}</span>
+            ${(p.tags||[]).slice(0,3).map(t => `<span class="item-tag">${t}</span>`).join('')}
+          </div>
+        </div>
+        <div class="item-meta">
+          <div class="item-date">${p.date || ''}</div>
+        </div>
+      </a>
+    `).join('');
+  })
+  .catch(e => {
+    document.getElementById('paperList').innerHTML = 
+      '<p style="color: var(--text-dim); text-align: center; padding: 60px;">论文精读库正在建设中...</p>';
+  });
+</script>
+</body>
+</html>
