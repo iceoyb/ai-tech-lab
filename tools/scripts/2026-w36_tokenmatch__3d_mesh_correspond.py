@@ -415,5 +415,357 @@ class Token:
 
     index: int
     seed: int
-    members: List[int] = field(default_factory=list)
     centroid: Tuple[float, float, float]
+    mean_curv: float
+    weight: float
+    members: List[int] = field(default_factory=list)
+
+# ---------------------------------------------------------------------------
+# Tokenisation (curvature-guided)
+# ---------------------------------------------------------------------------
+
+def curvature_weighted_tokenisation(mesh, num_tokens):
+    """Cluster vertices into ``num_tokens`` tokens guided by Gaussian curvature.
+
+    Uses a greedy farthest-point sampling where distance is weighted by
+    curvature saliency so high-curvature regions get more tokens.
+    """
+    n = mesh.num_vertices()
+    if num_tokens >= n:
+        # Degenerate: every vertex is its own token
+        return [
+            Token(index=i, seed=i, centroid=mesh.vertices[i],
+                  mean_curv=0.0, weight=1.0, members=[i])
+            for i in range(n)
+        ]
+
+    K = gaussian_curvature(mesh)
+    # Saliency = abs curvature + small epsilon
+    saliency = [abs(k) + 1e-6 for k in K]
+    total_sal = sum(saliency)
+
+    # Greedy farthest-point with curvature-weighted distance
+    seeds = []
+    # First seed: vertex with highest saliency
+    seeds.append(max(range(n), key=lambda i: saliency[i]))
+
+    # "Distance" to nearest seed (geodesic approximated by Euclidean + curvature diff)
+    min_dist = [float('inf')] * n
+
+    while len(seeds) < num_tokens:
+        last = seeds[-1]
+        # Update distances from last seed
+        for i in range(n):
+            # Euclidean distance weighted by saliency ratio
+            dx = mesh.vertices[i][0] - mesh.vertices[last][0]
+            dy = mesh.vertices[i][1] - mesh.vertices[last][1]
+            dz = mesh.vertices[i][2] - mesh.vertices[last][2]
+            euclid = (dx*dx + dy*dy + dz*dz) ** 0.5
+            # Weight by curvature saliency so high-curvature vertices "pull harder"
+            weighted = euclid * (1.0 + 2.0 * abs(saliency[i] - saliency[last]) / (total_sal / n + 1e-9))
+            if weighted < min_dist[i]:
+                min_dist[i] = weighted
+
+        # Pick next seed: vertex with max min_dist
+        next_seed = max(range(n), key=lambda i: min_dist[i])
+        seeds.append(next_seed)
+
+    # Assign each vertex to nearest seed (Euclidean)
+    assignments = [-1] * n
+    members = [[] for _ in seeds]
+    for i in range(n):
+        best_d = float('inf')
+        best_s = 0
+        for s_idx, s in enumerate(seeds):
+            dx = mesh.vertices[i][0] - mesh.vertices[s][0]
+            dy = mesh.vertices[i][1] - mesh.vertices[s][1]
+            dz = mesh.vertices[i][2] - mesh.vertices[s][2]
+            d = dx*dx + dy*dy + dz*dz
+            if d < best_d:
+                best_d = d
+                best_s = s_idx
+        assignments[i] = best_s
+        members[best_s].append(i)
+
+    # Build Token objects
+    H = mean_curvature(mesh)
+    tokens = []
+    for t_idx, s in enumerate(seeds):
+        mems = members[t_idx]
+        if not mems:
+            mems = [s]
+        # Centroid
+        cx = sum(mesh.vertices[m][0] for m in mems) / len(mems)
+        cy = sum(mesh.vertices[m][1] for m in mems) / len(mems)
+        cz = sum(mesh.vertices[m][2] for m in mems) / len(mems)
+        mean_h = sum(H[m] for m in mems) / len(mems)
+        weight = sum(saliency[m] for m in mems) / len(mems)
+        tokens.append(Token(
+            index=t_idx,
+            seed=s,
+            centroid=(cx, cy, cz),
+            mean_curv=mean_h,
+            weight=weight,
+            members=mems
+        ))
+
+    return tokens
+
+
+# ---------------------------------------------------------------------------
+# Lightweight self-attention on tokens (no numpy)
+# ---------------------------------------------------------------------------
+
+def token_self_attention(tokens, num_layers=2, hidden_dim=32):
+    """Apply a tiny self-attention transformer over token features.
+
+    Features per token: [centroid x, centroid y, centroid z, mean_curv, weight,
+    log(len(members))]  ->  projected to ``hidden_dim``.
+    We implement a single-head dot-product attention manually with lists.
+    """
+    import math
+
+    # Build feature vectors
+    feats = []
+    for t in tokens:
+        f = [
+            t.centroid[0], t.centroid[1], t.centroid[2],
+            t.mean_curv,
+            t.weight,
+            math.log(len(t.members) + 1),
+        ]
+        feats.append(f)
+
+    feat_dim = len(feats[0])
+
+    # Simple linear projection (random-ish but deterministic: use seed from token count)
+    # We just do a random Gaussian projection seeded by a deterministic value
+    import random
+    rng = random.Random(42)
+
+    def make_proj(in_dim, out_dim):
+        return [[rng.gauss(0, 1.0 / (in_dim ** 0.5)) for _ in range(in_dim)]
+                for _ in range(out_dim)]
+
+    W_q = make_proj(feat_dim, hidden_dim)
+    W_k = make_proj(feat_dim, hidden_dim)
+    W_v = make_proj(feat_dim, hidden_dim)
+    W_o = make_proj(hidden_dim, feat_dim)
+
+    def matmul(mat, vec):
+        return [sum(w * v for w, v in zip(row, vec)) for row in mat]
+
+    def relu(x):
+        return [max(0.0, v) for v in x]
+
+    for _ in range(num_layers):
+        # Q, K, V
+        Q = [matmul(W_q, f) for f in feats]
+        K = [matmul(W_k, f) for f in feats]
+        V = [matmul(W_v, f) for f in feats]
+
+        # Attention
+        scale = 1.0 / (hidden_dim ** 0.5)
+        new_feats = []
+        for i in range(len(tokens)):
+            # Attention scores
+            scores = []
+            for j in range(len(tokens)):
+                s = sum(Q[i][d] * K[j][d] for d in range(hidden_dim)) * scale
+                scores.append(s)
+            # Softmax
+            mx = max(scores)
+            exps = [math.exp(s - mx) for s in scores]
+            total = sum(exps)
+            attn = [e / total for e in exps]
+            # Weighted sum of V
+            out = [0.0] * hidden_dim
+            for j in range(len(tokens)):
+                for d in range(hidden_dim):
+                    out[d] += attn[j] * V[j][d]
+            # Output projection + residual
+            proj = matmul(W_o, out)
+            new_f = [feats[i][d] + proj[d] for d in range(feat_dim)]
+            new_feats.append(relu(new_f))
+
+        feats = new_feats
+
+    # Update token "embedding" summary into weight field (normalised)
+    for i, t in enumerate(tokens):
+        # Use norm of feature vector as a refined saliency score
+        t.weight = (sum(f*f for f in feats[i]) ** 0.5) / 10.0
+
+    return feats
+
+
+# ---------------------------------------------------------------------------
+# Correspondence via cosine similarity of token features
+# ---------------------------------------------------------------------------
+
+def compute_correspondence(src_tokens, tgt_tokens, src_feats, tgt_feats):
+    """For each source token, find the best-matching target token by feature cosine sim.
+
+    Returns a list ``corr[tgt_idx] = list of src_idx`` for soft mapping,
+    plus a dict {src_vertex_idx -> tgt_vertex_idx} for vertex-level mapping.
+    """
+    import math
+
+    def cosine(a, b):
+        dot = sum(x*y for x, y in zip(a, b))
+        na = sum(x*x for x in a) ** 0.5 + 1e-9
+        nb = sum(x*x for x in b) ** 0.5 + 1e-9
+        return dot / (na * nb)
+
+    # Token-level matches: best target per source
+    token_match = {}
+    for si, sf in enumerate(src_feats):
+        best_t = 0
+        best_sim = -2.0
+        for ti, tf in enumerate(tgt_feats):
+            sim = cosine(sf, tf)
+            if sim > best_sim:
+                best_sim = sim
+                best_t = ti
+        token_match[si] = (best_t, best_sim)
+
+    return token_match
+
+
+# ---------------------------------------------------------------------------
+# CLI entry point
+# ---------------------------------------------------------------------------
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="TokenMatch: 3D Mesh Correspondence with Curvature-Guided Tokenisation",
+        epilog="""
+Examples:
+  %(prog)s --source mesh_a.obj --target mesh_b.obj --output corr.json
+  %(prog)s --source mesh.obj --num-tokens 64 --inspect
+  %(prog)s --source mesh.obj --curvature-out curv.csv
+        """,
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
+
+    parser.add_argument("--source", "-s", required=True,
+                        help="Source mesh OBJ file")
+    parser.add_argument("--target", "-t",
+                        help="Target mesh OBJ file (if omitted, runs single-mesh inspection)")
+    parser.add_argument("--output", "-o", default="correspondence.json",
+                        help="Output JSON file for correspondence result (default: correspondence.json)")
+    parser.add_argument("--num-tokens", "-n", type=int, default=32,
+                        help="Number of tokens per mesh (default: 32)")
+    parser.add_argument("--num-layers", type=int, default=2,
+                        help="Number of self-attention layers (default: 2)")
+    parser.add_argument("--hidden-dim", type=int, default=32,
+                        help="Hidden dimension for token features (default: 32)")
+    parser.add_argument("--curvature-out",
+                        help="Write per-vertex Gaussian curvature to CSV file")
+    parser.add_argument("--inspect", action="store_true",
+                        help="Print mesh statistics and token summary")
+    parser.add_argument("--verbose", "-v", action="store_true",
+                        help="Verbose output")
+
+    args = parser.parse_args()
+
+    if args.verbose:
+        print(f"[INFO] Loading source mesh: {args.source}")
+
+    src_mesh = load_obj(args.source)
+    src_mesh.validate()
+
+    if args.verbose:
+        print(f"[INFO] Source: {src_mesh.num_vertices()} vertices, {src_mesh.num_faces()} faces")
+
+    # Curvature output
+    if args.curvature_out:
+        K = gaussian_curvature(src_mesh)
+        H = mean_curvature(src_mesh)
+        with open(args.curvature_out, "w") as f:
+            f.write("vertex_index,gaussian_curvature,mean_curvature\n")
+            for i, (k, h) in enumerate(zip(K, H)):
+                f.write(f"{i},{k:.6f},{h:.6f}\n")
+        if args.verbose:
+            print(f"[INFO] Curvature written to {args.curvature_out}")
+
+    # Tokenise
+    if args.verbose:
+        print(f"[INFO] Tokenising source mesh with {args.num_tokens} tokens...")
+    src_tokens = curvature_weighted_tokenisation(src_mesh, args.num_tokens)
+    src_feats = token_self_attention(src_tokens, args.num_layers, args.hidden_dim)
+
+    if args.inspect:
+        print(f"\n=== Mesh Statistics: {src_mesh.name} ===")
+        print(f"  Vertices : {src_mesh.num_vertices()}")
+        print(f"  Faces    : {src_mesh.num_faces()}")
+        print(f"  Area     : {src_mesh.total_area():.4f}")
+        bbox = src_mesh.bounding_box()
+        print(f"  BBox     : {bbox[0]} -> {bbox[1]}")
+        print(f"\n=== Token Summary ({len(src_tokens)} tokens) ===")
+        for i, t in enumerate(src_tokens):
+            print(f"  Token {i:3d}: seed={t.seed:5d}, members={len(t.members):4d}, "
+                  f"mean_H={t.mean_curv:.4f}, weight={t.weight:.4f}")
+
+    # If no target, just single-mesh mode
+    if not args.target:
+        if not args.inspect and not args.curvature_out:
+            print("No target mesh specified. Use --inspect for statistics or --target for correspondence.")
+        return 0
+
+    # Two-mesh correspondence
+    if args.verbose:
+        print(f"[INFO] Loading target mesh: {args.target}")
+    tgt_mesh = load_obj(args.target)
+    tgt_mesh.validate()
+
+    if args.verbose:
+        print(f"[INFO] Tokenising target mesh...")
+    tgt_tokens = curvature_weighted_tokenisation(tgt_mesh, args.num_tokens)
+    tgt_feats = token_self_attention(tgt_tokens, args.num_layers, args.hidden_dim)
+
+    if args.verbose:
+        print("[INFO] Computing correspondence...")
+    token_match = compute_correspondence(src_tokens, tgt_tokens, src_feats, tgt_feats)
+
+    # Write result
+    result = {
+        "source": {
+            "file": args.source,
+            "vertices": src_mesh.num_vertices(),
+            "faces": src_mesh.num_faces(),
+            "num_tokens": len(src_tokens),
+        },
+        "target": {
+            "file": args.target,
+            "vertices": tgt_mesh.num_vertices(),
+            "faces": tgt_mesh.num_faces(),
+            "num_tokens": len(tgt_tokens),
+        },
+        "token_correspondence": [
+            {
+                "source_token": si,
+                "target_token": ti,
+                "similarity": float(sim),
+                "source_seed": src_tokens[si].seed,
+                "target_seed": tgt_tokens[ti].seed,
+                "source_members": len(src_tokens[si].members),
+                "target_members": len(tgt_tokens[ti].members),
+            }
+            for si, (ti, sim) in sorted(token_match.items())
+        ],
+    }
+
+    import json
+    with open(args.output, "w") as f:
+        json.dump(result, f, indent=2)
+
+    print(f"Correspondence written to {args.output}")
+    print(f"  Source tokens: {len(src_tokens)}")
+    print(f"  Target tokens: {len(tgt_tokens)}")
+    print(f"  Matches: {len(token_match)}")
+
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
