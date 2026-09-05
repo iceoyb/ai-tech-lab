@@ -1,3 +1,17 @@
 {
-  "papers": []
+  "papers": [
+    {
+      "title": "TokenMatch: 3D Mesh Correspondence Transformer with Curvature-Guided Tokenisation",
+      "summary": "架构 领域论文精读，核心方法拆解与实战思考",
+      "venue": "架构",
+      "depth": 3,
+      "tags": [
+        "推理",
+        "训练",
+        "评估"
+      ],
+      "date": "2026-09-05",
+      "url": "papers/2026-w36-paper.html"
+    }
+  ]
 }
