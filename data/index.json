@@ -4,26 +4,26 @@
   "updates": [
     {
       "type": "paper",
-      "title": "🗞️ U.S. government limits exports of artificial intelligence software",
-      "summary": "趋势 · ⭐⭐",
-      "date": "2026-09-05",
-      "category": "趋势",
+      "title": "TokenMatch: 3D Mesh Correspondence Transformer with Curvature-Guided Tokenisation",
+      "summary": "架构 · ⭐⭐⭐",
+      "date": "2026-09-04",
+      "category": "架构",
       "url": "graph.html"
     },
     {
       "type": "paper",
-      "title": "AI训练数据质量：垃圾进，垃圾出",
-      "summary": "工程 · ⭐⭐",
-      "date": "2026-09-05",
+      "title": "Thinking in Pictures: A Systematic Benchmark for Reasoning-driven Image Generation",
+      "summary": "工程 · ⭐⭐⭐",
+      "date": "2026-09-04",
       "category": "工程",
       "url": "graph.html"
     },
     {
       "type": "paper",
-      "title": "Prompt Engineering 2.0：从技巧到方法论",
-      "summary": "工程 · ⭐⭐",
-      "date": "2026-09-05",
-      "category": "工程",
+      "title": "Configurable Semantic Chunking for Biomedical Information Extraction in Retrieval-Augmented Generation",
+      "summary": "架构 · ⭐⭐⭐",
+      "date": "2026-09-02",
+      "category": "架构",
       "url": "graph.html"
     },
     {
@@ -51,5 +51,5 @@
       "url": "weekly/"
     }
   ],
-  "latest_date": "2026-09-05"
+  "latest_date": "2026-09-04"
 }
