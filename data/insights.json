@@ -1,6 +1,30 @@
 {
   "insights": [
     {
+      "id": "2b26df06e2cb",
+      "insight": "多模态是下一个爆发点，但真正的挑战在于模态间的语义对齐",
+      "trigger": "技术判断",
+      "depth_score": 4,
+      "tags": [
+        "多模态",
+        "语义理解"
+      ],
+      "created_at": "2026-09-06T07:00:08.426037",
+      "validated": true
+    },
+    {
+      "id": "3610a76e3ec4",
+      "insight": "开源生态正在加速AI民主化，但商业模式仍在探索中",
+      "trigger": "生态观察",
+      "depth_score": 3,
+      "tags": [
+        "开源",
+        "商业模式"
+      ],
+      "created_at": "2026-09-06T07:00:08.425909",
+      "validated": true
+    },
+    {
       "id": "012547a3f469",
       "insight": "多模态是下一个爆发点，但真正的挑战在于模态间的语义对齐",
       "trigger": "技术判断",
