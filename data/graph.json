@@ -1,7 +1,7 @@
 {
   "stats": {
-    "total_nodes": 473,
-    "total_edges": 2678,
+    "total_nodes": 475,
+    "total_edges": 2695,
     "categories": {
       "学术": 1,
       "工具": 65,
@@ -12,10 +12,36 @@
       "测试": 1,
       "理论": 47,
       "算法": 39,
-      "趋势": 92
+      "趋势": 94
     }
   },
   "nodes": [
+    {
+      "id": "858db9d1c395",
+      "title": "AI产品落地：从Demo到Production的鸿沟",
+      "category": "趋势",
+      "tags": [
+        "AI落地",
+        "工程化",
+        "产品化"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-09-06T21:02:48.240535"
+    },
+    {
+      "id": "ea73370f2f34",
+      "title": "AI安全新挑战：对抗样本攻击升级",
+      "category": "趋势",
+      "tags": [
+        "AI安全",
+        "对抗攻击",
+        "防御机制"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-09-06T12:01:27.357166"
+    },
     {
       "id": "3b877ed7e9bd",
       "title": "ESPO: Error-Structured Prompt Optimization via Diagnose, Diversify, and Stabilize",
@@ -22226,6 +22252,108 @@
       "target": "b009af9b2faf",
       "relation": "similar",
       "weight": 1.2
+    },
+    {
+      "source": "913aa6e22230",
+      "target": "3b877ed7e9bd",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "609f78a5cf88",
+      "target": "3b877ed7e9bd",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "b8874100c4a1",
+      "target": "3b877ed7e9bd",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "cdb3a2d9959f",
+      "target": "3b877ed7e9bd",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "10a372a71033",
+      "target": "3b877ed7e9bd",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "3b87c9e8d191",
+      "target": "3b877ed7e9bd",
+      "relation": "similar",
+      "weight": 0.9
+    },
+    {
+      "source": "9476ec992d7b",
+      "target": "3b877ed7e9bd",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "ea73370f2f34",
+      "target": "af19a834d3a2",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "ea73370f2f34",
+      "target": "bc5cbc7c18ae",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "ea73370f2f34",
+      "target": "819e7ac2e9ad",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "ea73370f2f34",
+      "target": "298a09f430c6",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "ea73370f2f34",
+      "target": "0604392f43d9",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "858db9d1c395",
+      "target": "f2c8450ec1f2",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "858db9d1c395",
+      "target": "70c5b7864355",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "858db9d1c395",
+      "target": "c3b743b7b55c",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "858db9d1c395",
+      "target": "88a0314cc056",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "858db9d1c395",
+      "target": "7a7352148fd4",
+      "relation": "similar",
+      "weight": 1.1
     }
   ]
 }
