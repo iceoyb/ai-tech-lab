@@ -1,6 +1,30 @@
 {
   "insights": [
     {
+      "id": "030be6e976d2",
+      "insight": "AI技术正在从'能用'向'好用'转变，关键差异在于工程化能力",
+      "trigger": "趋势观察",
+      "depth_score": 4,
+      "tags": [
+        "工程化",
+        "产品化"
+      ],
+      "created_at": "2026-09-08T07:00:04.331385",
+      "validated": false
+    },
+    {
+      "id": "eabf174cf25a",
+      "insight": "开源生态正在加速AI民主化，但商业模式仍在探索中",
+      "trigger": "生态观察",
+      "depth_score": 3,
+      "tags": [
+        "开源",
+        "商业模式"
+      ],
+      "created_at": "2026-09-08T07:00:04.331237",
+      "validated": false
+    },
+    {
       "id": "18cbbf527114",
       "insight": "开源生态正在加速AI民主化，但商业模式仍在探索中",
       "trigger": "生态观察",
