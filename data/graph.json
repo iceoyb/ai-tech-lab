@@ -1,14 +1,14 @@
 {
   "stats": {
-    "total_nodes": 475,
-    "total_edges": 2695,
+    "total_nodes": 478,
+    "total_edges": 2708,
     "categories": {
       "学术": 1,
       "工具": 65,
       "工程": 84,
       "应用": 25,
-      "未分类": 3,
-      "架构": 116,
+      "未分类": 4,
+      "架构": 118,
       "测试": 1,
       "理论": 47,
       "算法": 39,
@@ -16,6 +16,43 @@
     }
   },
   "nodes": [
+    {
+      "id": "1f948a1f76c5",
+      "title": "Diffusion TV: Experiencing Diffusion Models through Tangible, Embodied Interaction",
+      "category": "未分类",
+      "tags": [
+        "视觉",
+        "机器人"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-09-08T08:01:08.803682"
+    },
+    {
+      "id": "c37a8831662e",
+      "title": "RegionFed: Federated Learning for Personalized Query Understanding in Heterogeneous Retail Environments",
+      "category": "架构",
+      "tags": [
+        "训练",
+        "隐私"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-09-07T21:01:24.133290"
+    },
+    {
+      "id": "62ebfcd868ef",
+      "title": "Ask Before You Optimize: Dynamic Pre-Formulation Clarification for Interactive Optimization",
+      "category": "架构",
+      "tags": [
+        "Agent",
+        "LLM",
+        "评估"
+      ],
+      "depth": 2,
+      "mastery": 0.0,
+      "created_at": "2026-09-07T12:00:42.138715"
+    },
     {
       "id": "858db9d1c395",
       "title": "AI产品落地：从Demo到Production的鸿沟",
@@ -22354,6 +22391,84 @@
       "target": "7a7352148fd4",
       "relation": "similar",
       "weight": 1.1
+    },
+    {
+      "source": "62ebfcd868ef",
+      "target": "075e8a577674",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "62ebfcd868ef",
+      "target": "ec3d1646018b",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "62ebfcd868ef",
+      "target": "9af1d14c3416",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "62ebfcd868ef",
+      "target": "fbca7c1eac6d",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "62ebfcd868ef",
+      "target": "f4c84a063ed3",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "c37a8831662e",
+      "target": "7f47523e8367",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "c37a8831662e",
+      "target": "c5e72d75d764",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "c37a8831662e",
+      "target": "a8d020178d61",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "c37a8831662e",
+      "target": "9af1d14c3416",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "c37a8831662e",
+      "target": "214ee5ba46f6",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "1f948a1f76c5",
+      "target": "1c35733146af",
+      "relation": "similar",
+      "weight": 0.6
+    },
+    {
+      "source": "1f948a1f76c5",
+      "target": "cf3798b1909b",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "1f948a1f76c5",
+      "target": "f570746ec6c0",
+      "relation": "similar",
+      "weight": 0.5
     }
   ]
 }
