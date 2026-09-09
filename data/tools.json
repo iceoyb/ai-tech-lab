@@ -27,7 +27,7 @@
       "category": "框架",
       "usage_count": 1,
       "success_rate": 1.0,
-      "last_used": "2026-09-02T07:00:59.546944",
+      "last_used": "2026-09-09T07:00:16.750555",
       "notes": ""
     },
     {
@@ -46,8 +46,8 @@
       "description": "本地LLM运行工具",
       "category": "工具",
       "usage_count": 1,
-      "success_rate": 0.0,
-      "last_used": "2026-09-08T07:00:04.331175",
+      "success_rate": 1.0,
+      "last_used": "2026-09-09T07:00:16.750485",
       "notes": ""
     }
   ]
