@@ -1,7 +1,7 @@
 {
   "stats": {
-    "total_nodes": 478,
-    "total_edges": 2708,
+    "total_nodes": 480,
+    "total_edges": 2722,
     "categories": {
       "学术": 1,
       "工具": 65,
@@ -10,12 +10,37 @@
       "未分类": 4,
       "架构": 118,
       "测试": 1,
-      "理论": 47,
+      "理论": 48,
       "算法": 39,
-      "趋势": 94
+      "趋势": 95
     }
   },
   "nodes": [
+    {
+      "id": "b98ab796a1e7",
+      "title": "AI模型可解释性：从黑盒到灰盒",
+      "category": "理论",
+      "tags": [
+        "可解释AI",
+        "XAI",
+        "模型调试"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-09-08T21:01:13.874897"
+    },
+    {
+      "id": "07d66a5ff554",
+      "title": "SNGLR AI Executive Briefing for 2021 – AI Forecasts for 2022",
+      "category": "趋势",
+      "tags": [
+        "视觉",
+        "代码"
+      ],
+      "depth": 2,
+      "mastery": 0.0,
+      "created_at": "2026-09-08T12:01:33.634219"
+    },
     {
       "id": "1f948a1f76c5",
       "title": "Diffusion TV: Experiencing Diffusion Models through Tangible, Embodied Interaction",
@@ -22469,6 +22494,90 @@
       "target": "f570746ec6c0",
       "relation": "similar",
       "weight": 0.5
+    },
+    {
+      "source": "07d66a5ff554",
+      "target": "9f8ff109e56a",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "07d66a5ff554",
+      "target": "42476be9d816",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "07d66a5ff554",
+      "target": "e68d81b7e9cc",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "07d66a5ff554",
+      "target": "ad2ac73b5210",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "07d66a5ff554",
+      "target": "2766e923d831",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "b98ab796a1e7",
+      "target": "3ae96c2e81f4",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "b98ab796a1e7",
+      "target": "28fbfb6ca8eb",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "b98ab796a1e7",
+      "target": "5bdc42a953f5",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "b98ab796a1e7",
+      "target": "f31fd723add2",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "b98ab796a1e7",
+      "target": "dae67345e398",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "2731c788019b",
+      "target": "a58664f9f3df",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "2731c788019b",
+      "target": "d7465bb7790d",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "2731c788019b",
+      "target": "d3fda10637ad",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "2731c788019b",
+      "target": "e786a67839c5",
+      "relation": "similar",
+      "weight": 1.1
     }
   ]
 }
