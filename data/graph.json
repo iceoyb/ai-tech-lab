@@ -1,21 +1,45 @@
 {
   "stats": {
-    "total_nodes": 480,
-    "total_edges": 2722,
+    "total_nodes": 482,
+    "total_edges": 2732,
     "categories": {
       "学术": 1,
       "工具": 65,
-      "工程": 84,
+      "工程": 85,
       "应用": 25,
       "未分类": 4,
       "架构": 118,
       "测试": 1,
       "理论": 48,
       "算法": 39,
-      "趋势": 95
+      "趋势": 96
     }
   },
   "nodes": [
+    {
+      "id": "1997cba9fbee",
+      "title": "AI编程助手代码质量评估新指标",
+      "category": "工程",
+      "tags": [
+        "AI编程",
+        "代码生成",
+        "评估指标"
+      ],
+      "depth": 2,
+      "mastery": 0.0,
+      "created_at": "2026-09-10T08:01:32.200342"
+    },
+    {
+      "id": "b0b944dcbf86",
+      "title": "🗞️ The Chaostron: An Important Advance in Learning Machines (1961)",
+      "category": "趋势",
+      "tags": [
+        "AI前沿"
+      ],
+      "depth": 2,
+      "mastery": 0.0,
+      "created_at": "2026-09-09T12:01:15.998370"
+    },
     {
       "id": "b98ab796a1e7",
       "title": "AI模型可解释性：从黑盒到灰盒",
@@ -22576,6 +22600,66 @@
     {
       "source": "2731c788019b",
       "target": "e786a67839c5",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "b0b944dcbf86",
+      "target": "af325e4fcc3b",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "b0b944dcbf86",
+      "target": "bfe9c377629a",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "b0b944dcbf86",
+      "target": "a3d1cf9c4b91",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "b0b944dcbf86",
+      "target": "2cafd4636ea2",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "b0b944dcbf86",
+      "target": "a31a08ea52da",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "1997cba9fbee",
+      "target": "1a562f3597f2",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "1997cba9fbee",
+      "target": "141561ab17c5",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "1997cba9fbee",
+      "target": "2739ac3dcdfb",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "1997cba9fbee",
+      "target": "cc9f0001c6cb",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "1997cba9fbee",
+      "target": "2dbd52e65f77",
       "relation": "similar",
       "weight": 1.1
     }
