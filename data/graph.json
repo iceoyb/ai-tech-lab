@@ -1,21 +1,45 @@
 {
   "stats": {
-    "total_nodes": 482,
-    "total_edges": 2732,
+    "total_nodes": 484,
+    "total_edges": 2742,
     "categories": {
       "学术": 1,
       "工具": 65,
       "工程": 85,
       "应用": 25,
       "未分类": 4,
-      "架构": 118,
+      "架构": 119,
       "测试": 1,
       "理论": 48,
       "算法": 39,
-      "趋势": 96
+      "趋势": 97
     }
   },
   "nodes": [
+    {
+      "id": "7bf0b756f46a",
+      "title": "Likelihood-free inference with nuisance parameters through normalizing flows",
+      "category": "架构",
+      "tags": [
+        "RAG",
+        "推理",
+        "部署"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-09-11T08:01:28.447456"
+    },
+    {
+      "id": "660327df6ce4",
+      "title": "🗞️ Machine Learning Crash Course",
+      "category": "趋势",
+      "tags": [
+        "AI前沿"
+      ],
+      "depth": 2,
+      "mastery": 0.0,
+      "created_at": "2026-09-10T12:01:13.232777"
+    },
     {
       "id": "1997cba9fbee",
       "title": "AI编程助手代码质量评估新指标",
@@ -22662,6 +22686,66 @@
       "target": "2dbd52e65f77",
       "relation": "similar",
       "weight": 1.1
+    },
+    {
+      "source": "660327df6ce4",
+      "target": "af325e4fcc3b",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "660327df6ce4",
+      "target": "bfe9c377629a",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "660327df6ce4",
+      "target": "a3d1cf9c4b91",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "660327df6ce4",
+      "target": "2cafd4636ea2",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "660327df6ce4",
+      "target": "a31a08ea52da",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "7bf0b756f46a",
+      "target": "8b38994b942e",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "7bf0b756f46a",
+      "target": "f46f4fb34d17",
+      "relation": "similar",
+      "weight": 0.9
+    },
+    {
+      "source": "7bf0b756f46a",
+      "target": "075e8a577674",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "7bf0b756f46a",
+      "target": "7d90bf026363",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "7bf0b756f46a",
+      "target": "c5c793263230",
+      "relation": "similar",
+      "weight": 0.8
     }
   ]
 }
