@@ -17,7 +17,7 @@
       "category": "工具",
       "usage_count": 1,
       "success_rate": 1.0,
-      "last_used": "2026-09-11T07:00:32.014183",
+      "last_used": "2026-09-12T07:00:01.799733",
       "notes": ""
     },
     {
@@ -46,8 +46,8 @@
       "description": "本地LLM运行工具",
       "category": "工具",
       "usage_count": 1,
-      "success_rate": 1.0,
-      "last_used": "2026-09-10T07:00:39.102591",
+      "success_rate": 0.0,
+      "last_used": "2026-09-12T07:00:01.799688",
       "notes": ""
     }
   ]
