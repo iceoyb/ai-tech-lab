@@ -1,21 +1,60 @@
 {
   "stats": {
-    "total_nodes": 484,
-    "total_edges": 2742,
+    "total_nodes": 487,
+    "total_edges": 2757,
     "categories": {
       "学术": 1,
       "工具": 65,
-      "工程": 85,
-      "应用": 25,
+      "工程": 86,
+      "应用": 26,
       "未分类": 4,
       "架构": 119,
       "测试": 1,
       "理论": 48,
       "算法": 39,
-      "趋势": 97
+      "趋势": 98
     }
   },
   "nodes": [
+    {
+      "id": "1b5a88262000",
+      "title": "视觉语言模型(VLM)多模态理解新高度",
+      "category": "应用",
+      "tags": [
+        "VLM",
+        "多模态",
+        "医学AI"
+      ],
+      "depth": 2,
+      "mastery": 0.0,
+      "created_at": "2026-09-12T08:01:33.903449"
+    },
+    {
+      "id": "c5ad1f95f2ef",
+      "title": "本周AI论文精选：值得关注的5篇论文",
+      "category": "趋势",
+      "tags": [
+        "论文精选",
+        "研究前沿",
+        "周报"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-09-11T21:01:31.743166"
+    },
+    {
+      "id": "b44570f19ac1",
+      "title": "AI训练数据质量：垃圾进，垃圾出",
+      "category": "工程",
+      "tags": [
+        "数据质量",
+        "训练数据",
+        "数据清洗"
+      ],
+      "depth": 2,
+      "mastery": 0.0,
+      "created_at": "2026-09-11T12:01:04.829520"
+    },
     {
       "id": "7bf0b756f46a",
       "title": "Likelihood-free inference with nuisance parameters through normalizing flows",
@@ -22746,6 +22785,96 @@
       "target": "c5c793263230",
       "relation": "similar",
       "weight": 0.8
+    },
+    {
+      "source": "b44570f19ac1",
+      "target": "6573207a124d",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "b44570f19ac1",
+      "target": "54060da77a55",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "b44570f19ac1",
+      "target": "bde8708cdde5",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "b44570f19ac1",
+      "target": "09241669f3cc",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "b44570f19ac1",
+      "target": "ad9a91ebbd19",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "c5ad1f95f2ef",
+      "target": "2dbc01a0cb94",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "c5ad1f95f2ef",
+      "target": "eb376272a4f9",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "c5ad1f95f2ef",
+      "target": "c677cf466c07",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "c5ad1f95f2ef",
+      "target": "2b23292776ed",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "c5ad1f95f2ef",
+      "target": "0cd9c2102768",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "1b5a88262000",
+      "target": "88ade639fcb1",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "1b5a88262000",
+      "target": "772839c61d0c",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "1b5a88262000",
+      "target": "4c167174fb32",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "1b5a88262000",
+      "target": "9951d01bf49e",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "1b5a88262000",
+      "target": "8b7e63c60b71",
+      "relation": "similar",
+      "weight": 1.1
     }
   ]
 }
