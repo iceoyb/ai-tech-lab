@@ -1,7 +1,31 @@
 {
   "tools_count": 5,
-  "insights_count": 15,
+  "insights_count": 17,
   "updates": [
+    {
+      "type": "insight",
+      "title": "开源生态正在加速AI民主化，但商业模式仍在探索中",
+      "summary": "深度评分：3/5 · 触发：生态观察",
+      "date": "2026-09-12",
+      "category": "开源 / 商业模式",
+      "url": "weekly/"
+    },
+    {
+      "type": "insight",
+      "title": "AI技术正在从'能用'向'好用'转变，关键差异在于工程化能力",
+      "summary": "深度评分：4/5 · 触发：趋势观察",
+      "date": "2026-09-12",
+      "category": "工程化 / 产品化",
+      "url": "weekly/"
+    },
+    {
+      "type": "paper",
+      "title": "视觉语言模型(VLM)多模态理解新高度",
+      "summary": "应用 · ⭐⭐",
+      "date": "2026-09-12",
+      "category": "应用",
+      "url": "graph.html"
+    },
     {
       "type": "insight",
       "title": "多模态是下一个爆发点，但真正的挑战在于模态间的语义对齐",
@@ -11,45 +35,21 @@
       "url": "weekly/"
     },
     {
-      "type": "insight",
-      "title": "开源生态正在加速AI民主化，但商业模式仍在探索中",
-      "summary": "深度评分：3/5 · 触发：生态观察",
-      "date": "2026-09-11",
-      "category": "开源 / 商业模式",
-      "url": "weekly/"
-    },
-    {
       "type": "paper",
-      "title": "Likelihood-free inference with nuisance parameters through normalizing flows",
-      "summary": "架构 · ⭐⭐⭐",
+      "title": "本周AI论文精选：值得关注的5篇论文",
+      "summary": "趋势 · ⭐⭐⭐",
       "date": "2026-09-11",
-      "category": "架构",
-      "url": "graph.html"
-    },
-    {
-      "type": "insight",
-      "title": "开源生态正在加速AI民主化，但商业模式仍在探索中",
-      "summary": "深度评分：3/5 · 触发：生态观察",
-      "date": "2026-09-10",
-      "category": "开源 / 商业模式",
-      "url": "weekly/"
-    },
-    {
-      "type": "paper",
-      "title": "🗞️ Machine Learning Crash Course",
-      "summary": "趋势 · ⭐⭐",
-      "date": "2026-09-10",
       "category": "趋势",
       "url": "graph.html"
     },
     {
       "type": "paper",
-      "title": "AI编程助手代码质量评估新指标",
+      "title": "AI训练数据质量：垃圾进，垃圾出",
       "summary": "工程 · ⭐⭐",
-      "date": "2026-09-10",
+      "date": "2026-09-11",
       "category": "工程",
       "url": "graph.html"
     }
   ],
-  "latest_date": "2026-09-11"
+  "latest_date": "2026-09-12"
 }
