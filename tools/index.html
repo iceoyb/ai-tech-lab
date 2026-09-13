@@ -32,6 +32,10 @@
     <div class="update-skeleton" style="height: 100px; border-radius: 12px;"></div>
     <div class="update-skeleton" style="height: 100px; border-radius: 12px;"></div>
   </div>
+
+  <h2 style="margin-top: 48px;">📦 每周产出的工具脚本</h2>
+  <p>每周围绕一个知识节点生成、可直接运行的 Python 脚本。</p>
+  <div id="scriptList" class="item-list"></div>
 </main>
 
 <footer class="site-footer">
@@ -70,6 +74,35 @@ fetch('../data/tools.json')
   })
   .catch(e => {
     document.getElementById('toolList').innerHTML = '<p style="color: var(--text-dim); text-align: center; padding: 60px;">加载失败</p>';
+  });
+
+// 每周产出的工具脚本（tools.json 的 scripts 数组）
+fetch('../data/tools.json')
+  .then(r => r.json())
+  .then(data => {
+    const el = document.getElementById('scriptList');
+    const scripts = data.scripts || [];
+    if (!scripts.length) {
+      el.innerHTML = '<p style="color: var(--text-dim); text-align: center; padding: 40px;">脚本正在积累中...</p>';
+      return;
+    }
+    el.innerHTML = scripts.map(s => `
+      <a href="${s.url}" class="item-card" download>
+        <div class="item-main">
+          <h3>${s.title || s.name}</h3>
+          <p>${s.description || ''}</p>
+          <div class="item-tags">
+            <span class="item-tag">${s.category || '工具'}</span>
+          </div>
+        </div>
+        <div class="item-meta">
+          <div class="item-date">📦 下载 .py</div>
+        </div>
+      </a>
+    `).join('');
+  })
+  .catch(e => {
+    document.getElementById('scriptList').innerHTML = '';
   });
 </script>
 </body>
