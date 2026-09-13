@@ -51,7 +51,7 @@ fetch('../data/papers.json')
       return;
     }
     list.innerHTML = data.papers.map(p => `
-      <a href="../${p.url}" class="item-card">
+      <a href="${p.url}" class="item-card">
         <div class="item-main">
           <h3>${p.title}</h3>
           <p>${p.summary || ''}</p>
