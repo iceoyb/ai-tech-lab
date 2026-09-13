@@ -51,7 +51,7 @@ fetch('../data/weekly.json')
       return;
     }
     list.innerHTML = data.reports.map(r => `
-      <a href="../${r.url}" class="item-card">
+      <a href="${r.url}" class="item-card">
         <div class="item-main">
           <h3>第 ${r.week} 周 · ${r.period}</h3>
           <p>${r.summary || ''}</p>
