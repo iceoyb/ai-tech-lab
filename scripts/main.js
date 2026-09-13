@@ -16,6 +16,9 @@ async function loadStats() {
     const idx = await idxRes.json();
     document.getElementById('statTools').textContent = idx.tools_count || 0;
     document.getElementById('statInsights').textContent = idx.insights_count || 0;
+    // 四大板块卡片里的节点数同步（避免硬编码过期）
+    const sn = document.getElementById('sectionNodes');
+    if (sn) sn.textContent = data.stats.total_nodes.toLocaleString();
   } catch (e) {
     console.log('数据加载失败', e);
   }
