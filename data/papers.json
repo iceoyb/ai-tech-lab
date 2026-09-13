@@ -10,8 +10,8 @@
         "部署"
       ],
       "date": "2026-09-13",
-      "url": "papers/2026-w37-paper.html",
-      "deep_url": "papers/2026-w37-paper-deep.html"
+      "url": "2026-w37-paper.html",
+      "deep_url": "2026-w37-paper-deep.html"
     },
     {
       "title": "TokenMatch: 3D Mesh Correspondence Transformer with Curvature-Guided Tokenisation",
@@ -23,8 +23,8 @@
         "评估"
       ],
       "date": "2026-09-05",
-      "url": "papers/2026-w36-paper.html",
-      "deep_url": "papers/2026-w36-paper-deep.html"
+      "url": "2026-w36-paper.html",
+      "deep_url": "2026-w36-paper-deep.html"
     },
     {
       "title": "Compile by Training: Turning Natural-Language Specifications into Local Neural Functions",
@@ -35,20 +35,7 @@
         "训练"
       ],
       "date": "2026-09-05",
-      "url": "papers/2026-w36-paper-deep.html"
-    },
-    {
-      "title": "TokenMatch: 3D Mesh Correspondence Transformer with Curvature-Guided Tokenisation",
-      "summary": "架构 领域论文精读，核心方法拆解与实战思考",
-      "venue": "架构",
-      "depth": 3,
-      "tags": [
-        "推理",
-        "训练",
-        "评估"
-      ],
-      "date": "2026-09-05",
-      "url": "papers/2026-w36-paper.html"
+      "url": "2026-w36-paper-deep.html"
     }
   ]
 }
