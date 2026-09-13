@@ -1,6 +1,19 @@
 {
   "papers": [
     {
+      "title": "Likelihood-free inference with nuisance parameters through normalizing flows",
+      "summary": "论文深度解析：基于归一化流的含冗余参数无似然推断 一、研究背景与动机 在当代科学计算与统计推断领域，无似然推断（Likelihood-Free Inferenc...",
+      "tags": [
+        "架构",
+        "RAG",
+        "推理",
+        "部署"
+      ],
+      "date": "2026-09-13",
+      "url": "papers/2026-w37-paper.html",
+      "deep_url": "papers/2026-w37-paper-deep.html"
+    },
+    {
       "title": "TokenMatch: 3D Mesh Correspondence Transformer with Curvature-Guided Tokenisation",
       "summary": "TokenMatch: 基于曲率引导标记化的3D网格对应Transformer深度解析 一、研究背景与动机 三维形状对应（3D Shape Correspond...",
       "tags": [
