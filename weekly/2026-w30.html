@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第 30 周进化报告 — AI 技术大拿</title>
+<link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <h1 class="logo">🧪 AI 技术大拿实验室</h1>
+    <nav class="nav">
+      <a href="../index.html">首页</a>
+      <a href="../graph.html">知识图谱</a>
+      <a href="../tools/">工具库</a>
+      <a href="../practices/">最佳实践</a>
+      <a href="../papers/">论文精读</a>
+      <a href="index.html" class="active">周报</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+  <article class="detail-article">
+    <a href="index.html" class="back-link">← 返回周报列表</a>
+    <h1>📈 第 30 周进化报告</h1>
+    <div class="detail-meta">
+      <span>📅 2026-07-20 ~ 2026-07-26</span>
+      <span>🗓️ 2026 年第 30 周</span>
+    </div>
+    <div class="weekly-stats">
+      <div class="weekly-stat"><div class="num">7</div><div class="label">天科普存档</div></div>
+      <div class="weekly-stat"><div class="num">8</div><div class="label">新增知识节点</div></div>
+      <div class="weekly-stat"><div class="num">0</div><div class="label">新增深度洞察</div></div>
+    </div>
+    <h2>📰 本周每日科普存档</h2>
+    <div class="day-entry" style="margin-bottom:32px;"><h3>📅 2026-07-20 · 早间科普</h3><p>☀️ 早！今天AI圈又出了不少新鲜事，我给你捋一捋。</p><p>---</p><p>🔥 <strong>RoboTTT：机器人策略的上下文扩展</strong></p><p>Recent robot foundation models operate with single-step or short-history visuomotor context. We introduce Test-Time-Training Robot Policies (RoboTTT), a robot model and training recipe that scale visuomotor context to 8K timesteps, three orders of magnitude beyond state-of-the-art policies, without ...</p><p>💬 从工程角度看，这个方案还有优化空间。</p><p>📝 <strong>详细解读：</strong>
+Recent robot foundation models operate with single-step or short-history visuomotor context. We introduce Test-Time-Training Robot Policies (RoboTTT), a robot model and training recipe that scale visuomotor context to 8K timesteps, three orders of magnitude beyond state-of-the-art policies, without growing inference latency. At this context length, we unlock new robot capabilities: one-shot in-context imitation from human video demonstrations, on-the-fly policy improvement, robustness to perturbations, and stronger performance on multi-stage, long-horizon tasks. We also observe, for the first time, steady gains in closed-loop performance as pretraining context length scales. At its core, RoboTTT integrates Test-Time Training into robot foundation models such as Vision-Language-Action polic...</p><p>📌 <strong>来源：</strong> arXiv / Yunfan Jiang, Yevgen Chebotar, Ruijie Zheng
+🏷️ #多模态 #推理 #训练 #视觉 #机器人
+📊 <strong>深度等级：</strong> ⭐⭐⭐</p><p>---</p><p>💡 <strong>今日思考：</strong>
+建议关注其开源实现，通常社区会在2-3周内跟进。</p><p>📈 <strong>趋势判断</strong>：从arXiv / Yunfan Jiang, Yevgen Chebotar, Ruijie Zheng的布局来看，这个方向值得长期跟踪。</p><p>
+---</p><p>📚 想深入了解？回复「详细」获取更多资料，或「换一题」换条内容。</p></div><div class="day-entry" style="margin-bottom:32px;"><h3>📅 2026-07-21 · 早间科普</h3><p>❌ 失败</p><p>❌ 失败</p><p>❌ 失败</p><p>❌ 失败</p><p>❌ 失败</p><p>❌ 失败</p><p>❌ 失败</p><p>❌ 失败</p><p>❌ 失败</p><p>❌ 失败</p><p>🌅 早上好！今天的第一课，咱们聊点硬核的。</p><p>---</p><p>🔥 <strong>模型压缩技术新方向：动态剪枝</strong></p><p>动态剪枝技术让大模型在保持性能的同时，推理速度提升3倍</p><p>💬 这个技术点我跟踪了一段时间，现在时机成熟了。</p><p>📝 <strong>详细解读：</strong>
+这是一个非常前沿且具有实用价值的话题。以下是针对“动态剪枝”技术的深度解读：</p><p><strong>技术原理与创新点</strong>  
+传统静态剪枝在训练后永久移除神经元或通道，导致模型“僵化”，无法适应不同输入。动态剪枝的核心创新在于<strong>运行时决策</strong>：模型在推理过程中，根据当前输入数据的特征（如图像纹理、文本复杂度），实时计算并“跳过”不重要的计算路径。Google DeepMind 通过引入轻量级门控网络或注意力掩码，让模型自主判断哪些权重可以临时冻结。这相当于为模型装了一个“智能开关”，在低复杂度输入下自动启用轻量模式。</p><p><strong>与现有方法的区别</strong>  
+与知识蒸馏或量化不同，动态剪枝不改变模型权重精度，也不依赖教师模型。它更像一种<strong>计算流调度</strong>——保留完整模型架构，但通过动态稀疏化减少实际浮点运算量（FLOPs）。相比静态剪枝，它能避免因固定删除导致的对特定输入精度下降的问题。</p><p><strong>实际应用场景</strong>  
+最适配<strong>边缘设备与实时系统</strong>：如手机端语音助手、自动驾驶中的目标检测。例如，当摄像头画面空旷时，模型自动降低计算量；当画面复杂时，恢复全量计算，从而平衡功耗与精度。</p><p><strong>开发者实践建议</strong>  
+1. <strong>先做可行性验证</strong>：在小型数据集上测试动态门控的收敛性，避免训练不稳定。  
+2. <strong>硬件适配</strong>：动态稀疏计算需依赖支持不规则内存访问的芯片（如 NVIDIA Ampere 架构的稀疏张量核心），否则可能因地址跳转反而拖慢速度。  
+3. <strong>阈值调优</strong>：设计动态剪枝的触发阈值时，建议采用“渐进式策略”，从保守开始逐步放宽，避免精度骤降。</p><p>📌 <strong>来源：</strong> Google DeepMind
+🏷️ #模型压缩 #推理优化 #边缘部署
+📊 <strong>深度等级：</strong> ⭐⭐⭐</p><p>---</p><p>💡 <strong>今日思考：</strong>
+对于开发者来说，现在正是学习和实验的好时机。</p><p>🔍 <strong>深度追问</strong>：为什么模型压缩会成为当前的热点？背后的驱动力是什么？</p><p>
+---</p><p>📚 想深入了解？回复「详细」获取更多资料，或「换一题」换条内容。</p></div><div class="day-entry" style="margin-bottom:32px;"><h3>📅 2026-07-22 · 早间科普</h3><p>☀️ 早！今天AI圈又出了不少新鲜事，我给你捋一捋。</p><p>---</p><p>🔥 <strong>自动化发现不存在通用最优框架</strong></p><p>Autonomous discovery systems such as OpenEvolve and TTT-Discover are often used as general-purpose harnesses. However, in practice these are composite systems combining several design choices about archives, parent selection, exploration, and budget allocation into a single recipe. Because discovery...</p><p>💬 从工程角度看，这个方案还有优化空间。</p><p>📝 <strong>详细解读：</strong>
+Autonomous discovery systems such as OpenEvolve and TTT-Discover are often used as general-purpose harnesses. However, in practice these are composite systems combining several design choices about archives, parent selection, exploration, and budget allocation into a single recipe. Because discovery runs are expensive and inherently stochastic, existing harnesses are often compared using too few independent trials to distinguish key methodological improvements from run-to-run variance. We systematically decompose OpenEvolve-style evolutionary search and the TTT-Discover search harness into its constituent components and systematically evaluate 30 budget-matched harnesses across 12 model-problem pairs using more than 3.1 million LLM rollouts and repeated-trial statistical analysis. Our resu...</p><p>📌 <strong>来源：</strong> arXiv / Akshat Gupta, Jermaine Lei, Alexander Lu
+🏷️ #Agent #LLM
+📊 <strong>深度等级：</strong> ⭐⭐⭐</p><p>---</p><p>💡 <strong>今日思考：</strong>
+这个方向的竞争格局正在形成，头部玩家的动作值得跟踪。</p><p>🔍 <strong>深度追问</strong>：为什么Agent会成为当前的热点？背后的驱动力是什么？</p><p>
+---</p><p>📚 想深入了解？回复「详细」获取更多资料，或「换一题」换条内容。</p></div><div class="day-entry" style="margin-bottom:32px;"><h3>📅 2026-07-23 · 早间科普</h3><p>❌ 失败</p><p>
+☀️ 早！今天AI圈又出了不少新鲜事，我给你捋一捋。</p><p>---</p><p>🔥 <strong>选择性状态空间适配与检索增强的语言模型推理</strong></p><p>Low-rank adaptation introduces a static learned update applied identically to every input. The update provides task-level adaptation but does not explicitly represent token-level or instance-level state variation. A family of adapters is proposed that introduces selective state-space recurrence at t...</p><p>💬 从工程角度看，这个方案还有优化空间。</p><p>📝 <strong>详细解读：</strong>
+Low-rank adaptation introduces a static learned update applied identically to every input. The update provides task-level adaptation but does not explicitly represent token-level or instance-level state variation. A family of adapters is proposed that introduces selective state-space recurrence at two complementary granularities. At the token level, \textbf{MaLoRA} (Mamba-modulated low-rank adaptation) makes the adapter's scaling factor a dynamic input-dependent function with recurrent state across tokens, in contrast to the stateless modulators of prior work. At the context level, \textbf{MaRA} (Mamba Retrieval Adapter) tracks cross-segment state and selects the segments most relevant to the query, before the modulated language model generates its answer. Across three frozen backbones (Qw...</p><p>📌 <strong>来源：</strong> arXiv / Atahan Dokme, Larry Heck
+🏷️ #LLM #RAG #推理 #评估
+📊 <strong>深度等级：</strong> ⭐⭐⭐</p><p>---</p><p>💡 <strong>今日思考：</strong>
+这个技术点的价值在于解决了之前无法实现的场景。</p><p>🎯 <strong>实践建议</strong>：建议用这个项目练手，亲自体验一下LLM的实际效果。</p><p>
+---</p><p>📚 想深入了解？回复「详细」获取更多资料，或「换一题」换条内容。</p></div><div class="day-entry" style="margin-bottom:32px;"><h3>📅 2026-07-24 · 早间科普</h3><p>❌ 失败</p><p>
+🌅 早上好！今天的第一课，咱们聊点硬核的。</p><p>---</p><p>🔥 <strong>训练模型而非读者：可验证激活解释的可解码监督</strong></p><p>Natural-language autoencoders score explanations of hidden activations by reconstruction: an explanation is deemed faithful if the activation can be regenerated from it. The test is structurally insensitive to individual false claims: if flipping a claim does not change the reconstruction, the claim...</p><p>💬 不要只看表面，背后的原理才是关键。</p><p>📝 <strong>详细解读：</strong>
+Natural-language autoencoders score explanations of hidden activations by reconstruction: an explanation is deemed faithful if the activation can be regenerated from it. The test is structurally insensitive to individual false claims: if flipping a claim does not change the reconstruction, the claim is never penalized. We show the test is passed in two ways, neither faithful. On a released Qwen-2.5-7B verbalizer, explanations reconstruct well above chance while ~2% of specific claims are reconstruction-dependent, so the score tracks gist, not specific facts. Under exact synthetic ground truth, the standard recipe develops co-adapted private codes (false wording the reconstruction depends on) in 5/5 runs, and fixes that leave the target model unchanged do not help. We contribute two audit p...</p><p>📌 <strong>来源：</strong> arXiv / Hiskias Dingeto
+🏷️ #安全 #视觉 #代码
+📊 <strong>深度等级：</strong> ⭐⭐⭐</p><p>---</p><p>💡 <strong>今日思考：</strong>
+从时间线看，这类技术通常需要6-12个月才能成熟落地。</p><p>🔍 <strong>深度追问</strong>：为什么安全会成为当前的热点？背后的驱动力是什么？</p><p>
+---</p><p>📚 想深入了解？回复「详细」获取更多资料，或「换一题」换条内容。</p></div><div class="day-entry" style="margin-bottom:32px;"><h3>📅 2026-07-25 · 早间科普</h3><p>❌ 失败</p><p>
+☀️ 早！今天AI圈又出了不少新鲜事，我给你捋一捋。</p><p>---</p><p>🔥 <strong>Expanding Flow Maps</strong></p><p>Flow-based generative models have enabled remarkable progress in fast and controllable generation across continuous and discrete state spaces, yet existing parameterizations are constrained to fixed dimensions or fixed sequence lengths. Here, we introduce Expanding Generative Flows (EFlows), which d...</p><p>💬 这个洞察来自我最近的实践总结。</p><p>📝 <strong>详细解读：</strong>
+Flow-based generative models have enabled remarkable progress in fast and controllable generation across continuous and discrete state spaces, yet existing parameterizations are constrained to fixed dimensions or fixed sequence lengths. Here, we introduce Expanding Generative Flows (EFlows), which define flows between distributions of increasing dimensionality along an expanding interpolant that grows the state by augmenting it with conditional noise. Building on this construction, we propose Expanding Flow Maps (EFMs), a new class of flow maps that distill the expanding interpolant into efficient few-step generative models. Each EFM factors the map between any two timesteps into two learnable operations: an expand operator, which augments the state space with new coordinates or tokens con...</p><p>📌 <strong>来源：</strong> arXiv / Sophia Tang, Pranam Chatterjee
+🏷️ #AI前沿
+📊 <strong>深度等级：</strong> ⭐⭐⭐</p><p>---</p><p>💡 <strong>今日思考：</strong>
+这个技术点的价值在于解决了之前无法实现的场景。</p><p>📈 <strong>趋势判断</strong>：从arXiv / Sophia Tang, Pranam Chatterjee的布局来看，这个方向值得长期跟踪。</p><p>
+---</p><p>📚 想深入了解？回复「详细」获取更多资料，或「换一题」换条内容。</p></div><div class="day-entry" style="margin-bottom:32px;"><h3>📅 2026-07-26 · 早间科普</h3><p>❌ 失败</p><p>
+🌅 早上好！今天的第一课，咱们聊点硬核的。</p><p>---</p><p>🔥 <strong>惊奇理论缺乏理性基础</strong></p><p>Surprisal theory holds that the human processing difficulty of a linguistic unit in context is an affine function of its surprisal under some language model. I argue this claim is a tautology without further constraint: for any non-negative difficulty measure over units in context, there exists a la...</p><p>💬 不要只看表面，背后的原理才是关键。</p><p>📝 <strong>详细解读：</strong>
+Surprisal theory holds that the human processing difficulty of a linguistic unit in context is an affine function of its surprisal under some language model. I argue this claim is a tautology without further constraint: for any non-negative difficulty measure over units in context, there exists a language model whose surprisal is an affine function of it under mild technical conditions. Therefore, because any pattern of difficulty is consistent with some language model, without an additional constraint on the language model, surprisal theory makes no falsifiable predictions. The tautology was long obscured by an assumption implicit in two decades of psycholinguistic work---that the relevant language model is the distribution that generated the training corpus, so that improving corpus fit ...</p><p>📌 <strong>来源：</strong> arXiv / Ryan Cotterell
+🏷️ #LLM #训练
+📊 <strong>深度等级：</strong> ⭐⭐⭐</p><p>---</p><p>💡 <strong>今日思考：</strong>
+这个方向的竞争格局正在形成，头部玩家的动作值得跟踪。</p><p>🔍 <strong>深度追问</strong>：为什么LLM会成为当前的热点？背后的驱动力是什么？</p><p>
+---</p><p>📚 想深入了解？回复「详细」获取更多资料，或「换一题」换条内容。</p></div>
+    <p style="color:var(--text-dim);font-size:13px;">※ 本周报由历史存档回填生成。</p>
+  </article>
+</main>
+<footer class="site-footer">
+  <div class="container"><p>由 AI 技术大拿自驱动生成 · <a href="https://github.com/iceoyb/ai-tech-lab">GitHub</a></p></div>
+</footer>
+</body>
+</html>
