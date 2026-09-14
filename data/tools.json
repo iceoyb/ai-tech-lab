@@ -26,8 +26,8 @@
       "description": "RAG和数据检索框架",
       "category": "框架",
       "usage_count": 1,
-      "success_rate": 0.0,
-      "last_used": "2026-09-10T07:00:39.102639",
+      "success_rate": 1.0,
+      "last_used": "2026-09-14T07:00:24.157160",
       "notes": ""
     },
     {
@@ -37,7 +37,7 @@
       "category": "工具",
       "usage_count": 1,
       "success_rate": 1.0,
-      "last_used": "2026-09-13T07:00:31.476656",
+      "last_used": "2026-09-14T07:00:24.157112",
       "notes": ""
     },
     {
@@ -49,36 +49,6 @@
       "success_rate": 0.0,
       "last_used": "2026-09-12T07:00:01.799688",
       "notes": ""
-    }
-  ],
-  "scripts": [
-    {
-      "name": "nl2func.py",
-      "title": "nl2func",
-      "category": "工具脚本",
-      "description": "每周产出的可运行 Python 脚本 (nl2func.py)",
-      "url": "scripts/nl2func.py"
-    },
-    {
-      "name": "2026-w37_视觉语言模型_vlm_多模态理解新高度.py",
-      "title": "vlm 多模态理解新高度",
-      "category": "工具脚本",
-      "description": "每周产出的可运行 Python 脚本 (2026-w37_视觉语言模型_vlm_多模态理解新高度.py)",
-      "url": "scripts/2026-w37_视觉语言模型_vlm_多模态理解新高度.py"
-    },
-    {
-      "name": "2026-w36_tokenmatch__3d_mesh_correspond.py",
-      "title": " 3d mesh correspond",
-      "category": "工具脚本",
-      "description": "每周产出的可运行 Python 脚本 (2026-w36_tokenmatch__3d_mesh_correspond.py)",
-      "url": "scripts/2026-w36_tokenmatch__3d_mesh_correspond.py"
-    },
-    {
-      "name": "2026-w36___jingyaogong_minimind.py",
-      "title": " jingyaogong minimind",
-      "category": "工具脚本",
-      "description": "每周产出的可运行 Python 脚本 (2026-w36___jingyaogong_minimind.py)",
-      "url": "scripts/2026-w36___jingyaogong_minimind.py"
     }
   ]
 }
