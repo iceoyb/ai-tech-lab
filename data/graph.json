@@ -1,14 +1,14 @@
 {
   "stats": {
-    "total_nodes": 487,
-    "total_edges": 2757,
+    "total_nodes": 489,
+    "total_edges": 2772,
     "categories": {
       "学术": 1,
-      "工具": 65,
+      "工具": 66,
       "工程": 86,
       "应用": 26,
       "未分类": 4,
-      "架构": 119,
+      "架构": 120,
       "测试": 1,
       "理论": 48,
       "算法": 39,
@@ -16,6 +16,30 @@
     }
   },
   "nodes": [
+    {
+      "id": "059a63e6ac7f",
+      "title": "深度解读：Transformer架构的下一个替代品？",
+      "category": "架构",
+      "tags": [
+        "架构创新",
+        "注意力机制",
+        "长序列"
+      ],
+      "depth": 4,
+      "mastery": 0.0,
+      "created_at": "2026-09-13T21:01:20.800390"
+    },
+    {
+      "id": "5140b40d09b2",
+      "title": "🔧 OpenHands/OpenHands",
+      "category": "工具",
+      "tags": [
+        "AI前沿"
+      ],
+      "depth": 2,
+      "mastery": 0.0,
+      "created_at": "2026-09-13T12:01:13.416525"
+    },
     {
       "id": "1b5a88262000",
       "title": "视觉语言模型(VLM)多模态理解新高度",
@@ -22873,6 +22897,96 @@
     {
       "source": "1b5a88262000",
       "target": "8b7e63c60b71",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "5140b40d09b2",
+      "target": "6518672474c6",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "5140b40d09b2",
+      "target": "cca3916e24bf",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "5140b40d09b2",
+      "target": "c43d2866d5fb",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "5140b40d09b2",
+      "target": "84ddee2d5107",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "5140b40d09b2",
+      "target": "65814ee07e6f",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "c43d2866d5fb",
+      "target": "5140b40d09b2",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "84ddee2d5107",
+      "target": "5140b40d09b2",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "65814ee07e6f",
+      "target": "5140b40d09b2",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "6518672474c6",
+      "target": "5140b40d09b2",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "cca3916e24bf",
+      "target": "5140b40d09b2",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "059a63e6ac7f",
+      "target": "84f181ed3368",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "059a63e6ac7f",
+      "target": "0b0a755eb7a6",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "059a63e6ac7f",
+      "target": "d16fc1a0c4b1",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "059a63e6ac7f",
+      "target": "92c51b91ea39",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "059a63e6ac7f",
+      "target": "fab233da8d91",
       "relation": "similar",
       "weight": 1.1
     }
