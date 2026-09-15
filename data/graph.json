@@ -1,7 +1,7 @@
 {
   "stats": {
-    "total_nodes": 489,
-    "total_edges": 2772,
+    "total_nodes": 490,
+    "total_edges": 2777,
     "categories": {
       "学术": 1,
       "工具": 66,
@@ -12,10 +12,21 @@
       "测试": 1,
       "理论": 48,
       "算法": 39,
-      "趋势": 98
+      "趋势": 99
     }
   },
   "nodes": [
+    {
+      "id": "c81ccdaa8198",
+      "title": "🗞️ Artificial intelligence is not conscious – Ted Chiang",
+      "category": "趋势",
+      "tags": [
+        "AI前沿"
+      ],
+      "depth": 2,
+      "mastery": 0.0,
+      "created_at": "2026-09-14T12:01:13.935725"
+    },
     {
       "id": "059a63e6ac7f",
       "title": "深度解读：Transformer架构的下一个替代品？",
@@ -22989,6 +23000,36 @@
       "target": "fab233da8d91",
       "relation": "similar",
       "weight": 1.1
+    },
+    {
+      "source": "c81ccdaa8198",
+      "target": "af325e4fcc3b",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "c81ccdaa8198",
+      "target": "bfe9c377629a",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "c81ccdaa8198",
+      "target": "a3d1cf9c4b91",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "c81ccdaa8198",
+      "target": "2cafd4636ea2",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "c81ccdaa8198",
+      "target": "a31a08ea52da",
+      "relation": "similar",
+      "weight": 0.5
     }
   ]
 }
