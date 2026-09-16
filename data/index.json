@@ -4,6 +4,22 @@
   "updates": [
     {
       "type": "paper",
+      "title": "AI Agent 自主决策能力新突破",
+      "summary": "架构 · ⭐⭐⭐",
+      "date": "2026-09-16",
+      "category": "架构",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
+      "title": "边缘AI推理框架性能对比",
+      "summary": "工具 · ⭐⭐",
+      "date": "2026-09-15",
+      "category": "工具",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
       "title": "🗞️ Artificial intelligence is not conscious – Ted Chiang",
       "summary": "趋势 · ⭐⭐",
       "date": "2026-09-14",
@@ -27,22 +43,6 @@
       "url": "weekly/"
     },
     {
-      "type": "paper",
-      "title": "深度解读：Transformer架构的下一个替代品？",
-      "summary": "架构 · ⭐⭐⭐⭐",
-      "date": "2026-09-13",
-      "category": "架构",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "🔧 OpenHands/OpenHands",
-      "summary": "工具 · ⭐⭐",
-      "date": "2026-09-13",
-      "category": "工具",
-      "url": "graph.html"
-    },
-    {
       "type": "insight",
       "title": "开源生态正在加速AI民主化，但商业模式仍在探索中",
       "summary": "深度评分：3/5 · 触发：生态观察",
@@ -51,5 +51,5 @@
       "url": "weekly/"
     }
   ],
-  "latest_date": "2026-09-14"
+  "latest_date": "2026-09-16"
 }
