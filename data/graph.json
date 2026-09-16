@@ -1,14 +1,14 @@
 {
   "stats": {
-    "total_nodes": 490,
-    "total_edges": 2777,
+    "total_nodes": 492,
+    "total_edges": 2787,
     "categories": {
       "学术": 1,
-      "工具": 66,
+      "工具": 67,
       "工程": 86,
       "应用": 26,
       "未分类": 4,
-      "架构": 120,
+      "架构": 121,
       "测试": 1,
       "理论": 48,
       "算法": 39,
@@ -16,6 +16,32 @@
     }
   },
   "nodes": [
+    {
+      "id": "9c67c2fe9813",
+      "title": "AI Agent 自主决策能力新突破",
+      "category": "架构",
+      "tags": [
+        "Agent",
+        "Multi-Agent",
+        "推理"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-09-16T08:01:21.009302"
+    },
+    {
+      "id": "b21cebffddaf",
+      "title": "边缘AI推理框架性能对比",
+      "category": "工具",
+      "tags": [
+        "边缘AI",
+        "推理框架",
+        "移动端"
+      ],
+      "depth": 2,
+      "mastery": 0.0,
+      "created_at": "2026-09-15T12:00:59.497085"
+    },
     {
       "id": "c81ccdaa8198",
       "title": "🗞️ Artificial intelligence is not conscious – Ted Chiang",
@@ -23030,6 +23056,66 @@
       "target": "a31a08ea52da",
       "relation": "similar",
       "weight": 0.5
+    },
+    {
+      "source": "b21cebffddaf",
+      "target": "65126ea2b8ea",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "b21cebffddaf",
+      "target": "4b181d9e4cb8",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "b21cebffddaf",
+      "target": "ee221cf6a1f5",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "b21cebffddaf",
+      "target": "c601ecf27a02",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "b21cebffddaf",
+      "target": "46db592c4606",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "9c67c2fe9813",
+      "target": "1d2804e5ec8d",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "9c67c2fe9813",
+      "target": "12bfc9944e89",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "9c67c2fe9813",
+      "target": "3e7364126b67",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "9c67c2fe9813",
+      "target": "0934c63bb3d9",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "9c67c2fe9813",
+      "target": "408b66718a88",
+      "relation": "similar",
+      "weight": 1.1
     }
   ]
 }
