@@ -1,14 +1,14 @@
 {
   "stats": {
-    "total_nodes": 494,
-    "total_edges": 2797,
+    "total_nodes": 495,
+    "total_edges": 2804,
     "categories": {
       "学术": 1,
       "工具": 67,
       "工程": 86,
       "应用": 26,
       "未分类": 4,
-      "架构": 122,
+      "架构": 123,
       "测试": 1,
       "理论": 49,
       "算法": 39,
@@ -16,6 +16,21 @@
     }
   },
   "nodes": [
+    {
+      "id": "75999909a064",
+      "title": "In-Context Robot Learning with VLM Agents",
+      "category": "架构",
+      "tags": [
+        "Agent",
+        "LLM",
+        "多模态",
+        "部署",
+        "评估"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-09-17T21:00:56.825854"
+    },
     {
       "id": "1779d3e937ad",
       "title": "Tables Decoded: DELTA for Structure, TARQA for Understanding",
@@ -23201,6 +23216,48 @@
     {
       "source": "1779d3e937ad",
       "target": "609f78a5cf88",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "2511691455db",
+      "target": "1779d3e937ad",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "fbca7c1eac6d",
+      "target": "1779d3e937ad",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "75999909a064",
+      "target": "fbca7c1eac6d",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "75999909a064",
+      "target": "075e8a577674",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "75999909a064",
+      "target": "7d90bf026363",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "75999909a064",
+      "target": "ec3d1646018b",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "75999909a064",
+      "target": "a8d020178d61",
       "relation": "similar",
       "weight": 1.1
     }
