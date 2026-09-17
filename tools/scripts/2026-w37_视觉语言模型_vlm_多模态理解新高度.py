@@ -536,3 +536,225 @@ def extract_features(img: ImageData) -> VisualFeatures:
             gx = min(2, x * 3 // w)
             r, g, b = img.pixels[idx]
             _, s, v
+            _, s, v = _rgb_to_hsv(r, g, b)
+            energy = (0.5 * math.sqrt(gx*gx + gy*gy) / 128.0) + (0.5 * s)
+            grid[gy][gx] += energy
+            counts[gy][gx] += 1
+
+        # 找能量最高的格子 = 显著区域
+        best_cell, best_energy = None, -1.0
+        for gy in range(3):
+            for gx in range(3):
+                if counts[gy][gx]:
+                    e = grid[gy][gx] / counts[gy][gx]
+                    if e > best_energy:
+                        best_energy, best_cell = e, (gy, gx)
+        if best_cell:
+            feat.salient_region = [
+                "上", "中", "下"][best_cell[0]] + ["左", "中", "右"][best_cell[1]]
+            # 显著区域密度 = 最强格子能量 / 平均格子能量（>1 说明能量集中）
+            cell_energies = [
+                grid[gy][gx] / counts[gy][gx]
+                for gy in range(3) for gx in range(3) if counts[gy][gx] > 0
+            ]
+            avg_e = sum(cell_energies) / max(len(cell_energies), 1)
+            feat.balance = 1.0 - abs(best_energy - avg_e) / max(best_energy, 1e-9)
+            feat.salient_density = best_energy / max(avg_e, 1e-9)
+
+    return feat
+
+
+# ---------------------------------------------------------------------------
+# 视觉 token 化 + 跨模态对齐 + 理解报告生成
+# ---------------------------------------------------------------------------
+
+def tokenize_visual(feat: VisualFeatures) -> List[str]:
+    """将视觉特征编码为紧凑的视觉 token 序列（模拟 VLM 视觉编码器输出）。"""
+    tokens: List[str] = []
+    for dc in feat.dominant_colors[:3]:
+        tokens.append(f"<color:{dc['name']}:{dc['ratio']:.2f}>")
+    tokens.append(f"<lum:{feat.brightness:.2f}>")
+    tokens.append(f"<contrast:{feat.contrast:.2f}>")
+    tokens.append(f"<sat:{feat.saturation:.2f}>")
+    tokens.append(f"<edge:{feat.edge_density:.2f}>")
+    tokens.append(f"<complexity:{feat.complexity:.2f}>")
+    return tokens
+
+
+def align_question_tokens(question: Optional[str], feat: VisualFeatures) -> List[str]:
+    """根据问题关键词选取应关注的特征（模拟跨模态注意力）。"""
+    if not question:
+        return []
+    attended: List[str] = []
+    for kw, fields in QUESTION_ATTENTION.items():
+        if kw in question:
+            attended.extend(fields)
+    return sorted(set(attended))
+
+
+def classify_scene(feat: VisualFeatures) -> Tuple[str, Dict[str, float]]:
+    """场景分类：与各场景签名计算加权相似度。"""
+    fd = asdict(feat)
+    scores: Dict[str, float] = {}
+    for scene, sig in SCENE_SIGNATURES.items():
+        s = 0.0
+        for key, expected in sig.items():
+            actual = fd.get(key, 0.0)
+            sigma = max(expected * 0.5, 0.05)
+            s += math.exp(-((actual - expected) ** 2) / (2 * sigma ** 2))
+        scores[scene] = s / max(len(sig), 1)
+    best = max(scores, key=scores.get)
+    return best, scores
+
+
+def generate_report(path: str, question: Optional[str]) -> UnderstandingReport:
+    """完整流水线：解码 → 特征提取 → token 化 → 跨模态对齐 → 报告。"""
+    t0 = time.time()
+    img = load_image(path)
+    feat = extract_features(img)
+    scene, scene_scores = classify_scene(feat)
+    tokens = tokenize_visual(feat)
+    attended = align_question_tokens(question, feat)
+
+    # 构造理解文本
+    parts: List[str] = []
+    parts.append(f"图像尺寸 {img.width}x{img.height}，格式 {img.fmt}")
+    if feat.dominant_colors:
+        dc = feat.dominant_colors[0]
+        parts.append(f"主色调为{dc['name']}（占比 {dc['ratio']*100:.1f}%）")
+    parts.append(f"场景判断为「{scene}」")
+    feat_scene_text = "、".join(
+        dc["name"] for dc in feat.dominant_colors[:3]) if feat.dominant_colors else "无显著色彩"
+    parts.append(f"色彩构成：{feat_scene_text}，饱和度 {feat.saturation:.2f}")
+    parts.append(f"画面复杂度 {feat.complexity:.2f}（0=极简 1=极繁），边缘密度 {feat.edge_density:.2f}")
+    summary = "。".join(parts) + "。"
+
+    # 问题定向回答（跨模态注意力对齐）
+    answer = None
+    if question:
+        fd = asdict(feat)
+        ans: List[str] = []
+        for f_name in attended:
+            if f_name == "dominant_colors" and feat.dominant_colors:
+                names = "、".join(dc["name"] for dc in feat.dominant_colors[:3])
+                ans.append(f"主要颜色：{names}")
+            elif f_name == "scene":
+                ans.append(f"场景：{scene}")
+            elif f_name == "salient_regions":
+                if feat.salient_regions:
+                    ans.append(f"显著区域：{feat.salient_regions[0].get('region', '未知')}")
+            elif f_name == "objects_hint":
+                ans.append(f"内容提示：{scene}")
+            elif f_name in fd and isinstance(fd[f_name], (int, float)):
+                ans.append(f"{f_name} = {fd[f_name]:.3f}")
+        if ans:
+            answer = "；".join(ans)
+
+    return UnderstandingReport(
+        file=path,
+        format=img.fmt,
+        width=img.width,
+        height=img.height,
+        megapixels=round(img.width * img.height / 1e6, 2),
+        visual_tokens=tokens,
+        features=asdict(feat),
+        scene=scene,
+        scene_scores={k: round(v, 3) for k, v in scene_scores.items()},
+        summary=summary,
+        answer=answer,
+        elapsed_ms=round((time.time() - t0) * 1000, 1),
+    )
+
+
+def _self_test() -> int:
+    """自检：手工构造测试图（纯标准库），跑完整流水线。"""
+    import tempfile
+    w = h = 64
+    raw = b""
+    for _ in range(h):
+        raw += b"\x00" + bytes([30, 160, 60] * w)  # filter byte + green RGB
+    def chunk(tag: bytes, data: bytes) -> bytes:
+        len_b = struct.pack(">I", len(data))
+        body = tag + data
+        return len_b + body + struct.pack(">I", zlib.crc32(body) & 0xFFFFFFFF)
+    ihdr = struct.pack(">IIBBBBB", w, h, 8, 2, 0, 0, 0)
+    png = (b"\x89PNG\r\n\x1a\n"
+           + chunk(b"IHDR", ihdr)
+           + chunk(b"IDAT", zlib.compress(raw))
+           + chunk(b"IEND", b""))
+    with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as f:
+        f.write(png)
+        path = f.name
+    try:
+        rep = generate_report(path, "这张图的主色调是什么？")
+        assert rep.width == 64 and rep.height == 64, "尺寸解码错误"
+        assert rep.features["dominant_colors"], "主色调未提取"
+        assert rep.features["dominant_colors"][0]["name"] == "绿色", \
+            f"期望绿色，实际 {rep.features['dominant_colors'][0]}"
+        assert rep.visual_tokens, "视觉 token 未生成"
+        assert "绿色" in rep.summary, "理解文本未包含主色调"
+        assert rep.answer and "绿色" in rep.answer, "问题对齐回答未包含主色调"
+        print("[SELF-TEST OK] 解码/特征/token化/场景分类/跨模态对齐 全部通过")
+        print(f"  64x64 绿色测试图 → 场景={rep.scene}, tokens={len(rep.visual_tokens)}")
+        print(f"  理解：{rep.summary[:120]}")
+        print(f"  回答：{rep.answer}")
+        return 0
+    finally:
+        os.unlink(path)
+
+
+def main(argv: Optional[Sequence[str]] = None) -> int:
+    parser = argparse.ArgumentParser(
+        description="视觉语言模型(VLM)多模态理解新高度 - 纯标准库图像理解 CLI（特征提取→token化→跨模态对齐→结构化报告）")
+    parser.add_argument("path", nargs="?", help="图像文件或目录（支持 PNG/JPEG/GIF/BMP/PNM）")
+    parser.add_argument("-q", "--question", help="自然语言问题（触发跨模态对齐）")
+    parser.add_argument("--format", choices=["text", "json"], default="text", help="输出格式")
+    parser.add_argument("-o", "--output", help="报告输出文件（不指定则打印到 stdout）")
+    parser.add_argument("--self-test", action="store_true", help="运行自检（内置测试图跑全流水线）")
+    agent_test = getattr(parser, "_dummy", None)
+    parser.add_argument("--version", action="version", version=f"%(prog)s {VERSION}")
+    args = parser.parse_args(argv)
+
+    if args.self_test:
+        return _self_test()
+    if not args.path:
+        parser.error("必须提供图像路径，或使用 --self-test")
+
+    # 单文件或目录批量
+    if os.path.isdir(args.path):
+        exts = (".png", ".jpg", ".jpeg", ".gif", ".bmp", ".pnm", ".ppm", ".pgm")
+        files = sorted(p for p in os.listdir(args.path) if p.lower().endswith(exts))
+        if not files:
+            print(f"目录中无图像文件：{args.path}", file=sys.stderr)
+            return 2
+        reports = []
+        for name in files:
+            p = os.path.join(args.path, name)
+            try:
+                reports.append(generate_report(p, args.question))
+            except (ImageDecodeError, OSError) as e:
+                print(f"  [跳过] {name}: {e}", file=sys.stderr)
+        payload = json.dumps([asdict(r) for r in reports], ensure_ascii=False, indent=2)
+    else:
+        rep = generate_report(args.path, args.question)
+        payload = json.dumps(asdict(rep), ensure_ascii=False, indent=2)
+
+    if args.output:
+        Path(args.output).write_text(payload, encoding="utf-8")
+        print(f"报告已写入 {args.output}")
+    elif args.format == "json":
+        print(payload)
+    else:
+        data = json.loads(payload)
+        reps = data if isinstance(data, list) else [data]
+        for r in reps:
+            print(f"\n=== {r['file']} ===")
+            print(r["summary"])
+            if r.get("answer"):
+                print(f"问：{r.get('question', '')} 答：{r['answer']}")
+            print(f"tokens: {len(r['visual_tokens'])} 个 | 用时 {r['elapsed_ms']}ms")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
