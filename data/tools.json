@@ -6,8 +6,8 @@
       "description": "LLM应用开发框架",
       "category": "框架",
       "usage_count": 1,
-      "success_rate": 0.0,
-      "last_used": "2026-09-13T07:00:31.476703",
+      "success_rate": 1.0,
+      "last_used": "2026-09-17T07:00:18.757057",
       "notes": ""
     },
     {
@@ -36,8 +36,8 @@
       "description": "高性能LLM推理引擎",
       "category": "工具",
       "usage_count": 1,
-      "success_rate": 1.0,
-      "last_used": "2026-09-16T07:00:20.159861",
+      "success_rate": 0.0,
+      "last_used": "2026-09-17T07:00:18.757012",
       "notes": ""
     },
     {
