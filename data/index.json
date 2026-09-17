@@ -4,26 +4,26 @@
   "updates": [
     {
       "type": "paper",
-      "title": "AI Agent 自主决策能力新突破",
+      "title": "Tables Decoded: DELTA for Structure, TARQA for Understanding",
       "summary": "架构 · ⭐⭐⭐",
-      "date": "2026-09-16",
+      "date": "2026-09-17",
       "category": "架构",
       "url": "graph.html"
     },
     {
       "type": "paper",
-      "title": "边缘AI推理框架性能对比",
-      "summary": "工具 · ⭐⭐",
-      "date": "2026-09-15",
-      "category": "工具",
+      "title": "Det-LIME: Detector-Aware, Multi-Instance Local Interpretable Model-Agnostic Explanations for Automated Marine Mammal Detection",
+      "summary": "理论 · ⭐⭐⭐",
+      "date": "2026-09-16",
+      "category": "理论",
       "url": "graph.html"
     },
     {
       "type": "paper",
-      "title": "🗞️ Artificial intelligence is not conscious – Ted Chiang",
-      "summary": "趋势 · ⭐⭐",
-      "date": "2026-09-14",
-      "category": "趋势",
+      "title": "AI Agent 自主决策能力新突破",
+      "summary": "架构 · ⭐⭐⭐",
+      "date": "2026-09-16",
+      "category": "架构",
       "url": "graph.html"
     },
     {
@@ -51,5 +51,5 @@
       "url": "weekly/"
     }
   ],
-  "latest_date": "2026-09-16"
+  "latest_date": "2026-09-17"
 }
