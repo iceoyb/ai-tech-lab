@@ -1,7 +1,7 @@
 {
   "stats": {
-    "total_nodes": 495,
-    "total_edges": 2804,
+    "total_nodes": 496,
+    "total_edges": 2811,
     "categories": {
       "学术": 1,
       "工具": 67,
@@ -11,11 +11,24 @@
       "架构": 123,
       "测试": 1,
       "理论": 49,
-      "算法": 39,
+      "算法": 40,
       "趋势": 99
     }
   },
   "nodes": [
+    {
+      "id": "20d8a29a62d3",
+      "title": "模型压缩技术新方向：动态剪枝",
+      "category": "算法",
+      "tags": [
+        "模型压缩",
+        "推理优化",
+        "边缘部署"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-09-18T08:01:39.670428"
+    },
     {
       "id": "75999909a064",
       "title": "In-Context Robot Learning with VLM Agents",
@@ -23258,6 +23271,48 @@
     {
       "source": "75999909a064",
       "target": "a8d020178d61",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "fbca7c1eac6d",
+      "target": "75999909a064",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "6e8f762d5209",
+      "target": "75999909a064",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "20d8a29a62d3",
+      "target": "5c9e14aff16c",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "20d8a29a62d3",
+      "target": "927f88ef9e8b",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "20d8a29a62d3",
+      "target": "8d1e5455ae13",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "20d8a29a62d3",
+      "target": "88ee82db8551",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "20d8a29a62d3",
+      "target": "837461b7223d",
       "relation": "similar",
       "weight": 1.1
     }
