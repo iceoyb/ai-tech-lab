@@ -1,12 +1,12 @@
 {
   "stats": {
-    "total_nodes": 496,
-    "total_edges": 2811,
+    "total_nodes": 497,
+    "total_edges": 2816,
     "categories": {
       "学术": 1,
       "工具": 67,
       "工程": 86,
-      "应用": 26,
+      "应用": 27,
       "未分类": 4,
       "架构": 123,
       "测试": 1,
@@ -16,6 +16,21 @@
     }
   },
   "nodes": [
+    {
+      "id": "427525240d0e",
+      "title": "Workspace Models: Lightweight Robotic Memory via Saliency-Driven Supervision",
+      "category": "应用",
+      "tags": [
+        "多模态",
+        "推理",
+        "部署",
+        "视觉",
+        "机器人"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-09-19T08:01:40.381859"
+    },
     {
       "id": "20d8a29a62d3",
       "title": "模型压缩技术新方向：动态剪枝",
@@ -23315,6 +23330,36 @@
       "target": "837461b7223d",
       "relation": "similar",
       "weight": 1.1
+    },
+    {
+      "source": "427525240d0e",
+      "target": "1c35733146af",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "427525240d0e",
+      "target": "f46f4fb34d17",
+      "relation": "similar",
+      "weight": 0.9
+    },
+    {
+      "source": "427525240d0e",
+      "target": "e58b12747236",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "427525240d0e",
+      "target": "7d90bf026363",
+      "relation": "similar",
+      "weight": 0.6
+    },
+    {
+      "source": "427525240d0e",
+      "target": "c5c793263230",
+      "relation": "similar",
+      "weight": 0.6
     }
   ]
 }
