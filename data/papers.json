@@ -1,6 +1,19 @@
 {
   "papers": [
     {
+      "title": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations",
+      "summary": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations — 深度论文解读 一...",
+      "tags": [
+        "架构",
+        "RAG",
+        "训练",
+        "开源"
+      ],
+      "date": "2026-09-20",
+      "url": "2026-w38-paper.html",
+      "deep_url": "2026-w38-paper-deep.html"
+    },
+    {
       "title": "Likelihood-free inference with nuisance parameters through normalizing flows",
       "summary": "论文深度解析：基于归一化流的含冗余参数无似然推断 一、研究背景与动机 在当代科学计算与统计推断领域，无似然推断（Likelihood-Free Inferenc...",
       "tags": [
