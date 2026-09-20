@@ -4,26 +4,26 @@
   "updates": [
     {
       "type": "paper",
+      "title": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations",
+      "summary": "架构 · ⭐⭐⭐",
+      "date": "2026-09-19",
+      "category": "架构",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
+      "title": "🔧 thedotmack/claude-mem",
+      "summary": "工具 · ⭐⭐",
+      "date": "2026-09-19",
+      "category": "工具",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
       "title": "Workspace Models: Lightweight Robotic Memory via Saliency-Driven Supervision",
       "summary": "应用 · ⭐⭐⭐",
       "date": "2026-09-19",
       "category": "应用",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "模型压缩技术新方向：动态剪枝",
-      "summary": "算法 · ⭐⭐⭐",
-      "date": "2026-09-18",
-      "category": "算法",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "In-Context Robot Learning with VLM Agents",
-      "summary": "架构 · ⭐⭐⭐",
-      "date": "2026-09-17",
-      "category": "架构",
       "url": "graph.html"
     },
     {
