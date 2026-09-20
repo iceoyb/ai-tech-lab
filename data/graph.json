@@ -1,14 +1,14 @@
 {
   "stats": {
-    "total_nodes": 497,
-    "total_edges": 2816,
+    "total_nodes": 499,
+    "total_edges": 2835,
     "categories": {
       "学术": 1,
-      "工具": 67,
+      "工具": 68,
       "工程": 86,
       "应用": 27,
       "未分类": 4,
-      "架构": 123,
+      "架构": 124,
       "测试": 1,
       "理论": 49,
       "算法": 40,
@@ -16,6 +16,33 @@
     }
   },
   "nodes": [
+    {
+      "id": "69e4f34ed80c",
+      "title": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations",
+      "category": "架构",
+      "tags": [
+        "RAG",
+        "训练",
+        "开源",
+        "视觉",
+        "代码"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-09-19T21:01:42.789346"
+    },
+    {
+      "id": "32f44381ff4c",
+      "title": "🔧 thedotmack/claude-mem",
+      "category": "工具",
+      "tags": [
+        "Agent",
+        "LLM"
+      ],
+      "depth": 2,
+      "mastery": 0.0,
+      "created_at": "2026-09-19T12:01:36.875189"
+    },
     {
       "id": "427525240d0e",
       "title": "Workspace Models: Lightweight Robotic Memory via Saliency-Driven Supervision",
@@ -23360,6 +23387,120 @@
       "target": "c5c793263230",
       "relation": "similar",
       "weight": 0.6
+    },
+    {
+      "source": "e58b12747236",
+      "target": "427525240d0e",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "1c35733146af",
+      "target": "427525240d0e",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "32f44381ff4c",
+      "target": "7c83f62c1464",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "32f44381ff4c",
+      "target": "ef41a7da29b5",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "32f44381ff4c",
+      "target": "382f6a1d94b1",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "32f44381ff4c",
+      "target": "075e8a577674",
+      "relation": "similar",
+      "weight": 0.6
+    },
+    {
+      "source": "32f44381ff4c",
+      "target": "7d90bf026363",
+      "relation": "similar",
+      "weight": 0.6
+    },
+    {
+      "source": "ef41a7da29b5",
+      "target": "32f44381ff4c",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "382f6a1d94b1",
+      "target": "32f44381ff4c",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "7c83f62c1464",
+      "target": "32f44381ff4c",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "69e4f34ed80c",
+      "target": "bcb19a8c867e",
+      "relation": "similar",
+      "weight": 1.7
+    },
+    {
+      "source": "69e4f34ed80c",
+      "target": "3ddde4f3e76c",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "69e4f34ed80c",
+      "target": "b5b0edce3141",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "69e4f34ed80c",
+      "target": "7f47523e8367",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "69e4f34ed80c",
+      "target": "609f78a5cf88",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "bcb19a8c867e",
+      "target": "69e4f34ed80c",
+      "relation": "similar",
+      "weight": 1.7
+    },
+    {
+      "source": "b5b0edce3141",
+      "target": "69e4f34ed80c",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "3ddde4f3e76c",
+      "target": "69e4f34ed80c",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "d9495447df1b",
+      "target": "69e4f34ed80c",
+      "relation": "similar",
+      "weight": 1.1
     }
   ]
 }
