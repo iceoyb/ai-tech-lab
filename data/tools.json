@@ -50,5 +50,14 @@
       "last_used": "2026-09-18T07:00:17.376096",
       "notes": ""
     }
+  ],
+  "scripts": [
+    {
+      "name": "2026-w38_famos__feed_forward_3d_articul.py",
+      "title": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations",
+      "category": "架构",
+      "description": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations - auto-generated 架构 tool (705 lines)",
+      "url": "scripts/2026-w38_famos__feed_forward_3d_articul.py"
+    }
   ]
 }
