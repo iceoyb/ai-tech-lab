@@ -1,6 +1,18 @@
 {
   "practices": [
     {
+      "title": "深度解读：Transformer架构的下一个替代品？",
+      "summary": "深度解读：Transformer架构的下一个替代品？ 自2017年《Attention Is All You Need》发表以来，Transformer架构几乎...",
+      "tags": [
+        "架构",
+        "架构创新",
+        "注意力机制",
+        "长序列"
+      ],
+      "date": "2026-09-20",
+      "url": "2026-w38-practice.html"
+    },
+    {
       "title": "本周AI论文精选：值得关注的5篇论文",
       "summary": "本周AI论文精选：值得关注的5篇论文 本周（2025年第10周）AI研究社区涌现出多篇具有工程实践价值的论文。我们精选了5篇覆盖大模型推理优化、多模态对齐、Ag...",
       "tags": [
