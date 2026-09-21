@@ -1,7 +1,7 @@
 {
   "stats": {
-    "total_nodes": 499,
-    "total_edges": 2835,
+    "total_nodes": 500,
+    "total_edges": 2840,
     "categories": {
       "学术": 1,
       "工具": 68,
@@ -12,10 +12,21 @@
       "测试": 1,
       "理论": 49,
       "算法": 40,
-      "趋势": 99
+      "趋势": 100
     }
   },
   "nodes": [
+    {
+      "id": "6f49c39e436b",
+      "title": "🗞️ Machine Learning 101 slidedeck: 2 years of headbanging, so you don't have to",
+      "category": "趋势",
+      "tags": [
+        "AI前沿"
+      ],
+      "depth": 2,
+      "mastery": 0.0,
+      "created_at": "2026-09-20T12:01:38.200380"
+    },
     {
       "id": "69e4f34ed80c",
       "title": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations",
@@ -23501,6 +23512,36 @@
       "target": "69e4f34ed80c",
       "relation": "similar",
       "weight": 1.1
+    },
+    {
+      "source": "6f49c39e436b",
+      "target": "af325e4fcc3b",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "6f49c39e436b",
+      "target": "bfe9c377629a",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "6f49c39e436b",
+      "target": "a3d1cf9c4b91",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "6f49c39e436b",
+      "target": "2cafd4636ea2",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "6f49c39e436b",
+      "target": "a31a08ea52da",
+      "relation": "similar",
+      "weight": 0.5
     }
   ]
 }
