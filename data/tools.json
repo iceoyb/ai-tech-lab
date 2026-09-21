@@ -27,7 +27,7 @@
       "category": "框架",
       "usage_count": 1,
       "success_rate": 1.0,
-      "last_used": "2026-09-20T07:00:04.254567",
+      "last_used": "2026-09-21T07:00:17.246159",
       "notes": ""
     },
     {
@@ -46,18 +46,9 @@
       "description": "本地LLM运行工具",
       "category": "工具",
       "usage_count": 1,
-      "success_rate": 1.0,
-      "last_used": "2026-09-18T07:00:17.376096",
+      "success_rate": 0.0,
+      "last_used": "2026-09-21T07:00:17.246210",
       "notes": ""
-    }
-  ],
-  "scripts": [
-    {
-      "name": "2026-w38_famos__feed_forward_3d_articul.py",
-      "title": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations",
-      "category": "架构",
-      "description": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations - auto-generated 架构 tool (705 lines)",
-      "url": "scripts/2026-w38_famos__feed_forward_3d_articul.py"
     }
   ]
 }
