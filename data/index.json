@@ -4,26 +4,26 @@
   "updates": [
     {
       "type": "paper",
-      "title": "🗞️ Machine Learning 101 slidedeck: 2 years of headbanging, so you don't have to",
-      "summary": "趋势 · ⭐⭐",
-      "date": "2026-09-20",
-      "category": "趋势",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations",
+      "title": "CodeMidas: Scaling Agentic Coding RL Environments from Code Itself",
       "summary": "架构 · ⭐⭐⭐",
-      "date": "2026-09-19",
+      "date": "2026-09-21",
       "category": "架构",
       "url": "graph.html"
     },
     {
       "type": "paper",
-      "title": "🔧 thedotmack/claude-mem",
-      "summary": "工具 · ⭐⭐",
-      "date": "2026-09-19",
-      "category": "工具",
+      "title": "8 areas of your company where AI will make the biggest impact",
+      "summary": "趋势 · ⭐⭐",
+      "date": "2026-09-21",
+      "category": "趋势",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
+      "title": "🗞️ Machine Learning 101 slidedeck: 2 years of headbanging, so you don't have to",
+      "summary": "趋势 · ⭐⭐",
+      "date": "2026-09-20",
+      "category": "趋势",
       "url": "graph.html"
     },
     {
@@ -51,5 +51,5 @@
       "url": "weekly/"
     }
   ],
-  "latest_date": "2026-09-20"
+  "latest_date": "2026-09-21"
 }
