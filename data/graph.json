@@ -1,21 +1,48 @@
 {
   "stats": {
-    "total_nodes": 500,
-    "total_edges": 2840,
+    "total_nodes": 502,
+    "total_edges": 2856,
     "categories": {
       "学术": 1,
       "工具": 68,
       "工程": 86,
       "应用": 27,
       "未分类": 4,
-      "架构": 124,
+      "架构": 125,
       "测试": 1,
       "理论": 49,
       "算法": 40,
-      "趋势": 100
+      "趋势": 101
     }
   },
   "nodes": [
+    {
+      "id": "a9e9adcbd969",
+      "title": "CodeMidas: Scaling Agentic Coding RL Environments from Code Itself",
+      "category": "架构",
+      "tags": [
+        "Agent",
+        "训练",
+        "开源",
+        "评估",
+        "代码"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-09-21T21:01:08.552016"
+    },
+    {
+      "id": "c4af0d6d8305",
+      "title": "8 areas of your company where AI will make the biggest impact",
+      "category": "趋势",
+      "tags": [
+        "视觉",
+        "代码"
+      ],
+      "depth": 2,
+      "mastery": 0.0,
+      "created_at": "2026-09-21T12:01:22.057173"
+    },
     {
       "id": "6f49c39e436b",
       "title": "🗞️ Machine Learning 101 slidedeck: 2 years of headbanging, so you don't have to",
@@ -23542,6 +23569,102 @@
       "target": "a31a08ea52da",
       "relation": "similar",
       "weight": 0.5
+    },
+    {
+      "source": "c4af0d6d8305",
+      "target": "9f8ff109e56a",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "c4af0d6d8305",
+      "target": "42476be9d816",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "c4af0d6d8305",
+      "target": "e68d81b7e9cc",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "c4af0d6d8305",
+      "target": "ad2ac73b5210",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "c4af0d6d8305",
+      "target": "2766e923d831",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "a9e9adcbd969",
+      "target": "1bb0decd6dd3",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "a9e9adcbd969",
+      "target": "b5b0edce3141",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "a9e9adcbd969",
+      "target": "143a101cd77e",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "a9e9adcbd969",
+      "target": "d1b966bd5daf",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "a9e9adcbd969",
+      "target": "9fcad6929d1f",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "8fcd3fe7419c",
+      "target": "a9e9adcbd969",
+      "relation": "similar",
+      "weight": 0.9
+    },
+    {
+      "source": "143a101cd77e",
+      "target": "a9e9adcbd969",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "d1b966bd5daf",
+      "target": "a9e9adcbd969",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "1bb0decd6dd3",
+      "target": "a9e9adcbd969",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "f4221b6d8358",
+      "target": "a9e9adcbd969",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "d9495447df1b",
+      "target": "a9e9adcbd969",
+      "relation": "similar",
+      "weight": 1.1
     }
   ]
 }
