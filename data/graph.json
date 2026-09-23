@@ -1,21 +1,48 @@
 {
   "stats": {
-    "total_nodes": 502,
-    "total_edges": 2856,
+    "total_nodes": 504,
+    "total_edges": 2869,
     "categories": {
       "学术": 1,
       "工具": 68,
       "工程": 86,
       "应用": 27,
       "未分类": 4,
-      "架构": 125,
+      "架构": 126,
       "测试": 1,
       "理论": 49,
-      "算法": 40,
+      "算法": 41,
       "趋势": 101
     }
   },
   "nodes": [
+    {
+      "id": "ab47790cf8df",
+      "title": "WorldCrafter: Consistent Video World Model with Implicit 3D-aware Memory",
+      "category": "算法",
+      "tags": [
+        "压缩",
+        "视觉"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-09-22T21:01:06.630994"
+    },
+    {
+      "id": "0767da48c7c2",
+      "title": "Grounded Action Model: 3D Grounding as a Foundation for Robotics",
+      "category": "架构",
+      "tags": [
+        "Agent",
+        "RAG",
+        "多模态",
+        "评估",
+        "视觉"
+      ],
+      "depth": 2,
+      "mastery": 0.0,
+      "created_at": "2026-09-22T12:01:15.638560"
+    },
     {
       "id": "a9e9adcbd969",
       "title": "CodeMidas: Scaling Agentic Coding RL Environments from Code Itself",
@@ -23665,6 +23692,84 @@
       "target": "a9e9adcbd969",
       "relation": "similar",
       "weight": 1.1
+    },
+    {
+      "source": "0767da48c7c2",
+      "target": "1917cce7c111",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "0767da48c7c2",
+      "target": "fbca7c1eac6d",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "0767da48c7c2",
+      "target": "075e8a577674",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "0767da48c7c2",
+      "target": "7d90bf026363",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "0767da48c7c2",
+      "target": "9fcad6929d1f",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "4b932fef0911",
+      "target": "0767da48c7c2",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "1917cce7c111",
+      "target": "0767da48c7c2",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "fbca7c1eac6d",
+      "target": "0767da48c7c2",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "ab47790cf8df",
+      "target": "cb1f8abb8c0c",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "ab47790cf8df",
+      "target": "bd8d449798b4",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "ab47790cf8df",
+      "target": "cff77ccd7b4a",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "ab47790cf8df",
+      "target": "bf1c5d3b579f",
+      "relation": "similar",
+      "weight": 0.6
+    },
+    {
+      "source": "ab47790cf8df",
+      "target": "22e4f9c5ac4c",
+      "relation": "similar",
+      "weight": 0.5
     }
   ]
 }
