@@ -4,26 +4,26 @@
   "updates": [
     {
       "type": "paper",
-      "title": "CodeMidas: Scaling Agentic Coding RL Environments from Code Itself",
-      "summary": "架构 · ⭐⭐⭐",
-      "date": "2026-09-21",
+      "title": "WorldCrafter: Consistent Video World Model with Implicit 3D-aware Memory",
+      "summary": "算法 · ⭐⭐⭐",
+      "date": "2026-09-22",
+      "category": "算法",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
+      "title": "Grounded Action Model: 3D Grounding as a Foundation for Robotics",
+      "summary": "架构 · ⭐⭐",
+      "date": "2026-09-22",
       "category": "架构",
       "url": "graph.html"
     },
     {
       "type": "paper",
-      "title": "8 areas of your company where AI will make the biggest impact",
-      "summary": "趋势 · ⭐⭐",
+      "title": "CodeMidas: Scaling Agentic Coding RL Environments from Code Itself",
+      "summary": "架构 · ⭐⭐⭐",
       "date": "2026-09-21",
-      "category": "趋势",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "🗞️ Machine Learning 101 slidedeck: 2 years of headbanging, so you don't have to",
-      "summary": "趋势 · ⭐⭐",
-      "date": "2026-09-20",
-      "category": "趋势",
+      "category": "架构",
       "url": "graph.html"
     },
     {
@@ -51,5 +51,5 @@
       "url": "weekly/"
     }
   ],
-  "latest_date": "2026-09-21"
+  "latest_date": "2026-09-22"
 }
