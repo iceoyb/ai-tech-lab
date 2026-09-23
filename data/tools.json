@@ -26,8 +26,8 @@
       "description": "RAG和数据检索框架",
       "category": "框架",
       "usage_count": 1,
-      "success_rate": 1.0,
-      "last_used": "2026-09-22T07:00:16.657078",
+      "success_rate": 0.0,
+      "last_used": "2026-09-23T07:00:16.982293",
       "notes": ""
     },
     {
@@ -46,8 +46,8 @@
       "description": "本地LLM运行工具",
       "category": "工具",
       "usage_count": 1,
-      "success_rate": 1.0,
-      "last_used": "2026-09-22T07:00:16.657141",
+      "success_rate": 0.0,
+      "last_used": "2026-09-23T07:00:16.982243",
       "notes": ""
     }
   ]
