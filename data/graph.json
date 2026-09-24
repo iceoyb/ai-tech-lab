@@ -1,11 +1,11 @@
 {
   "stats": {
-    "total_nodes": 504,
-    "total_edges": 2869,
+    "total_nodes": 506,
+    "total_edges": 2889,
     "categories": {
       "学术": 1,
       "工具": 68,
-      "工程": 86,
+      "工程": 88,
       "应用": 27,
       "未分类": 4,
       "架构": 126,
@@ -16,6 +16,35 @@
     }
   },
   "nodes": [
+    {
+      "id": "3853583d9b46",
+      "title": "SpeakerMem-R1: Speaker-Centered Dual-Track Memory for Multi-Party Dialogue",
+      "category": "工程",
+      "tags": [
+        "LLM",
+        "训练",
+        "部署",
+        "评估"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-09-24T08:01:11.511251"
+    },
+    {
+      "id": "5c46da6ec9d4",
+      "title": "Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs",
+      "category": "工程",
+      "tags": [
+        "LLM",
+        "推理",
+        "训练",
+        "部署",
+        "评估"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-09-23T21:01:02.596637"
+    },
     {
       "id": "ab47790cf8df",
       "title": "WorldCrafter: Consistent Video World Model with Implicit 3D-aware Memory",
@@ -23770,6 +23799,126 @@
       "target": "22e4f9c5ac4c",
       "relation": "similar",
       "weight": 0.5
+    },
+    {
+      "source": "5c46da6ec9d4",
+      "target": "8f27f476f519",
+      "relation": "similar",
+      "weight": 1.5
+    },
+    {
+      "source": "5c46da6ec9d4",
+      "target": "913aa6e22230",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "5c46da6ec9d4",
+      "target": "f69b082ac17f",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "5c46da6ec9d4",
+      "target": "ba4ccebaf13e",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "5c46da6ec9d4",
+      "target": "aed7f6c57da2",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "8f27f476f519",
+      "target": "5c46da6ec9d4",
+      "relation": "similar",
+      "weight": 1.5
+    },
+    {
+      "source": "913aa6e22230",
+      "target": "5c46da6ec9d4",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "2cdfd4bc6bfb",
+      "target": "5c46da6ec9d4",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "f69b082ac17f",
+      "target": "5c46da6ec9d4",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "1250c0a1692e",
+      "target": "5c46da6ec9d4",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "ba4ccebaf13e",
+      "target": "5c46da6ec9d4",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "10a372a71033",
+      "target": "5c46da6ec9d4",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "505426346b52",
+      "target": "5c46da6ec9d4",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "aed7f6c57da2",
+      "target": "5c46da6ec9d4",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "ac3737cab712",
+      "target": "5c46da6ec9d4",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "3853583d9b46",
+      "target": "5c46da6ec9d4",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "3853583d9b46",
+      "target": "8f27f476f519",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "3853583d9b46",
+      "target": "b009af9b2faf",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "3853583d9b46",
+      "target": "505426346b52",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "3853583d9b46",
+      "target": "ac3737cab712",
+      "relation": "similar",
+      "weight": 1.2
     }
   ]
 }
