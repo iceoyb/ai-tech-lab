@@ -4,26 +4,26 @@
   "updates": [
     {
       "type": "paper",
+      "title": "SpeakerMem-R1: Speaker-Centered Dual-Track Memory for Multi-Party Dialogue",
+      "summary": "工程 · ⭐⭐⭐",
+      "date": "2026-09-24",
+      "category": "工程",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
+      "title": "Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs",
+      "summary": "工程 · ⭐⭐⭐",
+      "date": "2026-09-23",
+      "category": "工程",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
       "title": "WorldCrafter: Consistent Video World Model with Implicit 3D-aware Memory",
       "summary": "算法 · ⭐⭐⭐",
       "date": "2026-09-22",
       "category": "算法",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "Grounded Action Model: 3D Grounding as a Foundation for Robotics",
-      "summary": "架构 · ⭐⭐",
-      "date": "2026-09-22",
-      "category": "架构",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "CodeMidas: Scaling Agentic Coding RL Environments from Code Itself",
-      "summary": "架构 · ⭐⭐⭐",
-      "date": "2026-09-21",
-      "category": "架构",
       "url": "graph.html"
     },
     {
@@ -51,5 +51,5 @@
       "url": "weekly/"
     }
   ],
-  "latest_date": "2026-09-22"
+  "latest_date": "2026-09-24"
 }
