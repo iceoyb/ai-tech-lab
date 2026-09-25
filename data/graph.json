@@ -1,14 +1,14 @@
 {
   "stats": {
-    "total_nodes": 506,
-    "total_edges": 2889,
+    "total_nodes": 508,
+    "total_edges": 2900,
     "categories": {
       "学术": 1,
       "工具": 68,
       "工程": 88,
       "应用": 27,
       "未分类": 4,
-      "架构": 126,
+      "架构": 128,
       "测试": 1,
       "理论": 49,
       "算法": 41,
@@ -16,6 +16,31 @@
     }
   },
   "nodes": [
+    {
+      "id": "9269ac8ecbba",
+      "title": "The Past Frames the Future: Memory for Autoregressive Video Generation",
+      "category": "架构",
+      "tags": [
+        "RAG",
+        "评估"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-09-25T08:01:49.720088"
+    },
+    {
+      "id": "c1908d3f4d70",
+      "title": "HaRP: High Dynamic Range Photosequencing through Dual Reversed Shutter Scanning",
+      "category": "架构",
+      "tags": [
+        "训练",
+        "安全",
+        "评估"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-09-24T21:02:12.147231"
+    },
     {
       "id": "3853583d9b46",
       "title": "SpeakerMem-R1: Speaker-Centered Dual-Track Memory for Multi-Party Dialogue",
@@ -23919,6 +23944,72 @@
       "target": "ac3737cab712",
       "relation": "similar",
       "weight": 1.2
+    },
+    {
+      "source": "1250c0a1692e",
+      "target": "3853583d9b46",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "c1908d3f4d70",
+      "target": "1bb0decd6dd3",
+      "relation": "similar",
+      "weight": 0.9
+    },
+    {
+      "source": "c1908d3f4d70",
+      "target": "143a101cd77e",
+      "relation": "similar",
+      "weight": 0.9
+    },
+    {
+      "source": "c1908d3f4d70",
+      "target": "d1b966bd5daf",
+      "relation": "similar",
+      "weight": 0.9
+    },
+    {
+      "source": "c1908d3f4d70",
+      "target": "c5e72d75d764",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "c1908d3f4d70",
+      "target": "9af1d14c3416",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "9269ac8ecbba",
+      "target": "075e8a577674",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "9269ac8ecbba",
+      "target": "9fcad6929d1f",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "9269ac8ecbba",
+      "target": "ec3d1646018b",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "9269ac8ecbba",
+      "target": "3ac3752ed9cd",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "9269ac8ecbba",
+      "target": "ad273050cc12",
+      "relation": "similar",
+      "weight": 0.8
     }
   ]
 }
