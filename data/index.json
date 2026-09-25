@@ -4,26 +4,26 @@
   "updates": [
     {
       "type": "paper",
+      "title": "The Past Frames the Future: Memory for Autoregressive Video Generation",
+      "summary": "架构 · ⭐⭐⭐",
+      "date": "2026-09-25",
+      "category": "架构",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
+      "title": "HaRP: High Dynamic Range Photosequencing through Dual Reversed Shutter Scanning",
+      "summary": "架构 · ⭐⭐⭐",
+      "date": "2026-09-24",
+      "category": "架构",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
       "title": "SpeakerMem-R1: Speaker-Centered Dual-Track Memory for Multi-Party Dialogue",
       "summary": "工程 · ⭐⭐⭐",
       "date": "2026-09-24",
       "category": "工程",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs",
-      "summary": "工程 · ⭐⭐⭐",
-      "date": "2026-09-23",
-      "category": "工程",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "WorldCrafter: Consistent Video World Model with Implicit 3D-aware Memory",
-      "summary": "算法 · ⭐⭐⭐",
-      "date": "2026-09-22",
-      "category": "算法",
       "url": "graph.html"
     },
     {
@@ -51,5 +51,5 @@
       "url": "weekly/"
     }
   ],
-  "latest_date": "2026-09-24"
+  "latest_date": "2026-09-25"
 }
