@@ -1,14 +1,14 @@
 {
   "stats": {
-    "total_nodes": 508,
-    "total_edges": 2900,
+    "total_nodes": 510,
+    "total_edges": 2911,
     "categories": {
       "学术": 1,
-      "工具": 68,
+      "工具": 69,
       "工程": 88,
       "应用": 27,
       "未分类": 4,
-      "架构": 128,
+      "架构": 129,
       "测试": 1,
       "理论": 49,
       "算法": 41,
@@ -16,6 +16,34 @@
     }
   },
   "nodes": [
+    {
+      "id": "6bf7c7e4da77",
+      "title": "Agentic Detection of Online Conspiracies",
+      "category": "架构",
+      "tags": [
+        "Agent",
+        "RAG",
+        "推理",
+        "安全",
+        "视觉"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-09-27T08:02:10.850922"
+    },
+    {
+      "id": "c3d6d753c044",
+      "title": "Learning to Discover Interesting Mathematics",
+      "category": "工具",
+      "tags": [
+        "LLM",
+        "部署",
+        "评估"
+      ],
+      "depth": 2,
+      "mastery": 0.0,
+      "created_at": "2026-09-26T12:02:21.005378"
+    },
     {
       "id": "9269ac8ecbba",
       "title": "The Past Frames the Future: Memory for Autoregressive Video Generation",
@@ -24010,6 +24038,72 @@
       "target": "ad273050cc12",
       "relation": "similar",
       "weight": 0.8
+    },
+    {
+      "source": "c3d6d753c044",
+      "target": "6ec492594263",
+      "relation": "similar",
+      "weight": 0.9
+    },
+    {
+      "source": "c3d6d753c044",
+      "target": "8f27f476f519",
+      "relation": "similar",
+      "weight": 0.9
+    },
+    {
+      "source": "c3d6d753c044",
+      "target": "b009af9b2faf",
+      "relation": "similar",
+      "weight": 0.9
+    },
+    {
+      "source": "c3d6d753c044",
+      "target": "f69b082ac17f",
+      "relation": "similar",
+      "weight": 0.9
+    },
+    {
+      "source": "c3d6d753c044",
+      "target": "1250c0a1692e",
+      "relation": "similar",
+      "weight": 0.9
+    },
+    {
+      "source": "0c14283cdddc",
+      "target": "c3d6d753c044",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "6bf7c7e4da77",
+      "target": "1917cce7c111",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "6bf7c7e4da77",
+      "target": "075e8a577674",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "6bf7c7e4da77",
+      "target": "7d90bf026363",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "6bf7c7e4da77",
+      "target": "7f47523e8367",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "6bf7c7e4da77",
+      "target": "0090962f5141",
+      "relation": "similar",
+      "weight": 1.1
     }
   ]
 }
