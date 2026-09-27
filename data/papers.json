@@ -1,6 +1,19 @@
 {
   "papers": [
     {
+      "title": "Agentic Detection of Online Conspiracies",
+      "summary": "OverviewPaper review for Agentic Detection of Online Conspiracies is being prepa...",
+      "tags": [
+        "架构",
+        "Agent",
+        "RAG",
+        "推理"
+      ],
+      "date": "2026-09-27",
+      "url": "2026-w39-paper.html",
+      "deep_url": "2026-w39-paper-deep.html"
+    },
+    {
       "title": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations",
       "summary": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations — 深度论文解读 一...",
       "tags": [
