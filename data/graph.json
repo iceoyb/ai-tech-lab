@@ -1,14 +1,14 @@
 {
   "stats": {
-    "total_nodes": 510,
-    "total_edges": 2911,
+    "total_nodes": 511,
+    "total_edges": 2917,
     "categories": {
       "学术": 1,
       "工具": 69,
       "工程": 88,
       "应用": 27,
       "未分类": 4,
-      "架构": 129,
+      "架构": 130,
       "测试": 1,
       "理论": 49,
       "算法": 41,
@@ -16,6 +16,21 @@
     }
   },
   "nodes": [
+    {
+      "id": "01a8cd896edc",
+      "title": "SemMSA: Latent Semantic-Aided Robust Multimodal Sentiment Analysis with Incomplete Data",
+      "category": "架构",
+      "tags": [
+        "LLM",
+        "多模态",
+        "安全",
+        "评估",
+        "代码"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-09-28T08:01:12.941417"
+    },
     {
       "id": "6bf7c7e4da77",
       "title": "Agentic Detection of Online Conspiracies",
@@ -24102,6 +24117,42 @@
     {
       "source": "6bf7c7e4da77",
       "target": "0090962f5141",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "1917cce7c111",
+      "target": "6bf7c7e4da77",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "01a8cd896edc",
+      "target": "cd3280b67cf1",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "01a8cd896edc",
+      "target": "fbca7c1eac6d",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "01a8cd896edc",
+      "target": "7dd12a7a7ac7",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "01a8cd896edc",
+      "target": "1779d3e937ad",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "01a8cd896edc",
+      "target": "75999909a064",
       "relation": "similar",
       "weight": 1.1
     }
