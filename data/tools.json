@@ -27,7 +27,7 @@
       "category": "框架",
       "usage_count": 1,
       "success_rate": 1.0,
-      "last_used": "2026-09-26T07:00:16.488859",
+      "last_used": "2026-09-28T07:00:16.787742",
       "notes": ""
     },
     {
@@ -46,18 +46,9 @@
       "description": "本地LLM运行工具",
       "category": "工具",
       "usage_count": 1,
-      "success_rate": 0.0,
-      "last_used": "2026-09-24T07:00:16.712301",
+      "success_rate": 1.0,
+      "last_used": "2026-09-28T07:00:16.787788",
       "notes": ""
-    }
-  ],
-  "scripts": [
-    {
-      "name": "2026-w39_agentic_detection_of_online_co.py",
-      "title": "Agentic Detection of Online Conspiracies",
-      "category": "架构",
-      "description": "Agentic Detection of Online Conspiracies - auto-generated 架构 tool (29 lines)",
-      "url": "scripts/2026-w39_agentic_detection_of_online_co.py"
     }
   ]
 }
