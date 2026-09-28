@@ -4,6 +4,14 @@
   "updates": [
     {
       "type": "paper",
+      "title": "SemMSA: Latent Semantic-Aided Robust Multimodal Sentiment Analysis with Incomplete Data",
+      "summary": "架构 · ⭐⭐⭐",
+      "date": "2026-09-28",
+      "category": "架构",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
       "title": "Agentic Detection of Online Conspiracies",
       "summary": "架构 · ⭐⭐⭐",
       "date": "2026-09-27",
@@ -16,14 +24,6 @@
       "summary": "工具 · ⭐⭐",
       "date": "2026-09-26",
       "category": "工具",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "The Past Frames the Future: Memory for Autoregressive Video Generation",
-      "summary": "架构 · ⭐⭐⭐",
-      "date": "2026-09-25",
-      "category": "架构",
       "url": "graph.html"
     },
     {
@@ -51,5 +51,5 @@
       "url": "weekly/"
     }
   ],
-  "latest_date": "2026-09-27"
+  "latest_date": "2026-09-28"
 }
