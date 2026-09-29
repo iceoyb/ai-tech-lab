@@ -4,25 +4,25 @@
   "updates": [
     {
       "type": "paper",
-      "title": "SemMSA: Latent Semantic-Aided Robust Multimodal Sentiment Analysis with Incomplete Data",
-      "summary": "架构 · ⭐⭐⭐",
+      "title": "Learning to Stop without Learning to Stop: Self-Supervised Confidence Training Improves Reasoning Efficiency",
+      "summary": "算法 · ⭐⭐⭐",
+      "date": "2026-09-29",
+      "category": "算法",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
+      "title": "FuseReg: Regularizing Layer Fusion Mitigates the Reconstruction-Generation Gap in Representation Autoencoders",
+      "summary": "算法 · ⭐⭐⭐",
       "date": "2026-09-28",
-      "category": "架构",
+      "category": "算法",
       "url": "graph.html"
     },
     {
       "type": "paper",
-      "title": "Agentic Detection of Online Conspiracies",
-      "summary": "架构 · ⭐⭐⭐",
-      "date": "2026-09-27",
-      "category": "架构",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "Learning to Discover Interesting Mathematics",
+      "title": "开源模型生态周报：Llama 3.1 405B实战表现",
       "summary": "工具 · ⭐⭐",
-      "date": "2026-09-26",
+      "date": "2026-09-28",
       "category": "工具",
       "url": "graph.html"
     },
@@ -51,5 +51,5 @@
       "url": "weekly/"
     }
   ],
-  "latest_date": "2026-09-28"
+  "latest_date": "2026-09-29"
 }
