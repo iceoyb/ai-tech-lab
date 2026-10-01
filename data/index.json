@@ -4,6 +4,14 @@
   "updates": [
     {
       "type": "paper",
+      "title": "Telescopic Language Models",
+      "summary": "架构 · ⭐⭐⭐",
+      "date": "2026-09-29",
+      "category": "架构",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
       "title": "Learning to Stop without Learning to Stop: Self-Supervised Confidence Training Improves Reasoning Efficiency",
       "summary": "算法 · ⭐⭐⭐",
       "date": "2026-09-29",
@@ -16,14 +24,6 @@
       "summary": "算法 · ⭐⭐⭐",
       "date": "2026-09-28",
       "category": "算法",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "开源模型生态周报：Llama 3.1 405B实战表现",
-      "summary": "工具 · ⭐⭐",
-      "date": "2026-09-28",
-      "category": "工具",
       "url": "graph.html"
     },
     {
