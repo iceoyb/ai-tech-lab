@@ -1,21 +1,77 @@
 {
   "stats": {
-    "total_nodes": 511,
-    "total_edges": 2917,
+    "total_nodes": 515,
+    "total_edges": 2944,
     "categories": {
       "学术": 1,
-      "工具": 69,
+      "工具": 70,
       "工程": 88,
       "应用": 27,
       "未分类": 4,
-      "架构": 130,
+      "架构": 131,
       "测试": 1,
       "理论": 49,
-      "算法": 41,
+      "算法": 43,
       "趋势": 101
     }
   },
   "nodes": [
+    {
+      "id": "e16d837ee916",
+      "title": "Telescopic Language Models",
+      "category": "架构",
+      "tags": [
+        "LLM",
+        "推理",
+        "训练",
+        "压缩",
+        "视觉"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-09-29T21:01:44.699192"
+    },
+    {
+      "id": "98d75733915b",
+      "title": "Learning to Stop without Learning to Stop: Self-Supervised Confidence Training Improves Reasoning Efficiency",
+      "category": "算法",
+      "tags": [
+        "LLM",
+        "RAG",
+        "推理",
+        "训练",
+        "评估"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-09-29T08:01:46.220731"
+    },
+    {
+      "id": "577ac2c1a7ed",
+      "title": "FuseReg: Regularizing Layer Fusion Mitigates the Reconstruction-Generation Gap in Representation Autoencoders",
+      "category": "算法",
+      "tags": [
+        "训练",
+        "评估",
+        "视觉"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-09-28T21:02:06.915548"
+    },
+    {
+      "id": "9572e0c6d10e",
+      "title": "开源模型生态周报：Llama 3.1 405B实战表现",
+      "category": "工具",
+      "tags": [
+        "开源模型",
+        "Llama",
+        "量化"
+      ],
+      "depth": 2,
+      "mastery": 0.0,
+      "created_at": "2026-09-28T12:01:27.078516"
+    },
     {
       "id": "01a8cd896edc",
       "title": "SemMSA: Latent Semantic-Aided Robust Multimodal Sentiment Analysis with Incomplete Data",
@@ -24155,6 +24211,168 @@
       "target": "75999909a064",
       "relation": "similar",
       "weight": 1.1
+    },
+    {
+      "source": "9572e0c6d10e",
+      "target": "e8ae4c2391fe",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "9572e0c6d10e",
+      "target": "da67f7d54f5d",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "9572e0c6d10e",
+      "target": "7b8ec807b43c",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "9572e0c6d10e",
+      "target": "cac95779e37c",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "9572e0c6d10e",
+      "target": "960d3d4823e5",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "577ac2c1a7ed",
+      "target": "cb1f8abb8c0c",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "577ac2c1a7ed",
+      "target": "b5b0edce3141",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "577ac2c1a7ed",
+      "target": "bd8d449798b4",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "577ac2c1a7ed",
+      "target": "cff77ccd7b4a",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "577ac2c1a7ed",
+      "target": "c5e72d75d764",
+      "relation": "similar",
+      "weight": 0.9
+    },
+    {
+      "source": "98d75733915b",
+      "target": "3b877ed7e9bd",
+      "relation": "similar",
+      "weight": 1.5
+    },
+    {
+      "source": "98d75733915b",
+      "target": "8f27f476f519",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "98d75733915b",
+      "target": "075e8a577674",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "98d75733915b",
+      "target": "913aa6e22230",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "98d75733915b",
+      "target": "3ac3752ed9cd",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "8f27f476f519",
+      "target": "98d75733915b",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "609f78a5cf88",
+      "target": "98d75733915b",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "b8874100c4a1",
+      "target": "98d75733915b",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "1dea00bf6138",
+      "target": "98d75733915b",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "10a372a71033",
+      "target": "98d75733915b",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "9476ec992d7b",
+      "target": "98d75733915b",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "e16d837ee916",
+      "target": "9af1d14c3416",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "e16d837ee916",
+      "target": "609f78a5cf88",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "e16d837ee916",
+      "target": "10a372a71033",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "e16d837ee916",
+      "target": "7dd12a7a7ac7",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "e16d837ee916",
+      "target": "8aea9445f3c3",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "1c35733146af",
+      "target": "e16d837ee916",
+      "relation": "similar",
+      "weight": 0.9
     }
   ]
 }
