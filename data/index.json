@@ -4,26 +4,26 @@
   "updates": [
     {
       "type": "paper",
+      "title": "Semifactual Credit-Augmented Policy Optimization",
+      "summary": "工程 · ⭐⭐⭐",
+      "date": "2026-10-02",
+      "category": "工程",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
+      "title": "Prompt Engineering 2.0：从技巧到方法论",
+      "summary": "工程 · ⭐⭐",
+      "date": "2026-10-01",
+      "category": "工程",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
       "title": "Telescopic Language Models",
       "summary": "架构 · ⭐⭐⭐",
       "date": "2026-09-29",
       "category": "架构",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "Learning to Stop without Learning to Stop: Self-Supervised Confidence Training Improves Reasoning Efficiency",
-      "summary": "算法 · ⭐⭐⭐",
-      "date": "2026-09-29",
-      "category": "算法",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "FuseReg: Regularizing Layer Fusion Mitigates the Reconstruction-Generation Gap in Representation Autoencoders",
-      "summary": "算法 · ⭐⭐⭐",
-      "date": "2026-09-28",
-      "category": "算法",
       "url": "graph.html"
     },
     {
@@ -51,5 +51,5 @@
       "url": "weekly/"
     }
   ],
-  "latest_date": "2026-09-29"
+  "latest_date": "2026-10-02"
 }
