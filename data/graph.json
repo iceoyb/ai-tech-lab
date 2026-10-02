@@ -1,11 +1,11 @@
 {
   "stats": {
-    "total_nodes": 515,
-    "total_edges": 2944,
+    "total_nodes": 517,
+    "total_edges": 2954,
     "categories": {
       "学术": 1,
       "工具": 70,
-      "工程": 88,
+      "工程": 90,
       "应用": 27,
       "未分类": 4,
       "架构": 131,
@@ -16,6 +16,34 @@
     }
   },
   "nodes": [
+    {
+      "id": "5d37f6312c18",
+      "title": "Semifactual Credit-Augmented Policy Optimization",
+      "category": "工程",
+      "tags": [
+        "LLM",
+        "推理",
+        "训练",
+        "开源",
+        "评估"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-10-02T08:01:42.681632"
+    },
+    {
+      "id": "6706b35c0d8c",
+      "title": "Prompt Engineering 2.0：从技巧到方法论",
+      "category": "工程",
+      "tags": [
+        "Prompt工程",
+        "方法论",
+        "最佳实践"
+      ],
+      "depth": 2,
+      "mastery": 0.0,
+      "created_at": "2026-10-01T12:01:55.098501"
+    },
     {
       "id": "e16d837ee916",
       "title": "Telescopic Language Models",
@@ -24373,6 +24401,66 @@
       "target": "e16d837ee916",
       "relation": "similar",
       "weight": 0.9
+    },
+    {
+      "source": "6706b35c0d8c",
+      "target": "9f8348509638",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "6706b35c0d8c",
+      "target": "32fb8382165a",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "6706b35c0d8c",
+      "target": "935a35b8e81a",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "6706b35c0d8c",
+      "target": "a762e45c83ce",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "6706b35c0d8c",
+      "target": "5cf4043cb29d",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "5d37f6312c18",
+      "target": "913aa6e22230",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "5d37f6312c18",
+      "target": "cdb3a2d9959f",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "5d37f6312c18",
+      "target": "aed7f6c57da2",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "5d37f6312c18",
+      "target": "3b877ed7e9bd",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "5d37f6312c18",
+      "target": "5c46da6ec9d4",
+      "relation": "similar",
+      "weight": 1.4
     }
   ]
 }
