@@ -1,9 +1,9 @@
 {
   "stats": {
-    "total_nodes": 517,
-    "total_edges": 2954,
+    "total_nodes": 519,
+    "total_edges": 2970,
     "categories": {
-      "学术": 1,
+      "学术": 2,
       "工具": 70,
       "工程": 90,
       "应用": 27,
@@ -11,11 +11,41 @@
       "架构": 131,
       "测试": 1,
       "理论": 49,
-      "算法": 43,
+      "算法": 44,
       "趋势": 101
     }
   },
   "nodes": [
+    {
+      "id": "cabccfb914e0",
+      "title": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research",
+      "category": "学术",
+      "tags": [
+        "Agent",
+        "LLM",
+        "训练",
+        "评估",
+        "视觉"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-10-03T08:02:07.453034"
+    },
+    {
+      "id": "d49840ffffcb",
+      "title": "One Basis to Animate Them All: Gaussian Blendshape Distillation for Real-Time Avatars",
+      "category": "算法",
+      "tags": [
+        "推理",
+        "训练",
+        "压缩",
+        "开源",
+        "评估"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-10-02T21:01:08.300608"
+    },
     {
       "id": "5d37f6312c18",
       "title": "Semifactual Credit-Augmented Policy Optimization",
@@ -24461,6 +24491,102 @@
       "target": "5c46da6ec9d4",
       "relation": "similar",
       "weight": 1.4
+    },
+    {
+      "source": "913aa6e22230",
+      "target": "5d37f6312c18",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "cdb3a2d9959f",
+      "target": "5d37f6312c18",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "aed7f6c57da2",
+      "target": "5d37f6312c18",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "d49840ffffcb",
+      "target": "22e4f9c5ac4c",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "d49840ffffcb",
+      "target": "790dff058468",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "d49840ffffcb",
+      "target": "66534be5ca4a",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "d49840ffffcb",
+      "target": "5d37f6312c18",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "d49840ffffcb",
+      "target": "8f27f476f519",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "66534be5ca4a",
+      "target": "d49840ffffcb",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "22e4f9c5ac4c",
+      "target": "d49840ffffcb",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "790dff058468",
+      "target": "d49840ffffcb",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "cabccfb914e0",
+      "target": "9af1d14c3416",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "cabccfb914e0",
+      "target": "609f78a5cf88",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "cabccfb914e0",
+      "target": "fbca7c1eac6d",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "cabccfb914e0",
+      "target": "8aea9445f3c3",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "cabccfb914e0",
+      "target": "505426346b52",
+      "relation": "similar",
+      "weight": 1.1
     }
   ]
 }
