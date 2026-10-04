@@ -50,5 +50,14 @@
       "last_used": "2026-10-04T07:00:17.828359",
       "notes": ""
     }
+  ],
+  "scripts": [
+    {
+      "name": "2026-w40_scholarcatalyst__a_benchmark_f.py",
+      "title": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research",
+      "category": "学术",
+      "description": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research - auto-generated 学术 tool (29 lines)",
+      "url": "scripts/2026-w40_scholarcatalyst__a_benchmark_f.py"
+    }
   ]
 }
