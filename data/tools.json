@@ -36,8 +36,8 @@
       "description": "高性能LLM推理引擎",
       "category": "工具",
       "usage_count": 1,
-      "success_rate": 0.0,
-      "last_used": "2026-10-03T07:00:17.501964",
+      "success_rate": 1.0,
+      "last_used": "2026-10-04T07:00:17.828288",
       "notes": ""
     },
     {
@@ -47,7 +47,7 @@
       "category": "工具",
       "usage_count": 1,
       "success_rate": 1.0,
-      "last_used": "2026-10-02T07:00:17.637807",
+      "last_used": "2026-10-04T07:00:17.828359",
       "notes": ""
     }
   ]
