@@ -1,6 +1,19 @@
 {
   "papers": [
     {
+      "title": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research",
+      "summary": "OverviewPaper review for ScholarCatalyst: A Benchmark for Retrieving Papers That...",
+      "tags": [
+        "学术",
+        "Agent",
+        "LLM",
+        "训练"
+      ],
+      "date": "2026-10-04",
+      "url": "2026-w40-paper.html",
+      "deep_url": "2026-w40-paper-deep.html"
+    },
+    {
       "title": "Agentic Detection of Online Conspiracies",
       "summary": "OverviewPaper review for Agentic Detection of Online Conspiracies is being prepa...",
       "tags": [
