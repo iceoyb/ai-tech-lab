@@ -1,7 +1,7 @@
 {
   "stats": {
     "total_nodes": 519,
-    "total_edges": 2970,
+    "total_edges": 2972,
     "categories": {
       "学术": 2,
       "工具": 70,
@@ -24587,6 +24587,18 @@
       "target": "505426346b52",
       "relation": "similar",
       "weight": 1.1
+    },
+    {
+      "source": "9af1d14c3416",
+      "target": "cabccfb914e0",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "fbca7c1eac6d",
+      "target": "cabccfb914e0",
+      "relation": "similar",
+      "weight": 1.2
     }
   ]
 }
