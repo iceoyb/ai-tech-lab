@@ -1,6 +1,18 @@
 {
   "practices": [
     {
+      "title": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research",
+      "summary": "BackgroundBest practice content for ScholarCatalyst: A Benchmark for Retrieving ...",
+      "tags": [
+        "学术",
+        "Agent",
+        "LLM",
+        "训练"
+      ],
+      "date": "2026-10-04",
+      "url": "2026-w40-practice.html"
+    },
+    {
       "title": "Agentic Detection of Online Conspiracies",
       "summary": "BackgroundBest practice content for Agentic Detection of Online Conspiracies is ...",
       "tags": [
