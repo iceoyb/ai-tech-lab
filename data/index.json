@@ -4,6 +4,14 @@
   "updates": [
     {
       "type": "paper",
+      "title": "🔧 sgl-project/sglang",
+      "summary": "工具 · ⭐⭐",
+      "date": "2026-10-04",
+      "category": "工具",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
       "title": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research",
       "summary": "学术 · ⭐⭐⭐",
       "date": "2026-10-03",
@@ -16,14 +24,6 @@
       "summary": "算法 · ⭐⭐⭐",
       "date": "2026-10-02",
       "category": "算法",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "Semifactual Credit-Augmented Policy Optimization",
-      "summary": "工程 · ⭐⭐⭐",
-      "date": "2026-10-02",
-      "category": "工程",
       "url": "graph.html"
     },
     {
@@ -51,5 +51,5 @@
       "url": "weekly/"
     }
   ],
-  "latest_date": "2026-10-03"
+  "latest_date": "2026-10-04"
 }
