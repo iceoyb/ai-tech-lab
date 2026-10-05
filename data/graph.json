@@ -1,10 +1,10 @@
 {
   "stats": {
-    "total_nodes": 519,
-    "total_edges": 2972,
+    "total_nodes": 520,
+    "total_edges": 2980,
     "categories": {
       "学术": 2,
-      "工具": 70,
+      "工具": 71,
       "工程": 90,
       "应用": 27,
       "未分类": 4,
@@ -16,6 +16,18 @@
     }
   },
   "nodes": [
+    {
+      "id": "25a4b462b5aa",
+      "title": "🔧 sgl-project/sglang",
+      "category": "工具",
+      "tags": [
+        "LLM",
+        "多模态"
+      ],
+      "depth": 2,
+      "mastery": 0.0,
+      "created_at": "2026-10-04T12:01:50.631295"
+    },
     {
       "id": "cabccfb914e0",
       "title": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research",
@@ -24599,6 +24611,54 @@
       "target": "cabccfb914e0",
       "relation": "similar",
       "weight": 1.2
+    },
+    {
+      "source": "25a4b462b5aa",
+      "target": "05f41476bf87",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "25a4b462b5aa",
+      "target": "b6e4f2d0b802",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "25a4b462b5aa",
+      "target": "362a634da0f6",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "25a4b462b5aa",
+      "target": "7d90bf026363",
+      "relation": "similar",
+      "weight": 0.6
+    },
+    {
+      "source": "25a4b462b5aa",
+      "target": "913aa6e22230",
+      "relation": "similar",
+      "weight": 0.6
+    },
+    {
+      "source": "b6e4f2d0b802",
+      "target": "25a4b462b5aa",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "362a634da0f6",
+      "target": "25a4b462b5aa",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "05f41476bf87",
+      "target": "25a4b462b5aa",
+      "relation": "similar",
+      "weight": 0.8
     }
   ]
 }
