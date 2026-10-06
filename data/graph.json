@@ -1,14 +1,14 @@
 {
   "stats": {
-    "total_nodes": 520,
-    "total_edges": 2980,
+    "total_nodes": 522,
+    "total_edges": 2992,
     "categories": {
       "学术": 2,
       "工具": 71,
       "工程": 90,
-      "应用": 27,
+      "应用": 28,
       "未分类": 4,
-      "架构": 131,
+      "架构": 132,
       "测试": 1,
       "理论": 49,
       "算法": 44,
@@ -16,6 +16,35 @@
     }
   },
   "nodes": [
+    {
+      "id": "137116ccf392",
+      "title": "Less Decoder is More Encoder: Geometric Representation Learning from Novel View Synthesis",
+      "category": "架构",
+      "tags": [
+        "开源",
+        "评估",
+        "代码",
+        "机器人"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-10-06T08:01:55.772056"
+    },
+    {
+      "id": "e047674ace13",
+      "title": "What Should World Models Forget? Stratified Retention for Continual Adaptation",
+      "category": "应用",
+      "tags": [
+        "LLM",
+        "推理",
+        "隐私",
+        "部署",
+        "评估"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-10-05T21:01:15.489531"
+    },
     {
       "id": "25a4b462b5aa",
       "title": "🔧 sgl-project/sglang",
@@ -24659,6 +24688,78 @@
       "target": "25a4b462b5aa",
       "relation": "similar",
       "weight": 0.8
+    },
+    {
+      "source": "e047674ace13",
+      "target": "8f27f476f519",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "e047674ace13",
+      "target": "f69b082ac17f",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "e047674ace13",
+      "target": "ba4ccebaf13e",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "e047674ace13",
+      "target": "aed7f6c57da2",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "e047674ace13",
+      "target": "5c46da6ec9d4",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "ba4ccebaf13e",
+      "target": "e047674ace13",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "79060edb39af",
+      "target": "e047674ace13",
+      "relation": "similar",
+      "weight": 0.9
+    },
+    {
+      "source": "137116ccf392",
+      "target": "58c7736565bf",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "137116ccf392",
+      "target": "3ddde4f3e76c",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "137116ccf392",
+      "target": "a9e9adcbd969",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "137116ccf392",
+      "target": "1bb0decd6dd3",
+      "relation": "similar",
+      "weight": 0.9
+    },
+    {
+      "source": "137116ccf392",
+      "target": "cf3798b1909b",
+      "relation": "similar",
+      "weight": 0.9
     }
   ]
 }
