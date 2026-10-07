@@ -4,6 +4,14 @@
   "updates": [
     {
       "type": "paper",
+      "title": "BiasFlow: Geometric Monitoring and Backbone Regularization for Spurious Feature Reliance",
+      "summary": "算法 · ⭐⭐⭐",
+      "date": "2026-10-07",
+      "category": "算法",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
       "title": "Less Decoder is More Encoder: Geometric Representation Learning from Novel View Synthesis",
       "summary": "架构 · ⭐⭐⭐",
       "date": "2026-10-06",
@@ -16,14 +24,6 @@
       "summary": "应用 · ⭐⭐⭐",
       "date": "2026-10-05",
       "category": "应用",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "🔧 sgl-project/sglang",
-      "summary": "工具 · ⭐⭐",
-      "date": "2026-10-04",
-      "category": "工具",
       "url": "graph.html"
     },
     {
@@ -51,5 +51,5 @@
       "url": "weekly/"
     }
   ],
-  "latest_date": "2026-10-06"
+  "latest_date": "2026-10-07"
 }
