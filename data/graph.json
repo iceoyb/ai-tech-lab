@@ -1,7 +1,7 @@
 {
   "stats": {
-    "total_nodes": 522,
-    "total_edges": 2992,
+    "total_nodes": 523,
+    "total_edges": 2999,
     "categories": {
       "学术": 2,
       "工具": 71,
@@ -11,11 +11,25 @@
       "架构": 132,
       "测试": 1,
       "理论": 49,
-      "算法": 44,
+      "算法": 45,
       "趋势": 101
     }
   },
   "nodes": [
+    {
+      "id": "3bd46b2c1666",
+      "title": "BiasFlow: Geometric Monitoring and Backbone Regularization for Spurious Feature Reliance",
+      "category": "算法",
+      "tags": [
+        "训练",
+        "安全",
+        "评估",
+        "视觉"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-10-07T08:01:55.026223"
+    },
     {
       "id": "137116ccf392",
       "title": "Less Decoder is More Encoder: Geometric Representation Learning from Novel View Synthesis",
@@ -24760,6 +24774,48 @@
       "target": "cf3798b1909b",
       "relation": "similar",
       "weight": 0.9
+    },
+    {
+      "source": "f570746ec6c0",
+      "target": "137116ccf392",
+      "relation": "similar",
+      "weight": 0.9
+    },
+    {
+      "source": "cf3798b1909b",
+      "target": "137116ccf392",
+      "relation": "similar",
+      "weight": 0.9
+    },
+    {
+      "source": "3bd46b2c1666",
+      "target": "cb1f8abb8c0c",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "3bd46b2c1666",
+      "target": "1bb0decd6dd3",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "3bd46b2c1666",
+      "target": "b5b0edce3141",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "3bd46b2c1666",
+      "target": "143a101cd77e",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "3bd46b2c1666",
+      "target": "d1b966bd5daf",
+      "relation": "similar",
+      "weight": 1.1
     }
   ]
 }
