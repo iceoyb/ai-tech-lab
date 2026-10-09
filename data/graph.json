@@ -1,14 +1,14 @@
 {
   "stats": {
-    "total_nodes": 523,
-    "total_edges": 2999,
+    "total_nodes": 524,
+    "total_edges": 3004,
     "categories": {
       "学术": 2,
       "工具": 71,
       "工程": 90,
       "应用": 28,
       "未分类": 4,
-      "架构": 132,
+      "架构": 133,
       "测试": 1,
       "理论": 49,
       "算法": 45,
@@ -16,6 +16,19 @@
     }
   },
   "nodes": [
+    {
+      "id": "6946299e3df6",
+      "title": "AdvSim2Real : Training Web Agents Against Adaptive Prompt Injection in a Web World Model",
+      "category": "架构",
+      "tags": [
+        "Agent",
+        "训练",
+        "安全"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-10-07T21:01:07.862587"
+    },
     {
       "id": "3bd46b2c1666",
       "title": "BiasFlow: Geometric Monitoring and Backbone Regularization for Spurious Feature Reliance",
@@ -24816,6 +24829,36 @@
       "target": "d1b966bd5daf",
       "relation": "similar",
       "weight": 1.1
+    },
+    {
+      "source": "6946299e3df6",
+      "target": "7f47523e8367",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "6946299e3df6",
+      "target": "a8d020178d61",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "6946299e3df6",
+      "target": "9af1d14c3416",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "6946299e3df6",
+      "target": "214ee5ba46f6",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "6946299e3df6",
+      "target": "cd3280b67cf1",
+      "relation": "similar",
+      "weight": 0.8
     }
   ]
 }
