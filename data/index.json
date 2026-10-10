@@ -4,25 +4,25 @@
   "updates": [
     {
       "type": "paper",
+      "title": "On the estimation and validity of AI time horizons---a statistical look at the METR plot",
+      "summary": "工程 · ⭐⭐⭐",
+      "date": "2026-10-10",
+      "category": "工程",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
+      "title": "Dex-One2Many: Learning Dexterous Manipulation from a Single Human Demonstration",
+      "summary": "工具 · ⭐⭐⭐",
+      "date": "2026-10-09",
+      "category": "工具",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
       "title": "AdvSim2Real : Training Web Agents Against Adaptive Prompt Injection in a Web World Model",
       "summary": "架构 · ⭐⭐⭐",
       "date": "2026-10-07",
-      "category": "架构",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "BiasFlow: Geometric Monitoring and Backbone Regularization for Spurious Feature Reliance",
-      "summary": "算法 · ⭐⭐⭐",
-      "date": "2026-10-07",
-      "category": "算法",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "Less Decoder is More Encoder: Geometric Representation Learning from Novel View Synthesis",
-      "summary": "架构 · ⭐⭐⭐",
-      "date": "2026-10-06",
       "category": "架构",
       "url": "graph.html"
     },
@@ -51,5 +51,5 @@
       "url": "weekly/"
     }
   ],
-  "latest_date": "2026-10-07"
+  "latest_date": "2026-10-10"
 }
