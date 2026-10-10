@@ -1,11 +1,11 @@
 {
   "stats": {
-    "total_nodes": 524,
-    "total_edges": 3004,
+    "total_nodes": 526,
+    "total_edges": 3009,
     "categories": {
       "学术": 2,
-      "工具": 71,
-      "工程": 90,
+      "工具": 72,
+      "工程": 91,
       "应用": 28,
       "未分类": 4,
       "架构": 133,
@@ -16,6 +16,28 @@
     }
   },
   "nodes": [
+    {
+      "id": "5f6d059f3148",
+      "title": "On the estimation and validity of AI time horizons---a statistical look at the METR plot",
+      "category": "工程",
+      "tags": [
+        "评估"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-10-10T08:01:22.484806"
+    },
+    {
+      "id": "edeaad4b82b2",
+      "title": "Dex-One2Many: Learning Dexterous Manipulation from a Single Human Demonstration",
+      "category": "工具",
+      "tags": [
+        "机器人"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-10-09T21:01:10.641568"
+    },
     {
       "id": "6946299e3df6",
       "title": "AdvSim2Real : Training Web Agents Against Adaptive Prompt Injection in a Web World Model",
@@ -24859,6 +24881,36 @@
       "target": "cd3280b67cf1",
       "relation": "similar",
       "weight": 0.8
+    },
+    {
+      "source": "5f6d059f3148",
+      "target": "70c70f616ad8",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "5f6d059f3148",
+      "target": "913aa6e22230",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "5f6d059f3148",
+      "target": "2cdfd4bc6bfb",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "5f6d059f3148",
+      "target": "96c09b88e4c7",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "5f6d059f3148",
+      "target": "f46f4fb34d17",
+      "relation": "similar",
+      "weight": 0.5
     }
   ]
 }
