@@ -1,6 +1,19 @@
 {
   "papers": [
     {
+      "title": "AdvSim2Real : Training Web Agents Against Adaptive Prompt Injection in a Web World Model",
+      "summary": "OverviewPaper review for AdvSim2Real : Training Web Agents Against Adaptive Prom...",
+      "tags": [
+        "架构",
+        "Agent",
+        "训练",
+        "安全"
+      ],
+      "date": "2026-10-11",
+      "url": "2026-w41-paper.html",
+      "deep_url": "2026-w41-paper-deep.html"
+    },
+    {
       "title": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research",
       "summary": "OverviewPaper review for ScholarCatalyst: A Benchmark for Retrieving Papers That...",
       "tags": [
