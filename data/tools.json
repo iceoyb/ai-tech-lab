@@ -50,5 +50,14 @@
       "last_used": "2026-10-08T07:00:18.554877",
       "notes": ""
     }
+  ],
+  "scripts": [
+    {
+      "name": "2026-w41_on_the_estimation_and_validity.py",
+      "title": "On the estimation and validity of AI time horizons---a statistical look at the METR plot",
+      "category": "工程",
+      "description": "On the estimation and validity of AI time horizons---a statistical look at the METR plot - auto-generated 工程 tool (29 lines)",
+      "url": "scripts/2026-w41_on_the_estimation_and_validity.py"
+    }
   ]
 }
