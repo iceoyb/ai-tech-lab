@@ -1,6 +1,16 @@
 {
   "practices": [
     {
+      "title": "On the estimation and validity of AI time horizons---a statistical look at the METR plot",
+      "summary": "BackgroundBest practice content for On the estimation and validity of AI time ho...",
+      "tags": [
+        "工程",
+        "评估"
+      ],
+      "date": "2026-10-11",
+      "url": "2026-w41-practice.html"
+    },
+    {
       "title": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research",
       "summary": "BackgroundBest practice content for ScholarCatalyst: A Benchmark for Retrieving ...",
       "tags": [
