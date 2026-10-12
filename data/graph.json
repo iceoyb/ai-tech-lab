@@ -1,14 +1,14 @@
 {
   "stats": {
-    "total_nodes": 526,
-    "total_edges": 3009,
+    "total_nodes": 527,
+    "total_edges": 3014,
     "categories": {
       "学术": 2,
       "工具": 72,
       "工程": 91,
       "应用": 28,
       "未分类": 4,
-      "架构": 133,
+      "架构": 134,
       "测试": 1,
       "理论": 49,
       "算法": 45,
@@ -16,6 +16,19 @@
     }
   },
   "nodes": [
+    {
+      "id": "b5ecac60fd74",
+      "title": "Evaluating the Transfer of Co-Evolved Communication from 2D to 3D Simulation",
+      "category": "架构",
+      "tags": [
+        "Agent",
+        "评估",
+        "机器人"
+      ],
+      "depth": 2,
+      "mastery": 0.0,
+      "created_at": "2026-10-11T12:02:24.199881"
+    },
     {
       "id": "5f6d059f3148",
       "title": "On the estimation and validity of AI time horizons---a statistical look at the METR plot",
@@ -24911,6 +24924,36 @@
       "target": "f46f4fb34d17",
       "relation": "similar",
       "weight": 0.5
+    },
+    {
+      "source": "b5ecac60fd74",
+      "target": "075e8a577674",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "b5ecac60fd74",
+      "target": "9fcad6929d1f",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "b5ecac60fd74",
+      "target": "ec3d1646018b",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "b5ecac60fd74",
+      "target": "0101f8240307",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "b5ecac60fd74",
+      "target": "ad273050cc12",
+      "relation": "similar",
+      "weight": 0.8
     }
   ]
 }
