@@ -1,7 +1,7 @@
 {
   "stats": {
-    "total_nodes": 527,
-    "total_edges": 3014,
+    "total_nodes": 528,
+    "total_edges": 3019,
     "categories": {
       "学术": 2,
       "工具": 72,
@@ -11,11 +11,25 @@
       "架构": 134,
       "测试": 1,
       "理论": 49,
-      "算法": 45,
+      "算法": 46,
       "趋势": 101
     }
   },
   "nodes": [
+    {
+      "id": "f87dd52a1fe1",
+      "title": "Latent Compaction with Test-Time Training",
+      "category": "算法",
+      "tags": [
+        "训练",
+        "压缩",
+        "开源",
+        "代码"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-10-15T21:01:49.560125"
+    },
     {
       "id": "b5ecac60fd74",
       "title": "Evaluating the Transfer of Co-Evolved Communication from 2D to 3D Simulation",
@@ -24954,6 +24968,36 @@
       "target": "ad273050cc12",
       "relation": "similar",
       "weight": 0.8
+    },
+    {
+      "source": "f87dd52a1fe1",
+      "target": "22e4f9c5ac4c",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "f87dd52a1fe1",
+      "target": "1bb0decd6dd3",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "f87dd52a1fe1",
+      "target": "b5b0edce3141",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "f87dd52a1fe1",
+      "target": "66534be5ca4a",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "f87dd52a1fe1",
+      "target": "143a101cd77e",
+      "relation": "similar",
+      "weight": 1.1
     }
   ]
 }
