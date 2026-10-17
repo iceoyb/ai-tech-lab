@@ -1,11 +1,11 @@
 {
   "stats": {
-    "total_nodes": 528,
-    "total_edges": 3019,
+    "total_nodes": 529,
+    "total_edges": 3024,
     "categories": {
       "学术": 2,
       "工具": 72,
-      "工程": 91,
+      "工程": 92,
       "应用": 28,
       "未分类": 4,
       "架构": 134,
@@ -16,6 +16,21 @@
     }
   },
   "nodes": [
+    {
+      "id": "8a5b8e245ff9",
+      "title": "LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation",
+      "category": "工程",
+      "tags": [
+        "Agent",
+        "训练",
+        "开源",
+        "评估",
+        "代码"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-10-17T08:02:09.834468"
+    },
     {
       "id": "f87dd52a1fe1",
       "title": "Latent Compaction with Test-Time Training",
@@ -24998,6 +25013,36 @@
       "target": "143a101cd77e",
       "relation": "similar",
       "weight": 1.1
+    },
+    {
+      "source": "8a5b8e245ff9",
+      "target": "a9e9adcbd969",
+      "relation": "similar",
+      "weight": 1.5
+    },
+    {
+      "source": "8a5b8e245ff9",
+      "target": "1bb0decd6dd3",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "8a5b8e245ff9",
+      "target": "b5b0edce3141",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "8a5b8e245ff9",
+      "target": "143a101cd77e",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "8a5b8e245ff9",
+      "target": "d1b966bd5daf",
+      "relation": "similar",
+      "weight": 1.2
     }
   ]
 }
