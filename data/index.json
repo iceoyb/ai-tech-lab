@@ -4,6 +4,14 @@
   "updates": [
     {
       "type": "paper",
+      "title": "LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation",
+      "summary": "工程 · ⭐⭐⭐",
+      "date": "2026-10-17",
+      "category": "工程",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
       "title": "Latent Compaction with Test-Time Training",
       "summary": "算法 · ⭐⭐⭐",
       "date": "2026-10-15",
@@ -16,14 +24,6 @@
       "summary": "架构 · ⭐⭐",
       "date": "2026-10-11",
       "category": "架构",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "On the estimation and validity of AI time horizons---a statistical look at the METR plot",
-      "summary": "工程 · ⭐⭐⭐",
-      "date": "2026-10-10",
-      "category": "工程",
       "url": "graph.html"
     },
     {
@@ -51,5 +51,5 @@
       "url": "weekly/"
     }
   ],
-  "latest_date": "2026-10-15"
+  "latest_date": "2026-10-17"
 }
