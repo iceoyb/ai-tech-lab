@@ -40,17 +40,18 @@
   </div>
 </footer>
 
+<script src="../scripts/content-filter.js"></script>
 <script>
-// 周报列表页 — 数据本地生成，无外部输入
 fetch('../data/weekly.json')
   .then(r => r.json())
   .then(data => {
     const list = document.getElementById('weeklyList');
-    if (!data.reports || data.reports.length === 0) {
+    const reports = ContentFilter.visibleWeekly(data.reports);
+    if (!reports.length) {
       list.innerHTML = '<p style="color: var(--text-dim); text-align: center; padding: 60px;">第一份周报将在本周日生成...</p>';
       return;
     }
-    list.innerHTML = data.reports.map(r => `
+    list.innerHTML = reports.map(r => `
       <a href="${r.url}" class="item-card">
         <div class="item-main">
           <h3>第 ${r.week} 周 · ${r.period}</h3>
