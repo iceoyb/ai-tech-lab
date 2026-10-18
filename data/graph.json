@@ -1,14 +1,14 @@
 {
   "stats": {
-    "total_nodes": 529,
-    "total_edges": 3024,
+    "total_nodes": 530,
+    "total_edges": 3035,
     "categories": {
       "学术": 2,
       "工具": 72,
       "工程": 92,
       "应用": 28,
       "未分类": 4,
-      "架构": 134,
+      "架构": 135,
       "测试": 1,
       "理论": 49,
       "算法": 46,
@@ -16,6 +16,17 @@
     }
   },
   "nodes": [
+    {
+      "id": "2e21661a8228",
+      "title": "Discovering state-of-the-art quantum circuits with large language models",
+      "category": "架构",
+      "tags": [
+        "LLM"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-10-17T21:01:58.072085"
+    },
     {
       "id": "8a5b8e245ff9",
       "title": "LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation",
@@ -25043,6 +25054,72 @@
       "target": "d1b966bd5daf",
       "relation": "similar",
       "weight": 1.2
+    },
+    {
+      "source": "8fcd3fe7419c",
+      "target": "8a5b8e245ff9",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "143a101cd77e",
+      "target": "8a5b8e245ff9",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "d1b966bd5daf",
+      "target": "8a5b8e245ff9",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "1bb0decd6dd3",
+      "target": "8a5b8e245ff9",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "96c09b88e4c7",
+      "target": "8a5b8e245ff9",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "f4221b6d8358",
+      "target": "8a5b8e245ff9",
+      "relation": "similar",
+      "weight": 0.6
+    },
+    {
+      "source": "2e21661a8228",
+      "target": "075e8a577674",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "2e21661a8228",
+      "target": "7d90bf026363",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "2e21661a8228",
+      "target": "ec3d1646018b",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "2e21661a8228",
+      "target": "c2c40429365f",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "2e21661a8228",
+      "target": "a8d020178d61",
+      "relation": "similar",
+      "weight": 0.5
     }
   ]
 }
