@@ -1,6 +1,16 @@
 {
   "practices": [
     {
+      "title": "Discovering state-of-the-art quantum circuits with large language models",
+      "summary": "BackgroundBest practice content for Discovering state-of-the-art quantum circuit...",
+      "tags": [
+        "架构",
+        "LLM"
+      ],
+      "date": "2026-10-18",
+      "url": "2026-w42-practice.html"
+    },
+    {
       "title": "On the estimation and validity of AI time horizons---a statistical look at the METR plot",
       "summary": "BackgroundBest practice content for On the estimation and validity of AI time ho...",
       "tags": [
