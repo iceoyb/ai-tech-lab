@@ -58,7 +58,7 @@ fetch('../data/papers.json')
           <p>${p.summary || ''}</p>
           <div class="item-tags">
             ${p.venue ? `<span class="item-tag">${p.venue}</span>` : ''}
-            <span class="item-tag">${'⭐'.repeat(p.depth || 2)}</span>
+            ${p.depth ? `<span class="item-tag">${'⭐'.repeat(p.depth)}</span>` : ''}
             ${(p.tags||[]).slice(0,3).map(t => `<span class="item-tag">${t}</span>`).join('')}
           </div>
         </div>

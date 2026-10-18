@@ -53,11 +53,39 @@
   ],
   "scripts": [
     {
-      "name": "2026-w42_discovering_state_of_the_art_q.py",
-      "title": "Discovering state-of-the-art quantum circuits with large language models",
-      "category": "架构",
-      "description": "Discovering state-of-the-art quantum circuits with large language models - auto-generated 架构 tool (29 lines)",
-      "url": "scripts/2026-w42_discovering_state_of_the_art_q.py"
+      "name": "2026-w38_famos__feed_forward_3d_articul.py",
+      "title": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations",
+      "category": "工具",
+      "description": "从稀疏三维观测前馈重建铰接结构，可导出 JSON 与 URDF。",
+      "url": "scripts/2026-w38_famos__feed_forward_3d_articul.py"
+    },
+    {
+      "name": "2026-w37_视觉语言模型_vlm_多模态理解新高度.py",
+      "title": "视觉语言模型(VLM)多模态理解新高度 - 多模态内容理解与图像分析 CLI 工具",
+      "category": "工具",
+      "description": "纯标准库的视觉特征提取、视觉 token 与跨模态理解报告。",
+      "url": "scripts/2026-w37_视觉语言模型_vlm_多模态理解新高度.py"
+    },
+    {
+      "name": "2026-w36_tokenmatch__3d_mesh_correspond.py",
+      "title": "TokenMatch: 3D Mesh Correspondence Transformer with Curvature-Guided Tokenisation",
+      "category": "工具",
+      "description": "曲率引导的网格标记化与对应场，只依赖 Python 标准库。",
+      "url": "scripts/2026-w36_tokenmatch__3d_mesh_correspond.py"
+    },
+    {
+      "name": "2026-w36___jingyaogong_minimind.py",
+      "title": "jingyaogong/minimind - MiniMind 极简语言模型训练/推理演示工具",
+      "category": "工具",
+      "description": "字符级 n-gram 语言模型的训练、生成与困惑度演示。",
+      "url": "scripts/2026-w36___jingyaogong_minimind.py"
+    },
+    {
+      "name": "nl2func.py",
+      "title": "自然语言文本函数生成器 (Compile-by-Training Demo)",
+      "category": "工具",
+      "description": "把自然语言规格生成本地 Python 函数，对应 Compile by Training 的演示。",
+      "url": "scripts/nl2func.py"
     }
   ]
 }

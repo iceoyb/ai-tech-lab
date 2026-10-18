@@ -27,8 +27,8 @@ async function loadGraph() {
     const res = await fetch('data/graph.json');
     const data = await res.json();
     
-    allNodes = data.nodes;
-    allEdges = data.edges;
+    allNodes = data.nodes || [];
+    allEdges = data.edges || [];
 
     const counts = ContentFilter.graphCounts(data);
     document.getElementById('gsNodes').textContent = counts.nodes.toLocaleString();
@@ -39,9 +39,9 @@ async function loadGraph() {
     }
 
     const categoryMap = ContentFilter.categoryCounts(allNodes);
-    const categories = Object.keys(categoryMap).sort((a, b) => categoryMap[b] - categoryMap[a]);
+    const categoryNames = Object.keys(categoryMap).sort((a, b) => categoryMap[b] - categoryMap[a]);
     const filterEl = document.getElementById('categoryFilter');
-    categories.forEach(cat => {
+    categoryNames.forEach(cat => {
       activeCategories.add(cat);
       const label = document.createElement('label');
       label.innerHTML = `
