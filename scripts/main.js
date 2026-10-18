@@ -1,4 +1,3 @@
-// 首页逻辑
 document.addEventListener('DOMContentLoaded', () => {
   loadStats();
   loadUpdates();
@@ -11,13 +10,11 @@ async function loadStats() {
     const counts = ContentFilter.graphCounts(data);
     document.getElementById('statNodes').textContent = counts.nodes.toLocaleString();
     document.getElementById('statEdges').textContent = counts.edges.toLocaleString();
-    
-    // 工具数和洞察数从 index 数据读
+
     const idxRes = await fetch('data/index.json');
     const idx = await idxRes.json();
     document.getElementById('statTools').textContent = idx.tools_count || 0;
     document.getElementById('statInsights').textContent = idx.insights_count || 0;
-    // 四大板块卡片里的节点数同步（避免硬编码过期）
     const sn = document.getElementById('sectionNodes');
     if (sn) sn.textContent = counts.nodes.toLocaleString();
   } catch (e) {

@@ -1,85 +1,79 @@
-# 🧪 AI 技术大拿实验室
+# AI 技术大拿实验室
 
-> 每天进化一点，每周造点东西。
+个人 AI 技术作品集。站点把知识图谱、论文精读、工程实践和可运行脚本放在一起，作为长期学习的公开记录。
 
-AI 技术大拿的自驱动产出基地。从论文到代码，从工具到实践，一切自动生成，自动更新。
+线上地址：https://iceoyb.github.io/ai-tech-lab/
 
-## 🎯 四大板块
+## 截图
 
-| 板块 | 内容 | 更新频率 |
-|------|------|----------|
-| 🕸️ **知识图谱** | 由 `data/graph.json` 实时计数的 AI 技术节点（当前 530 个） | 每日 |
-| 🛠️ **工具库** | 可直接运行的 Python/JS 工具脚本 | 每周 |
-| 📐 **最佳实践** | 工程化方案 + 代码模板 + 踩坑记录 | 每周 |
-| 📄 **论文精读** | 顶会论文深度解读 + 核心方法拆解 | 每周 |
+![首页](docs/screenshots/首页.png)
 
-## 🌐 访问地址
+![知识图谱](docs/screenshots/知识图谱.png)
 
-**GitHub Pages**: https://iceoyb.github.io/ai-tech-lab/
+![工具库](docs/screenshots/工具库.png)
 
-## 🏗️ 架构
+![论文精读](docs/screenshots/论文精读.png)
+
+## 站点内容
+
+| 板块 | 现在发布的内容 |
+|------|----------------|
+| 知识图谱 | `data/graph.json` 中的节点与连接。页面按 `nodes`、`edges` 数组长度显示，当前为 **530** 个节点、**3035** 条连接 |
+| 论文精读 | 2026 年第 36–38 周深度解读：TokenMatch、归一化流无似然推断、FAMOS |
+| 最佳实践 | 同期三篇长文：Transformer 替代架构（两篇）与五篇论文的工程解读 |
+| 工具脚本 | FAMOS 铰接重建、视觉语言理解、TokenMatch 网格对应、MiniMind 演示、nl2func |
+| 周报 | 第 30–35 周的科普存档 |
+
+第 39 周及之后的论文页、实践页只写了 “is being prepared”，工具脚本只有约 29 行并打印 “executed successfully”。这些文件已从站点移除。第 36 周起的周报是同一套空模板，同样不发布。已完成的长文和脚本都保留。
+
+## 数据怎么进到这个仓库
+
+`publish_to_github.py` 不在本仓库，也没有对应的 GitHub Actions。每日图谱同步和每周内容生成发生在仓库外的 GuruDB 与进化脚本中，再把静态 HTML 和 JSON 推到这个 GitHub Pages 仓库。
+
+推送前在站点根目录运行守卫，空模板会被跳过而不是发布：
+
+```bash
+python3 scripts/publish_guard.py
+```
+
+守卫会删除并移出索引：
+
+- 正文含 `is being prepared` 的页面
+- 只打印 `executed successfully` 的短脚本
+- 套用固定「下周计划」文案的周报模板
+
+语法无法解析的脚本会从工具索引中去掉，命令以非零状态退出。已有文章和能解析的脚本会留下。
+
+如果外部脚本再次把占位条目写进 JSON，页面仍用 `scripts/content-filter.js` 在渲染时丢掉它们：摘要含 `is being prepared`、`OverviewPaper review`、`BackgroundBest practice`、`auto-generated`，以及描述里行数少于 80 的脚本。周报列表只用第 35 周及以前的存档。`scripts/featured-scripts.json` 保留已经写好的脚本；生成器若只在 `tools.json` 里留最新一条，工具页仍会把这些脚本并出来。
+
+首页和图谱页的节点数、连接数由 `ContentFilter.graphCounts` 读取 `data/graph.json` 的数组长度。图谱使用仓库内的 `scripts/d3.v7.min.js`（D3 v7.9.0）。
+
+## 本地预览
+
+```bash
+python3 -m http.server 8080
+```
+
+浏览器打开 http://127.0.0.1:8080/ ，再看 `graph.html`、`tools/`、`papers/2026-w38-paper-deep.html`。
+
+## 目录
 
 ```
 ai-tech-lab/
-├── index.html           # 首页（统计 + 最新动态）
-├── graph.html           # 知识图谱（D3.js 力导向图）
-├── data/                # JSON 数据（自动生成）
-│   ├── graph.json       # 知识图谱数据
-│   ├── tools.json       # 工具库数据
-│   ├── insights.json    # 深度洞察
-│   ├── practices.json   # 最佳实践索引
-│   ├── papers.json      # 论文精读索引
-│   ├── weekly.json      # 周报索引
-│   └── index.json       # 首页数据
-├── tools/
-│   ├── index.html       # 工具列表页
-│   └── scripts/         # 可运行的工具脚本（每周新增）
-├── practices/           # 最佳实践文章（每周新增）
-├── papers/              # 论文精读笔记（每周新增）
-├── weekly/              # 进化周报（每周新增）
-├── styles/main.css      # 全站样式
-└── scripts/             # 前端 JS
-    ├── content-filter.js    # 按内容质量过滤占位稿
-    ├── featured-scripts.json
-    ├── main.js              # 首页逻辑
-    └── graph.js             # 图谱可视化
+├── index.html
+├── graph.html
+├── data/
+├── papers/
+├── practices/
+├── weekly/
+├── tools/scripts/
+├── styles/main.css
+├── scripts/
+│   ├── content-filter.js       # 渲染时丢掉占位条目
+│   ├── featured-scripts.json   # 已完成脚本，工具页优先展示
+│   ├── publish_guard.py        # 推送前删除占位页和桩脚本
+│   ├── d3.v7.min.js
+│   ├── main.js
+│   └── graph.js
+└── docs/screenshots/
 ```
-
-## 界面
-
-![首页](docs/首页.png)
-
-![知识图谱](docs/知识图谱.png)
-
-## 内容流水线
-
-站点是纯静态 GitHub Pages（根目录有 `.nojekyll`，不经 Jekyll 处理）。页面不内嵌正文索引，打开后用 `fetch` 读取 `data/*.json`：
-
-| 数据 | 消费页面 |
-|------|----------|
-| `data/graph.json` | 首页统计、`graph.html` 力导向图 |
-| `data/papers.json` / `practices.json` / `weekly.json` / `tools.json` | 对应栏目列表 |
-| `data/index.json` | 工具数、洞察数 |
-| `data/insights.json` | 洞察原文（首页不再直接铺开） |
-
-正文是生成好的 HTML：`papers/`、`practices/`、`weekly/`，可运行脚本在 `tools/scripts/`。
-
-自动推送不在本仓库。外部脚本 `publish_to_github.py`（README 所述，源码不在此 repo）按日/周提交，信息为 `update: 知识图谱 & 内容更新`，覆盖 `data/*.json` 以及当周的页面和脚本：
-
-- 每日：`graph.json`、`tools.json`、`index.json`
-- 每周日：论文、实践、周报页面及当周脚本，并重写对应 JSON 索引
-
-`scripts/content-filter.js` 在浏览器里过滤这些索引，不改 JSON 本身，因此后续自动提交不会把占位稿重新露出来。判定包括：摘要含 `is being prepared`、`OverviewPaper review`、`BackgroundBest practice`、`auto-generated`，以及描述里行数少于 80 的脚本。`scripts/featured-scripts.json` 保留已写好、但不再出现在 `tools.json` `scripts` 数组里的完整脚本（生成器目前只保留最新一条）。
-
-节点和边的展示数字取 `graph.json` 里 `nodes` / `edges` 的数组长度，不使用写死的 577 / 3036。
-
-## 📊 大拿状态
-
-- 等级：Lv.10
-- 知识图谱：530 节点 / 3035 边（与当前 `data/graph.json` 一致；页面按数组长度计算）
-- 连续学习：21 天
-- 分类覆盖：架构、算法、工具、应用、趋势、工程、理论、学术
-
----
-
-*由 AI 技术大拿自驱动生成 · 自动更新*

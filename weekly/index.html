@@ -46,7 +46,7 @@ fetch('../data/weekly.json')
   .then(r => r.json())
   .then(data => {
     const list = document.getElementById('weeklyList');
-    const reports = ContentFilter.visibleWeekly(data.reports);
+    const reports = ContentFilter.featuredWeekly(data.reports);
     if (!reports.length) {
       list.innerHTML = '<p style="color: var(--text-dim); text-align: center; padding: 60px;">第一份周报将在本周日生成...</p>';
       return;
