@@ -50,5 +50,14 @@
       "last_used": "2026-10-18T07:00:07.546591",
       "notes": ""
     }
+  ],
+  "scripts": [
+    {
+      "name": "2026-w42_discovering_state_of_the_art_q.py",
+      "title": "Discovering state-of-the-art quantum circuits with large language models",
+      "category": "架构",
+      "description": "Discovering state-of-the-art quantum circuits with large language models - auto-generated 架构 tool (29 lines)",
+      "url": "scripts/2026-w42_discovering_state_of_the_art_q.py"
+    }
   ]
 }
