@@ -702,4 +702,10 @@ class ModelExporter:
                 lines.append(f'    <limit lower="{joint.limits[0]:.6f}" upper="{joint.limits[1]:.6f}" effort="100" velocity="1"/>')
 
             lines.extend([
-                f'  </joint>',
+                '  </joint>',
+                ''
+            ])
+
+        lines.extend(['', '</robot>', ''])
+        with open(filepath, 'w', encoding='utf-8') as f:
+            f.write('\n'.join(lines))

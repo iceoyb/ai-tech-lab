@@ -1,0 +1,37 @@
+[
+  {
+    "name": "2026-w38_famos__feed_forward_3d_articul.py",
+    "title": "FAMOS：稀疏观测的前馈三维关节建模",
+    "category": "架构",
+    "description": "从稀疏三维点聚类刚体、推断关节并导出 JSON / URDF。",
+    "url": "scripts/2026-w38_famos__feed_forward_3d_articul.py"
+  },
+  {
+    "name": "2026-w37_视觉语言模型_vlm_多模态理解新高度.py",
+    "title": "视觉语言模型：多模态内容理解",
+    "category": "应用",
+    "description": "纯标准库解析图像特征、生成视觉 token，并输出结构化理解报告。",
+    "url": "scripts/2026-w37_视觉语言模型_vlm_多模态理解新高度.py"
+  },
+  {
+    "name": "2026-w36_tokenmatch__3d_mesh_correspond.py",
+    "title": "TokenMatch：曲率引导的网格对应",
+    "category": "架构",
+    "description": "计算离散曲率、曲率加权 token 化，并在两个网格之间建立对应。",
+    "url": "scripts/2026-w36_tokenmatch__3d_mesh_correspond.py"
+  },
+  {
+    "name": "2026-w36___jingyaogong_minimind.py",
+    "title": "MiniMind：字符级 n-gram 训练与生成",
+    "category": "算法",
+    "description": "在标准库内完成字符级语言模型的训练、生成与困惑度计算。",
+    "url": "scripts/2026-w36___jingyaogong_minimind.py"
+  },
+  {
+    "name": "nl2func.py",
+    "title": "nl2func：自然语言到本地函数",
+    "category": "工程",
+    "description": "把自然语言描述的文本处理需求生成为可独立运行的 Python 函数。",
+    "url": "scripts/nl2func.py"
+  }
+]

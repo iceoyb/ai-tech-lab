@@ -44,9 +44,8 @@
   </div>
 </footer>
 
+<script src="../scripts/content-filter.js"></script>
 <script>
-// 工具库页面逻辑
-// 数据来自本地生成的 tools.json，无用户输入
 fetch('../data/tools.json')
   .then(r => r.json())
   .then(data => {
@@ -76,12 +75,13 @@ fetch('../data/tools.json')
     document.getElementById('toolList').innerHTML = '<p style="color: var(--text-dim); text-align: center; padding: 60px;">加载失败</p>';
   });
 
-// 每周产出的工具脚本（tools.json 的 scripts 数组）
-fetch('../data/tools.json')
-  .then(r => r.json())
-  .then(data => {
+Promise.all([
+  fetch('../scripts/featured-scripts.json').then(r => r.json()),
+  fetch('../data/tools.json').then(r => r.json())
+])
+  .then(([featured, data]) => {
     const el = document.getElementById('scriptList');
-    const scripts = data.scripts || [];
+    const scripts = ContentFilter.mergeScripts(featured, data.scripts || []);
     if (!scripts.length) {
       el.innerHTML = '<p style="color: var(--text-dim); text-align: center; padding: 40px;">脚本正在积累中...</p>';
       return;
