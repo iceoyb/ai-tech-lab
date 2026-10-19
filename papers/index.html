@@ -40,25 +40,24 @@
   </div>
 </footer>
 
-<script src="../scripts/content-filter.js"></script>
 <script>
+// 论文精读列表页 — 数据本地生成，无外部输入
 fetch('../data/papers.json')
   .then(r => r.json())
   .then(data => {
     const list = document.getElementById('paperList');
-    const papers = ContentFilter.visiblePapers(data.papers);
-    if (!papers.length) {
+    if (!data.papers || data.papers.length === 0) {
       list.innerHTML = '<p style="color: var(--text-dim); text-align: center; padding: 60px;">论文精读库正在建设中，每周更新...</p>';
       return;
     }
-    list.innerHTML = papers.map(p => `
-      <a href="${p.deep_url || p.url}" class="item-card">
+    list.innerHTML = data.papers.map(p => `
+      <a href="${p.url}" class="item-card">
         <div class="item-main">
           <h3>${p.title}</h3>
           <p>${p.summary || ''}</p>
           <div class="item-tags">
-            ${p.venue ? `<span class="item-tag">${p.venue}</span>` : ''}
-            ${p.depth ? `<span class="item-tag">${'⭐'.repeat(p.depth)}</span>` : ''}
+            <span class="item-tag">${p.venue || ''}</span>
+            <span class="item-tag">${'⭐'.repeat(p.depth || 2)}</span>
             ${(p.tags||[]).slice(0,3).map(t => `<span class="item-tag">${t}</span>`).join('')}
           </div>
         </div>
