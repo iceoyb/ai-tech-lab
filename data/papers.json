@@ -1,8 +1,58 @@
 {
   "papers": [
     {
+      "title": "Discovering state-of-the-art quantum circuits with large language models",
+      "summary": "OverviewPaper review for Discovering state-of-the-art quantum circuits with larg...",
+      "tags": [
+        "架构",
+        "LLM"
+      ],
+      "date": "2026-10-18",
+      "url": "2026-w42-paper.html",
+      "deep_url": "2026-w42-paper-deep.html"
+    },
+    {
+      "title": "AdvSim2Real : Training Web Agents Against Adaptive Prompt Injection in a Web World Model",
+      "summary": "OverviewPaper review for AdvSim2Real : Training Web Agents Against Adaptive Prom...",
+      "tags": [
+        "架构",
+        "Agent",
+        "训练",
+        "安全"
+      ],
+      "date": "2026-10-11",
+      "url": "2026-w41-paper.html",
+      "deep_url": "2026-w41-paper-deep.html"
+    },
+    {
+      "title": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research",
+      "summary": "OverviewPaper review for ScholarCatalyst: A Benchmark for Retrieving Papers That...",
+      "tags": [
+        "学术",
+        "Agent",
+        "LLM",
+        "训练"
+      ],
+      "date": "2026-10-04",
+      "url": "2026-w40-paper.html",
+      "deep_url": "2026-w40-paper-deep.html"
+    },
+    {
+      "title": "Agentic Detection of Online Conspiracies",
+      "summary": "OverviewPaper review for Agentic Detection of Online Conspiracies is being prepa...",
+      "tags": [
+        "架构",
+        "Agent",
+        "RAG",
+        "推理"
+      ],
+      "date": "2026-09-27",
+      "url": "2026-w39-paper.html",
+      "deep_url": "2026-w39-paper-deep.html"
+    },
+    {
       "title": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations",
-      "summary": "一次前向计算重建关节与运动链，避开逐实例优化的耗时和对初始化的敏感。",
+      "summary": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations — 深度论文解读 一...",
       "tags": [
         "架构",
         "RAG",
@@ -10,12 +60,12 @@
         "开源"
       ],
       "date": "2026-09-20",
-      "url": "2026-w38-paper-deep.html",
+      "url": "2026-w38-paper.html",
       "deep_url": "2026-w38-paper-deep.html"
     },
     {
       "title": "Likelihood-free inference with nuisance parameters through normalizing flows",
-      "summary": "模拟器没有显式似然时，用归一化流建模目标参数与冗余参数之间的条件依赖。",
+      "summary": "论文深度解析：基于归一化流的含冗余参数无似然推断 一、研究背景与动机 在当代科学计算与统计推断领域，无似然推断（Likelihood-Free Inferenc...",
       "tags": [
         "架构",
         "RAG",
@@ -23,12 +73,12 @@
         "部署"
       ],
       "date": "2026-09-13",
-      "url": "2026-w37-paper-deep.html",
+      "url": "2026-w37-paper.html",
       "deep_url": "2026-w37-paper-deep.html"
     },
     {
       "title": "TokenMatch: 3D Mesh Correspondence Transformer with Curvature-Guided Tokenisation",
-      "summary": "用曲率分配标记化预算，把计算集中在几何细节，而不是对网格做均匀采样。",
+      "summary": "TokenMatch: 基于曲率引导标记化的3D网格对应Transformer深度解析 一、研究背景与动机 三维形状对应（3D Shape Correspond...",
       "tags": [
         "架构",
         "推理",
@@ -36,8 +86,19 @@
         "评估"
       ],
       "date": "2026-09-05",
-      "url": "2026-w36-paper-deep.html",
+      "url": "2026-w36-paper.html",
       "deep_url": "2026-w36-paper-deep.html"
+    },
+    {
+      "title": "Compile by Training: Turning Natural-Language Specifications into Local Neural Functions",
+      "summary": "Many recurring text functions are easy to describe but difficult to implement with rules, while calling a large remote m...",
+      "venue": "arXiv / Yuntian Deng, Pengyu Nie, Stuart Shieber",
+      "depth": 4,
+      "tags": [
+        "训练"
+      ],
+      "date": "2026-09-05",
+      "url": "2026-w36-paper-deep.html"
     }
   ]
 }
