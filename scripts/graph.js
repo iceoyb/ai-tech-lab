@@ -27,27 +27,23 @@ async function loadGraph() {
     const res = await fetch('data/graph.json');
     const data = await res.json();
     
-    allNodes = data.nodes || [];
-    allEdges = data.edges || [];
-
-    const counts = ContentFilter.graphCounts(data);
-    document.getElementById('gsNodes').textContent = counts.nodes.toLocaleString();
-    document.getElementById('gsEdges').textContent = counts.edges.toLocaleString();
-    const lead = document.getElementById('graphLead');
-    if (lead) {
-      lead.textContent = counts.nodes.toLocaleString() + ' 个技术节点，' + counts.edges.toLocaleString() + ' 条连接。拖拽节点探索，点击查看详情。';
-    }
-
-    const categoryMap = ContentFilter.categoryCounts(allNodes);
-    const categoryNames = Object.keys(categoryMap).sort((a, b) => categoryMap[b] - categoryMap[a]);
+    allNodes = data.nodes;
+    allEdges = data.edges;
+    
+    // 更新统计
+    document.getElementById('gsNodes').textContent = data.stats.total_nodes.toLocaleString();
+    document.getElementById('gsEdges').textContent = data.stats.total_edges.toLocaleString();
+    
+    // 构建分类筛选器
+    const categories = Object.keys(data.stats.categories).sort((a, b) => data.stats.categories[b] - data.stats.categories[a]);
     const filterEl = document.getElementById('categoryFilter');
-    categoryNames.forEach(cat => {
+    categories.forEach(cat => {
       activeCategories.add(cat);
       const label = document.createElement('label');
       label.innerHTML = `
         <input type="checkbox" checked data-cat="${cat}">
         <span class="cat-dot" style="background: ${CATEGORY_COLORS[cat] || '#6b7280'}"></span>
-        ${cat} (${categoryMap[cat]})
+        ${cat} (${data.stats.categories[cat]})
       `;
       label.querySelector('input').addEventListener('change', (e) => {
         if (e.target.checked) activeCategories.add(cat);
