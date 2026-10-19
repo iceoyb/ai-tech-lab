@@ -4,43 +4,27 @@
   "updates": [
     {
       "type": "paper",
-      "title": "FAMOS：稀疏观测下的前馈三维铰接建模",
-      "summary": "一次前向计算重建关节与运动链，避开逐实例优化。",
-      "date": "2026-09-20",
-      "category": "论文精读",
-      "url": "papers/2026-w38-paper-deep.html"
+      "title": "Rethinking Routing Exploration in Modern Mixture-of-Experts",
+      "summary": "未分类 · ⭐⭐⭐",
+      "date": "2026-10-18",
+      "category": "未分类",
+      "url": "graph.html"
     },
     {
       "type": "paper",
-      "title": "用归一化流做含冗余参数的无似然推断",
-      "summary": "模拟器没有显式似然时，显式建模目标参数与冗余参数的条件依赖。",
-      "date": "2026-09-13",
-      "category": "论文精读",
-      "url": "papers/2026-w37-paper-deep.html"
+      "title": "Discovering state-of-the-art quantum circuits with large language models",
+      "summary": "架构 · ⭐⭐⭐",
+      "date": "2026-10-17",
+      "category": "架构",
+      "url": "graph.html"
     },
     {
       "type": "paper",
-      "title": "TokenMatch：曲率引导的三维网格对应",
-      "summary": "把标记化预算花在高曲率区域，而不是均匀采样。",
-      "date": "2026-09-05",
-      "category": "论文精读",
-      "url": "papers/2026-w36-paper-deep.html"
-    },
-    {
-      "type": "practice",
-      "title": "Transformer 之后：状态空间模型与线性注意力",
-      "summary": "从二次复杂度和 KV Cache 看替代架构的工程边界。",
-      "date": "2026-09-20",
-      "category": "最佳实践",
-      "url": "practices/2026-w38-practice.html"
-    },
-    {
-      "type": "tool",
-      "title": "FAMOS 铰接重建脚本",
-      "summary": "纯 Python，从稀疏三维观测导出 JSON / URDF。",
-      "date": "2026-09-20",
-      "category": "工具",
-      "url": "tools/scripts/2026-w38_famos__feed_forward_3d_articul.py"
+      "title": "LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation",
+      "summary": "工程 · ⭐⭐⭐",
+      "date": "2026-10-17",
+      "category": "工程",
+      "url": "graph.html"
     },
     {
       "type": "insight",
@@ -48,8 +32,24 @@
       "summary": "深度评分：4/5 · 触发：技术判断",
       "date": "2026-08-27",
       "category": "多模态 / 语义理解",
-      "url": "weekly/2026-w35.html"
+      "url": "weekly/"
+    },
+    {
+      "type": "insight",
+      "title": "AI技术正在从'能用'向'好用'转变，关键差异在于工程化能力",
+      "summary": "深度评分：4/5 · 触发：趋势观察",
+      "date": "2026-08-16",
+      "category": "工程化 / 产品化",
+      "url": "weekly/"
+    },
+    {
+      "type": "insight",
+      "title": "开源生态正在加速AI民主化，但商业模式仍在探索中",
+      "summary": "深度评分：3/5 · 触发：生态观察",
+      "date": "2026-08-02",
+      "category": "开源 / 商业模式",
+      "url": "weekly/"
     }
   ],
-  "latest_date": "2026-09-20"
+  "latest_date": "2026-10-18"
 }
