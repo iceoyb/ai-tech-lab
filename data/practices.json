@@ -1,8 +1,52 @@
 {
   "practices": [
     {
+      "title": "Discovering state-of-the-art quantum circuits with large language models",
+      "summary": "BackgroundBest practice content for Discovering state-of-the-art quantum circuit...",
+      "tags": [
+        "架构",
+        "LLM"
+      ],
+      "date": "2026-10-18",
+      "url": "2026-w42-practice.html"
+    },
+    {
+      "title": "On the estimation and validity of AI time horizons---a statistical look at the METR plot",
+      "summary": "BackgroundBest practice content for On the estimation and validity of AI time ho...",
+      "tags": [
+        "工程",
+        "评估"
+      ],
+      "date": "2026-10-11",
+      "url": "2026-w41-practice.html"
+    },
+    {
+      "title": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research",
+      "summary": "BackgroundBest practice content for ScholarCatalyst: A Benchmark for Retrieving ...",
+      "tags": [
+        "学术",
+        "Agent",
+        "LLM",
+        "训练"
+      ],
+      "date": "2026-10-04",
+      "url": "2026-w40-practice.html"
+    },
+    {
+      "title": "Agentic Detection of Online Conspiracies",
+      "summary": "BackgroundBest practice content for Agentic Detection of Online Conspiracies is ...",
+      "tags": [
+        "架构",
+        "Agent",
+        "RAG",
+        "推理"
+      ],
+      "date": "2026-09-27",
+      "url": "2026-w39-practice.html"
+    },
+    {
       "title": "深度解读：Transformer架构的下一个替代品？",
-      "summary": "从二次复杂度和 KV Cache 出发，看状态空间模型与线性注意力的工程边界。",
+      "summary": "深度解读：Transformer架构的下一个替代品？ 自2017年《Attention Is All You Need》发表以来，Transformer架构几乎...",
       "tags": [
         "架构",
         "架构创新",
@@ -14,7 +58,7 @@
     },
     {
       "title": "本周AI论文精选：值得关注的5篇论文",
-      "summary": "推理优化、多模态对齐、Agent、RAG 与高效微调五篇论文的工程解读。",
+      "summary": "本周AI论文精选：值得关注的5篇论文 本周（2025年第10周）AI研究社区涌现出多篇具有工程实践价值的论文。我们精选了5篇覆盖大模型推理优化、多模态对齐、Ag...",
       "tags": [
         "趋势",
         "论文精选",
@@ -26,7 +70,7 @@
     },
     {
       "title": "深度解读：Transformer架构的下一个替代品？",
-      "summary": "序列变长之后，Mamba 与线性注意力相对标准 Transformer 的落地取舍。",
+      "summary": "深度解读：Transformer架构的下一个替代品？ 自2017年《Attention Is All You Need》发表以来，Transformer架构凭借...",
       "tags": [
         "架构",
         "架构创新",
