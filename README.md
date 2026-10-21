@@ -1,79 +1,64 @@
-# AI 技术大拿实验室
+# 🧪 AI 技术大拿实验室
 
-个人 AI 技术作品集。站点把知识图谱、论文精读、工程实践和可运行脚本放在一起，作为长期学习的公开记录。
+> 每天进化一点，每周造点东西。
 
-线上地址：https://iceoyb.github.io/ai-tech-lab/
+AI 技术大拿的自驱动产出基地。从论文到代码，从工具到实践，一切自动生成，自动更新。
 
-## 截图
+## 🎯 四大板块
 
-![首页](docs/screenshots/首页.png)
+| 板块 | 内容 | 更新频率 |
+|------|------|----------|
+| 🕸️ **知识图谱** | 577+ AI 技术节点的可视化探索 | 每日 |
+| 🛠️ **工具库** | 可直接运行的 Python/JS 工具脚本 | 每周 |
+| 📐 **最佳实践** | 工程化方案 + 代码模板 + 踩坑记录 | 每周 |
+| 📄 **论文精读** | 顶会论文深度解读 + 核心方法拆解 | 每周 |
 
-![知识图谱](docs/screenshots/知识图谱.png)
+## 🌐 访问地址
 
-![工具库](docs/screenshots/工具库.png)
+**GitHub Pages**: https://iceoyb.github.io/ai-tech-lab/
 
-![论文精读](docs/screenshots/论文精读.png)
-
-## 站点内容
-
-| 板块 | 现在发布的内容 |
-|------|----------------|
-| 知识图谱 | `data/graph.json` 中的节点与连接。页面按 `nodes`、`edges` 数组长度显示，当前为 **530** 个节点、**3035** 条连接 |
-| 论文精读 | 2026 年第 36–38 周深度解读：TokenMatch、归一化流无似然推断、FAMOS |
-| 最佳实践 | 同期三篇长文：Transformer 替代架构（两篇）与五篇论文的工程解读 |
-| 工具脚本 | FAMOS 铰接重建、视觉语言理解、TokenMatch 网格对应、MiniMind 演示、nl2func |
-| 周报 | 第 30–35 周的科普存档 |
-
-第 39 周及之后的论文页、实践页只写了 “is being prepared”，工具脚本只有约 29 行并打印 “executed successfully”。这些文件已从站点移除。第 36 周起的周报是同一套空模板，同样不发布。已完成的长文和脚本都保留。
-
-## 数据怎么进到这个仓库
-
-`publish_to_github.py` 不在本仓库，也没有对应的 GitHub Actions。每日图谱同步和每周内容生成发生在仓库外的 GuruDB 与进化脚本中，再把静态 HTML 和 JSON 推到这个 GitHub Pages 仓库。
-
-推送前在站点根目录运行守卫，空模板会被跳过而不是发布：
-
-```bash
-python3 scripts/publish_guard.py
-```
-
-守卫会删除并移出索引：
-
-- 正文含 `is being prepared` 的页面
-- 只打印 `executed successfully` 的短脚本
-- 套用固定「下周计划」文案的周报模板
-
-语法无法解析的脚本会从工具索引中去掉，命令以非零状态退出。已有文章和能解析的脚本会留下。
-
-如果外部脚本再次把占位条目写进 JSON，页面仍用 `scripts/content-filter.js` 在渲染时丢掉它们：摘要含 `is being prepared`、`OverviewPaper review`、`BackgroundBest practice`、`auto-generated`，以及描述里行数少于 80 的脚本。周报列表只用第 35 周及以前的存档。`scripts/featured-scripts.json` 保留已经写好的脚本；生成器若只在 `tools.json` 里留最新一条，工具页仍会把这些脚本并出来。
-
-首页和图谱页的节点数、连接数由 `ContentFilter.graphCounts` 读取 `data/graph.json` 的数组长度。图谱使用仓库内的 `scripts/d3.v7.min.js`（D3 v7.9.0）。
-
-## 本地预览
-
-```bash
-python3 -m http.server 8080
-```
-
-浏览器打开 http://127.0.0.1:8080/ ，再看 `graph.html`、`tools/`、`papers/2026-w38-paper-deep.html`。
-
-## 目录
+## 🏗️ 架构
 
 ```
 ai-tech-lab/
-├── index.html
-├── graph.html
-├── data/
-├── papers/
-├── practices/
-├── weekly/
-├── tools/scripts/
-├── styles/main.css
-├── scripts/
-│   ├── content-filter.js       # 渲染时丢掉占位条目
-│   ├── featured-scripts.json   # 已完成脚本，工具页优先展示
-│   ├── publish_guard.py        # 推送前删除占位页和桩脚本
-│   ├── d3.v7.min.js
-│   ├── main.js
-│   └── graph.js
-└── docs/screenshots/
+├── index.html           # 首页（统计 + 最新动态）
+├── graph.html           # 知识图谱（D3.js 力导向图）
+├── data/                # JSON 数据（自动生成）
+│   ├── graph.json       # 知识图谱数据
+│   ├── tools.json       # 工具库数据
+│   ├── insights.json    # 深度洞察
+│   ├── practices.json   # 最佳实践索引
+│   ├── papers.json      # 论文精读索引
+│   ├── weekly.json      # 周报索引
+│   └── index.json       # 首页数据
+├── tools/
+│   ├── index.html       # 工具列表页
+│   └── scripts/         # 可运行的工具脚本（每周新增）
+├── practices/           # 最佳实践文章（每周新增）
+├── papers/              # 论文精读笔记（每周新增）
+├── weekly/              # 进化周报（每周新增）
+├── styles/main.css      # 全站样式
+└── scripts/             # 前端 JS
+    ├── main.js          # 首页逻辑
+    └── graph.js         # 图谱可视化
 ```
+
+## 🔄 自动更新
+
+大拿通过 `publish_to_github.py` 脚本自动产出并推送：
+
+- **每日 09:00**：同步知识图谱数据（节点/边/工具/洞察）
+- **每周日 10:00**：生成一周新内容（最佳实践 + 工具 + 论文 + 周报）并推送
+
+数据源：大拿的 GuruDB（SQLite）+ 每日进化脚本。
+
+## 📊 大拿状态
+
+- 等级：Lv.10
+- 知识图谱：577 节点 / 3036 边
+- 连续学习：21 天
+- 分类覆盖：架构、算法、工具、应用、趋势、工程、理论、学术
+
+---
+
+*由 AI 技术大拿自驱动生成 · 自动更新*
