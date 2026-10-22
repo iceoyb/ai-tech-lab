@@ -4,6 +4,14 @@
   "updates": [
     {
       "type": "paper",
+      "title": "UniWALM: Unified World Action Language Model for Embodied Robot Control",
+      "summary": "架构 · ⭐⭐⭐",
+      "date": "2026-10-21",
+      "category": "架构",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
       "title": "Rethinking Routing Exploration in Modern Mixture-of-Experts",
       "summary": "未分类 · ⭐⭐⭐",
       "date": "2026-10-18",
@@ -16,14 +24,6 @@
       "summary": "架构 · ⭐⭐⭐",
       "date": "2026-10-17",
       "category": "架构",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation",
-      "summary": "工程 · ⭐⭐⭐",
-      "date": "2026-10-17",
-      "category": "工程",
       "url": "graph.html"
     },
     {
@@ -51,5 +51,5 @@
       "url": "weekly/"
     }
   ],
-  "latest_date": "2026-10-18"
+  "latest_date": "2026-10-21"
 }
