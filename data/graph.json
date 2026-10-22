@@ -1,14 +1,14 @@
 {
   "stats": {
-    "total_nodes": 531,
-    "total_edges": 3036,
+    "total_nodes": 532,
+    "total_edges": 3044,
     "categories": {
       "学术": 2,
       "工具": 72,
       "工程": 92,
       "应用": 28,
       "未分类": 5,
-      "架构": 135,
+      "架构": 136,
       "测试": 1,
       "理论": 49,
       "算法": 46,
@@ -16,6 +16,21 @@
     }
   },
   "nodes": [
+    {
+      "id": "17a80736d414",
+      "title": "UniWALM: Unified World Action Language Model for Embodied Robot Control",
+      "category": "架构",
+      "tags": [
+        "LLM",
+        "多模态",
+        "推理",
+        "训练",
+        "视觉"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-10-21T21:01:07.179495"
+    },
     {
       "id": "59f5a8c5477a",
       "title": "Rethinking Routing Exploration in Modern Mixture-of-Experts",
@@ -25137,6 +25152,54 @@
       "target": "1f948a1f76c5",
       "relation": "similar",
       "weight": 0.5
+    },
+    {
+      "source": "17a80736d414",
+      "target": "7dd12a7a7ac7",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "17a80736d414",
+      "target": "e16d837ee916",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "17a80736d414",
+      "target": "913aa6e22230",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "17a80736d414",
+      "target": "1c35733146af",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "17a80736d414",
+      "target": "cdb3a2d9959f",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "1c35733146af",
+      "target": "17a80736d414",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "cdb3a2d9959f",
+      "target": "17a80736d414",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "7dd12a7a7ac7",
+      "target": "17a80736d414",
+      "relation": "similar",
+      "weight": 1.4
     }
   ]
 }
