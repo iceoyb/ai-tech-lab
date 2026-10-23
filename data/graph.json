@@ -1,7 +1,7 @@
 {
   "stats": {
-    "total_nodes": 532,
-    "total_edges": 3044,
+    "total_nodes": 534,
+    "total_edges": 3054,
     "categories": {
       "学术": 2,
       "工具": 72,
@@ -11,11 +11,34 @@
       "架构": 136,
       "测试": 1,
       "理论": 49,
-      "算法": 46,
-      "趋势": 101
+      "算法": 47,
+      "趋势": 102
     }
   },
   "nodes": [
+    {
+      "id": "5aa5e75e390c",
+      "title": "PhysiCalWorld: In-Context Physics Calibration for World Models",
+      "category": "算法",
+      "tags": [
+        "推理",
+        "训练"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-10-23T08:02:08.841032"
+    },
+    {
+      "id": "2e387efe645c",
+      "title": "🗞️ U.S. government limits exports of artificial intelligence software",
+      "category": "趋势",
+      "tags": [
+        "AI前沿"
+      ],
+      "depth": 2,
+      "mastery": 0.0,
+      "created_at": "2026-10-22T12:01:45.693621"
+    },
     {
       "id": "17a80736d414",
       "title": "UniWALM: Unified World Action Language Model for Embodied Robot Control",
@@ -25200,6 +25223,66 @@
       "target": "17a80736d414",
       "relation": "similar",
       "weight": 1.4
+    },
+    {
+      "source": "2e387efe645c",
+      "target": "af325e4fcc3b",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "2e387efe645c",
+      "target": "bfe9c377629a",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "2e387efe645c",
+      "target": "a3d1cf9c4b91",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "2e387efe645c",
+      "target": "2cafd4636ea2",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "2e387efe645c",
+      "target": "a31a08ea52da",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "5aa5e75e390c",
+      "target": "8f27f476f519",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "5aa5e75e390c",
+      "target": "1c35733146af",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "5aa5e75e390c",
+      "target": "790dff058468",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "5aa5e75e390c",
+      "target": "98d75733915b",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "5aa5e75e390c",
+      "target": "d49840ffffcb",
+      "relation": "similar",
+      "weight": 0.8
     }
   ]
 }
