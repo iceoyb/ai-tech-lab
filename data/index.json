@@ -4,6 +4,14 @@
   "updates": [
     {
       "type": "paper",
+      "title": "🔧 usestrix/strix",
+      "summary": "工具 · ⭐⭐",
+      "date": "2026-10-23",
+      "category": "工具",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
       "title": "PhysiCalWorld: In-Context Physics Calibration for World Models",
       "summary": "算法 · ⭐⭐⭐",
       "date": "2026-10-23",
@@ -16,14 +24,6 @@
       "summary": "趋势 · ⭐⭐",
       "date": "2026-10-22",
       "category": "趋势",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "UniWALM: Unified World Action Language Model for Embodied Robot Control",
-      "summary": "架构 · ⭐⭐⭐",
-      "date": "2026-10-21",
-      "category": "架构",
       "url": "graph.html"
     },
     {
