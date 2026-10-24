@@ -1,10 +1,10 @@
 {
   "stats": {
-    "total_nodes": 534,
-    "total_edges": 3054,
+    "total_nodes": 535,
+    "total_edges": 3056,
     "categories": {
       "学术": 2,
-      "工具": 72,
+      "工具": 73,
       "工程": 92,
       "应用": 28,
       "未分类": 5,
@@ -16,6 +16,17 @@
     }
   },
   "nodes": [
+    {
+      "id": "c479778a6bbd",
+      "title": "🔧 usestrix/strix",
+      "category": "工具",
+      "tags": [
+        "开源"
+      ],
+      "depth": 2,
+      "mastery": 0.0,
+      "created_at": "2026-10-23T12:01:59.741245"
+    },
     {
       "id": "5aa5e75e390c",
       "title": "PhysiCalWorld: In-Context Physics Calibration for World Models",
@@ -25283,6 +25294,18 @@
       "target": "d49840ffffcb",
       "relation": "similar",
       "weight": 0.8
+    },
+    {
+      "source": "c479778a6bbd",
+      "target": "208a5d1da460",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "208a5d1da460",
+      "target": "c479778a6bbd",
+      "relation": "similar",
+      "weight": 0.5
     }
   ]
 }
