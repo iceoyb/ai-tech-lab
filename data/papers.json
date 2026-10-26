@@ -1,6 +1,18 @@
 {
   "papers": [
     {
+      "title": "PhysiCalWorld: In-Context Physics Calibration for World Models",
+      "summary": "OverviewPaper review for PhysiCalWorld: In-Context Physics Calibration for World...",
+      "tags": [
+        "算法",
+        "推理",
+        "训练"
+      ],
+      "date": "2026-10-25",
+      "url": "2026-w43-paper.html",
+      "deep_url": "2026-w43-paper-deep.html"
+    },
+    {
       "title": "Discovering state-of-the-art quantum circuits with large language models",
       "summary": "OverviewPaper review for Discovering state-of-the-art quantum circuits with larg...",
       "tags": [
