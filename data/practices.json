@@ -1,6 +1,17 @@
 {
   "practices": [
     {
+      "title": "PhysiCalWorld: In-Context Physics Calibration for World Models",
+      "summary": "BackgroundBest practice content for PhysiCalWorld: In-Context Physics Calibratio...",
+      "tags": [
+        "算法",
+        "推理",
+        "训练"
+      ],
+      "date": "2026-10-25",
+      "url": "2026-w43-practice.html"
+    },
+    {
       "title": "Discovering state-of-the-art quantum circuits with large language models",
       "summary": "BackgroundBest practice content for Discovering state-of-the-art quantum circuit...",
       "tags": [
