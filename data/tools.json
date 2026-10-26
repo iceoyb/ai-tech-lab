@@ -6,8 +6,8 @@
       "description": "LLM应用开发框架",
       "category": "框架",
       "usage_count": 1,
-      "success_rate": 1.0,
-      "last_used": "2026-10-24T07:00:56.101096",
+      "success_rate": 0.0,
+      "last_used": "2026-10-26T07:00:55.967554",
       "notes": ""
     },
     {
@@ -27,7 +27,7 @@
       "category": "框架",
       "usage_count": 1,
       "success_rate": 1.0,
-      "last_used": "2026-10-23T07:00:05.499541",
+      "last_used": "2026-10-25T07:00:56.433074",
       "notes": ""
     },
     {
@@ -47,7 +47,7 @@
       "category": "工具",
       "usage_count": 1,
       "success_rate": 1.0,
-      "last_used": "2026-10-24T07:00:56.101153",
+      "last_used": "2026-10-26T07:00:55.967605",
       "notes": ""
     }
   ]
