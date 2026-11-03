@@ -4,26 +4,26 @@
   "updates": [
     {
       "type": "paper",
+      "title": "A Better Critic Matters for Distribution Matching Distillation",
+      "summary": "算法 · ⭐⭐⭐",
+      "date": "2026-11-02",
+      "category": "算法",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
+      "title": "Honeycomb-Surfels: Compact Hexagonal Primitives for Efficient Scene Rendering and Reconstruction",
+      "summary": "算法 · ⭐⭐⭐",
+      "date": "2026-10-28",
+      "category": "算法",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
       "title": "SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning",
       "summary": "架构 · ⭐⭐⭐",
       "date": "2026-10-27",
       "category": "架构",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "🔧 usestrix/strix",
-      "summary": "工具 · ⭐⭐",
-      "date": "2026-10-23",
-      "category": "工具",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "PhysiCalWorld: In-Context Physics Calibration for World Models",
-      "summary": "算法 · ⭐⭐⭐",
-      "date": "2026-10-23",
-      "category": "算法",
       "url": "graph.html"
     },
     {
@@ -51,5 +51,5 @@
       "url": "weekly/"
     }
   ],
-  "latest_date": "2026-10-27"
+  "latest_date": "2026-11-02"
 }
