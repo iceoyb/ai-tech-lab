@@ -1,7 +1,7 @@
 {
   "stats": {
-    "total_nodes": 536,
-    "total_edges": 3062,
+    "total_nodes": 538,
+    "total_edges": 3072,
     "categories": {
       "学术": 2,
       "工具": 73,
@@ -11,11 +11,36 @@
       "架构": 137,
       "测试": 1,
       "理论": 49,
-      "算法": 47,
+      "算法": 49,
       "趋势": 102
     }
   },
   "nodes": [
+    {
+      "id": "a74370bcfe43",
+      "title": "A Better Critic Matters for Distribution Matching Distillation",
+      "category": "算法",
+      "tags": [
+        "训练",
+        "压缩",
+        "视觉"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-11-02T21:01:57.720077"
+    },
+    {
+      "id": "20ef6c04da6b",
+      "title": "Honeycomb-Surfels: Compact Hexagonal Primitives for Efficient Scene Rendering and Reconstruction",
+      "category": "算法",
+      "tags": [
+        "训练",
+        "视觉"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-10-28T21:01:53.542662"
+    },
     {
       "id": "e04310ed867b",
       "title": "SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning",
@@ -25357,6 +25382,66 @@
       "target": "e04310ed867b",
       "relation": "similar",
       "weight": 1.4
+    },
+    {
+      "source": "20ef6c04da6b",
+      "target": "cb1f8abb8c0c",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "20ef6c04da6b",
+      "target": "b5b0edce3141",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "20ef6c04da6b",
+      "target": "1c35733146af",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "20ef6c04da6b",
+      "target": "28d42c2b2e24",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "20ef6c04da6b",
+      "target": "bd8d449798b4",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "a74370bcfe43",
+      "target": "cb1f8abb8c0c",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "a74370bcfe43",
+      "target": "bd8d449798b4",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "a74370bcfe43",
+      "target": "cff77ccd7b4a",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "a74370bcfe43",
+      "target": "e16d837ee916",
+      "relation": "similar",
+      "weight": 0.9
+    },
+    {
+      "source": "a74370bcfe43",
+      "target": "22e4f9c5ac4c",
+      "relation": "similar",
+      "weight": 0.8
     }
   ]
 }
