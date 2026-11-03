@@ -1,6 +1,17 @@
 {
   "practices": [
     {
+      "title": "Honeycomb-Surfels: Compact Hexagonal Primitives for Efficient Scene Rendering and Reconstruction",
+      "summary": "BackgroundBest practice content for Honeycomb-Surfels: Compact Hexagonal Primiti...",
+      "tags": [
+        "算法",
+        "训练",
+        "视觉"
+      ],
+      "date": "2026-11-01",
+      "url": "2026-w44-practice.html"
+    },
+    {
       "title": "PhysiCalWorld: In-Context Physics Calibration for World Models",
       "summary": "BackgroundBest practice content for PhysiCalWorld: In-Context Physics Calibratio...",
       "tags": [
