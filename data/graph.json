@@ -1,14 +1,14 @@
 {
   "stats": {
-    "total_nodes": 538,
-    "total_edges": 3072,
+    "total_nodes": 539,
+    "total_edges": 3077,
     "categories": {
       "学术": 2,
       "工具": 73,
       "工程": 92,
       "应用": 28,
       "未分类": 5,
-      "架构": 137,
+      "架构": 138,
       "测试": 1,
       "理论": 49,
       "算法": 49,
@@ -16,6 +16,21 @@
     }
   },
   "nodes": [
+    {
+      "id": "165248a59034",
+      "title": "WebHarbor: Docking Real Websites for Evolving GUI Agent Environments",
+      "category": "架构",
+      "tags": [
+        "Agent",
+        "RAG",
+        "训练",
+        "开源",
+        "评估"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-11-04T08:02:11.822830"
+    },
     {
       "id": "a74370bcfe43",
       "title": "A Better Critic Matters for Distribution Matching Distillation",
@@ -25442,6 +25457,36 @@
       "target": "22e4f9c5ac4c",
       "relation": "similar",
       "weight": 0.8
+    },
+    {
+      "source": "165248a59034",
+      "target": "9fcad6929d1f",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "165248a59034",
+      "target": "ec3d1646018b",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "165248a59034",
+      "target": "7f47523e8367",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "165248a59034",
+      "target": "f4c84a063ed3",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "165248a59034",
+      "target": "528fe9f4be9d",
+      "relation": "similar",
+      "weight": 1.4
     }
   ]
 }
