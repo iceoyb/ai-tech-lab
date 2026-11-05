@@ -1,11 +1,11 @@
 {
   "stats": {
-    "total_nodes": 539,
-    "total_edges": 3077,
+    "total_nodes": 540,
+    "total_edges": 3085,
     "categories": {
       "学术": 2,
       "工具": 73,
-      "工程": 92,
+      "工程": 93,
       "应用": 28,
       "未分类": 5,
       "架构": 138,
@@ -16,6 +16,18 @@
     }
   },
   "nodes": [
+    {
+      "id": "0f8c742975f8",
+      "title": "Aligning Language Models with General Preferences: An Empirical Study of Direct Nash Optimization",
+      "category": "工程",
+      "tags": [
+        "LLM",
+        "评估"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-11-05T08:02:03.914432"
+    },
     {
       "id": "165248a59034",
       "title": "WebHarbor: Docking Real Websites for Evolving GUI Agent Environments",
@@ -25487,6 +25499,54 @@
       "target": "528fe9f4be9d",
       "relation": "similar",
       "weight": 1.4
+    },
+    {
+      "source": "9fcad6929d1f",
+      "target": "165248a59034",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "7f47523e8367",
+      "target": "165248a59034",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "3b87c9e8d191",
+      "target": "165248a59034",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "0f8c742975f8",
+      "target": "913aa6e22230",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "0f8c742975f8",
+      "target": "96c09b88e4c7",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "0f8c742975f8",
+      "target": "f69b082ac17f",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "0f8c742975f8",
+      "target": "1250c0a1692e",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "0f8c742975f8",
+      "target": "ba4ccebaf13e",
+      "relation": "similar",
+      "weight": 0.8
     }
   ]
 }
