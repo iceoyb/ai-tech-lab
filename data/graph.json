@@ -1,14 +1,14 @@
 {
   "stats": {
-    "total_nodes": 540,
-    "total_edges": 3085,
+    "total_nodes": 541,
+    "total_edges": 3094,
     "categories": {
       "学术": 2,
       "工具": 73,
       "工程": 93,
       "应用": 28,
       "未分类": 5,
-      "架构": 138,
+      "架构": 139,
       "测试": 1,
       "理论": 49,
       "算法": 49,
@@ -16,6 +16,21 @@
     }
   },
   "nodes": [
+    {
+      "id": "584ae7f61bec",
+      "title": "BEAKER: An Expert-Curated Benchmark for Embodied Brains in Self-Driving Chemical Laboratories",
+      "category": "架构",
+      "tags": [
+        "LLM",
+        "多模态",
+        "推理",
+        "安全",
+        "部署"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-11-05T21:02:07.345257"
+    },
     {
       "id": "0f8c742975f8",
       "title": "Aligning Language Models with General Preferences: An Empirical Study of Direct Nash Optimization",
@@ -25547,6 +25562,60 @@
       "target": "ba4ccebaf13e",
       "relation": "similar",
       "weight": 0.8
+    },
+    {
+      "source": "584ae7f61bec",
+      "target": "7dd12a7a7ac7",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "584ae7f61bec",
+      "target": "f69b082ac17f",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "584ae7f61bec",
+      "target": "7d90bf026363",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "584ae7f61bec",
+      "target": "c2c40429365f",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "584ae7f61bec",
+      "target": "0090962f5141",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "992a1b8989da",
+      "target": "584ae7f61bec",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "2f1fe0c9daaa",
+      "target": "584ae7f61bec",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "c2c40429365f",
+      "target": "584ae7f61bec",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "7dd12a7a7ac7",
+      "target": "584ae7f61bec",
+      "relation": "similar",
+      "weight": 1.4
     }
   ]
 }
