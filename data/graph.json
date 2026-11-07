@@ -1,9 +1,9 @@
 {
   "stats": {
-    "total_nodes": 541,
-    "total_edges": 3094,
+    "total_nodes": 542,
+    "total_edges": 3099,
     "categories": {
-      "学术": 2,
+      "学术": 3,
       "工具": 73,
       "工程": 93,
       "应用": 28,
@@ -16,6 +16,19 @@
     }
   },
   "nodes": [
+    {
+      "id": "6cd3c15e1a7b",
+      "title": "Scientist World: Grow a Research World for AI-Scientists",
+      "category": "学术",
+      "tags": [
+        "Agent",
+        "训练",
+        "评估"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-11-06T21:02:04.236052"
+    },
     {
       "id": "584ae7f61bec",
       "title": "BEAKER: An Expert-Curated Benchmark for Embodied Brains in Self-Driving Chemical Laboratories",
@@ -25616,6 +25629,36 @@
       "target": "584ae7f61bec",
       "relation": "similar",
       "weight": 1.4
+    },
+    {
+      "source": "6cd3c15e1a7b",
+      "target": "cabccfb914e0",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "6cd3c15e1a7b",
+      "target": "9af1d14c3416",
+      "relation": "similar",
+      "weight": 0.9
+    },
+    {
+      "source": "6cd3c15e1a7b",
+      "target": "a9e9adcbd969",
+      "relation": "similar",
+      "weight": 0.9
+    },
+    {
+      "source": "6cd3c15e1a7b",
+      "target": "8a5b8e245ff9",
+      "relation": "similar",
+      "weight": 0.9
+    },
+    {
+      "source": "6cd3c15e1a7b",
+      "target": "e04310ed867b",
+      "relation": "similar",
+      "weight": 0.9
     }
   ]
 }
