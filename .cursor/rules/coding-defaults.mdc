@@ -1,0 +1,79 @@
+---
+description: Coding defaults from ponytail (minimal-change) + impeccable (ui-craft). Apply to all code edits; UI sections apply when touching frontend.
+alwaysApply: true
+---
+
+# Coding defaults (minimal change + UI craft)
+
+## Always (every code change)
+
+Prefer the **smallest complete** change. No unrequested abstractions, wrappers, options, config, sample code, or new dependencies.
+
+Ladder (take the first that fully solves it):
+1. Skip features/options nobody asked for.
+2. Reuse existing helpers / components / patterns in this repo.
+3. Prefer stdlib or platform APIs; prefer project wrappers over raw primitives when the project has them.
+4. Use already-installed deps only.
+5. One readable line if that works.
+6. Otherwise the least code that works.
+
+Hard rules:
+- Lazy on scope, never lazy on completeness: update every necessary call site, test, fixture, and export.
+- Keep existing layering, interfaces, and conventions. Delete beats add.
+- Comments only for why the code cannot say; one line.
+- Bugfix: grep every caller of changed functions; fix the root cause once in shared code.
+- Preserve error handling and validation when moving/merging code.
+- Non-trivial new logic gets a small test or assert-based self-check; trivial edits do not.
+- Shortcuts: comment `shortcut: <limit>, <when to upgrade>`.
+
+**Never drop:** trust-boundary validation, data-loss error handling, security, accessibility, hardware calibration the product needs, or anything the user explicitly asked for.
+
+PR / change report must end with: what you skipped or did not check; risks the user must know (or "no extra risk").
+
+## Review (when reviewing a diff / PR)
+
+Order: correct → safe → scales → tested → fast → lean.
+
+Report only findings with a concrete case ("this input → this wrong result"). Suggest the smallest useful fix; prefer deleting code.
+
+Format:
+- What this change does: (2–3 sentences)
+- Must fix / Should fix / Nice to have (skip empty groups; continuous numbering)
+- Each item: What this is / Problem / Fix / If we skip it
+- Verdict: … ; Lean: -N lines possible (if any); Not checked: … (if any)
+- Or: Looks good. Ship. + what you checked
+
+## Frontend / UI only
+
+When editing UI (web, landing, dashboard, components, forms, native screens):
+
+- Read PRODUCT.md / DESIGN.md if present; do not invent missing product facts.
+- Prefer refinement over redesign unless asked to redesign.
+- After direction is set, before UI edits: honor craft floor below.
+- Verify on a real render (batch checks, not one screenshot per tweak).
+- Theme browser chrome from the palette: selection, caret, scrollbar, focus ring, underline offset, tabular numerals.
+- Copy: product language; controls name the action; errors name problem + recovery.
+
+### Craft floor — verify
+- Contrast: body/placeholder ≥4.5:1; large text ≥3:1; tint secondary text from surface hue, never gray on color.
+- Depth: shadows need offset + soft blur; zero-offset colored halo is decoration.
+- Spacing: tight groups, generous separation; more space above a heading than below.
+- Type: body ~65–75ch; display max 6rem; tracking floor -0.04em; clear scale/weight steps; fix overflow at breakpoints.
+- Motion: one authored moment, not scatter; ease-out from already-visible default.
+- States: hover, disabled, loading, error, empty; keyboard focus; real content.
+
+### Craft floor — refuse (unless brief earns it)
+- Same-size icon+heading+text card grids as page structure; nested cards always wrong.
+- Hero-metric template (big number + label + supporting stats).
+- **Ban:** kicker/eyebrow above a heading — delete it; heading stands alone.
+- Section numbers 01/02/03 unless sequence carries needed meaning.
+- Modal for tasks that need neither interruption nor protected focus.
+- Gradient text; decorative glass/blur; >1px colored side borders on cards/callouts.
+- Hard offset neobrutalist shadows outside a neobrutalist world.
+- Sparklines/progress rings/soft rounded boxes as content stand-ins.
+- Monospace as "technical" costume (ok for code/data/measurement).
+- System display faces as the voice of an own-world page — source a face that matches.
+- Unicode/emoji as icon system; geometric masks faking organic photo edges.
+- Light/dark chosen by category habit instead of use scene.
+
+The floor never picks the visual world. When torn between refined and committed, commit.
