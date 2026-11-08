@@ -1,14 +1,14 @@
 {
   "stats": {
-    "total_nodes": 542,
-    "total_edges": 3099,
+    "total_nodes": 543,
+    "total_edges": 3104,
     "categories": {
       "学术": 3,
       "工具": 73,
       "工程": 93,
       "应用": 28,
       "未分类": 5,
-      "架构": 139,
+      "架构": 140,
       "测试": 1,
       "理论": 49,
       "算法": 49,
@@ -16,6 +16,19 @@
     }
   },
   "nodes": [
+    {
+      "id": "a99b37a1343a",
+      "title": "XStack: A Benchmark for ML Repo Migration",
+      "category": "架构",
+      "tags": [
+        "Agent",
+        "LLM",
+        "评估"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-11-08T08:02:15.526967"
+    },
     {
       "id": "6cd3c15e1a7b",
       "title": "Scientist World: Grow a Research World for AI-Scientists",
@@ -25659,6 +25672,36 @@
       "target": "e04310ed867b",
       "relation": "similar",
       "weight": 0.9
+    },
+    {
+      "source": "a99b37a1343a",
+      "target": "075e8a577674",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "a99b37a1343a",
+      "target": "ec3d1646018b",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "a99b37a1343a",
+      "target": "9af1d14c3416",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "a99b37a1343a",
+      "target": "fbca7c1eac6d",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "a99b37a1343a",
+      "target": "f4c84a063ed3",
+      "relation": "similar",
+      "weight": 1.1
     }
   ]
 }
