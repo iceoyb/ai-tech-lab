@@ -1,6 +1,18 @@
 {
   "practices": [
     {
+      "title": "XStack: A Benchmark for ML Repo Migration",
+      "summary": "BackgroundBest practice content for XStack: A Benchmark for ML Repo Migration is...",
+      "tags": [
+        "架构",
+        "Agent",
+        "LLM",
+        "评估"
+      ],
+      "date": "2026-11-08",
+      "url": "2026-w45-practice.html"
+    },
+    {
       "title": "Honeycomb-Surfels: Compact Hexagonal Primitives for Efficient Scene Rendering and Reconstruction",
       "summary": "BackgroundBest practice content for Honeycomb-Surfels: Compact Hexagonal Primiti...",
       "tags": [
