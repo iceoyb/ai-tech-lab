@@ -1,6 +1,19 @@
 {
   "papers": [
     {
+      "title": "XStack: A Benchmark for ML Repo Migration",
+      "summary": "OverviewPaper review for XStack: A Benchmark for ML Repo Migration is being prep...",
+      "tags": [
+        "架构",
+        "Agent",
+        "LLM",
+        "评估"
+      ],
+      "date": "2026-11-08",
+      "url": "2026-w45-paper.html",
+      "deep_url": "2026-w45-paper-deep.html"
+    },
+    {
       "title": "Honeycomb-Surfels: Compact Hexagonal Primitives for Efficient Scene Rendering and Reconstruction",
       "summary": "OverviewPaper review for Honeycomb-Surfels: Compact Hexagonal Primitives for Eff...",
       "tags": [
