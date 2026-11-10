@@ -4,25 +4,25 @@
   "updates": [
     {
       "type": "paper",
-      "title": "XStack: A Benchmark for ML Repo Migration",
+      "title": "BitDecoding-FP4: Native FP4 KV Cache Decoding via Algorithm-System Co-Design",
       "summary": "架构 · ⭐⭐⭐",
-      "date": "2026-11-08",
+      "date": "2026-11-09",
       "category": "架构",
       "url": "graph.html"
     },
     {
       "type": "paper",
-      "title": "Scientist World: Grow a Research World for AI-Scientists",
-      "summary": "学术 · ⭐⭐⭐",
-      "date": "2026-11-06",
-      "category": "学术",
+      "title": "Exploring Weight-Space Programming: Capabilities, Generalization, and Limitations",
+      "summary": "架构 · ⭐⭐",
+      "date": "2026-11-09",
+      "category": "架构",
       "url": "graph.html"
     },
     {
       "type": "paper",
-      "title": "BEAKER: An Expert-Curated Benchmark for Embodied Brains in Self-Driving Chemical Laboratories",
+      "title": "XStack: A Benchmark for ML Repo Migration",
       "summary": "架构 · ⭐⭐⭐",
-      "date": "2026-11-05",
+      "date": "2026-11-08",
       "category": "架构",
       "url": "graph.html"
     },
@@ -51,5 +51,5 @@
       "url": "weekly/"
     }
   ],
-  "latest_date": "2026-11-08"
+  "latest_date": "2026-11-09"
 }
