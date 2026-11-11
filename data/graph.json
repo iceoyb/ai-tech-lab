@@ -1,14 +1,14 @@
 {
   "stats": {
-    "total_nodes": 545,
-    "total_edges": 3117,
+    "total_nodes": 547,
+    "total_edges": 3126,
     "categories": {
-      "学术": 3,
+      "学术": 4,
       "工具": 73,
       "工程": 93,
       "应用": 28,
       "未分类": 5,
-      "架构": 142,
+      "架构": 143,
       "测试": 1,
       "理论": 49,
       "算法": 49,
@@ -16,6 +16,32 @@
     }
   },
   "nodes": [
+    {
+      "id": "75319d0ba3a0",
+      "title": "Programming Prescience: Issues in Human Construction of Forecasting Bots",
+      "category": "学术",
+      "tags": [
+        "推理",
+        "代码"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-11-11T08:02:20.664074"
+    },
+    {
+      "id": "ad76b8d02d22",
+      "title": "Guiding Data Allocation for Robust Subpopulation Generalization",
+      "category": "架构",
+      "tags": [
+        "RAG",
+        "训练",
+        "开源",
+        "代码"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-11-10T21:02:23.570500"
+    },
     {
       "id": "a85aca035a12",
       "title": "BitDecoding-FP4: Native FP4 KV Cache Decoding via Algorithm-System Co-Design",
@@ -25810,6 +25836,60 @@
       "target": "a85aca035a12",
       "relation": "similar",
       "weight": 1.1
+    },
+    {
+      "source": "ad76b8d02d22",
+      "target": "bcb19a8c867e",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "ad76b8d02d22",
+      "target": "3ddde4f3e76c",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "ad76b8d02d22",
+      "target": "69e4f34ed80c",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "ad76b8d02d22",
+      "target": "7f47523e8367",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "ad76b8d02d22",
+      "target": "58c7736565bf",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "bcb19a8c867e",
+      "target": "ad76b8d02d22",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "3ddde4f3e76c",
+      "target": "ad76b8d02d22",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "75319d0ba3a0",
+      "target": "ed3985c8206e",
+      "relation": "similar",
+      "weight": 0.6
+    },
+    {
+      "source": "75319d0ba3a0",
+      "target": "0b8224ef0636",
+      "relation": "similar",
+      "weight": 0.6
     }
   ]
 }
