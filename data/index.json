@@ -4,25 +4,25 @@
   "updates": [
     {
       "type": "paper",
+      "title": "Programming Prescience: Issues in Human Construction of Forecasting Bots",
+      "summary": "学术 · ⭐⭐⭐",
+      "date": "2026-11-11",
+      "category": "学术",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
+      "title": "Guiding Data Allocation for Robust Subpopulation Generalization",
+      "summary": "架构 · ⭐⭐⭐",
+      "date": "2026-11-10",
+      "category": "架构",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
       "title": "BitDecoding-FP4: Native FP4 KV Cache Decoding via Algorithm-System Co-Design",
       "summary": "架构 · ⭐⭐⭐",
       "date": "2026-11-09",
-      "category": "架构",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "Exploring Weight-Space Programming: Capabilities, Generalization, and Limitations",
-      "summary": "架构 · ⭐⭐",
-      "date": "2026-11-09",
-      "category": "架构",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "XStack: A Benchmark for ML Repo Migration",
-      "summary": "架构 · ⭐⭐⭐",
-      "date": "2026-11-08",
       "category": "架构",
       "url": "graph.html"
     },
@@ -51,5 +51,5 @@
       "url": "weekly/"
     }
   ],
-  "latest_date": "2026-11-09"
+  "latest_date": "2026-11-11"
 }
