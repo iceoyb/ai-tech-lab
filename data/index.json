@@ -4,26 +4,26 @@
   "updates": [
     {
       "type": "paper",
+      "title": "Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations",
+      "summary": "架构 · ⭐⭐⭐",
+      "date": "2026-11-12",
+      "category": "架构",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
+      "title": "Toward Foundation Detection Models via Example-Based Grounding in EM-DETR",
+      "summary": "架构 · ⭐⭐⭐",
+      "date": "2026-11-11",
+      "category": "架构",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
       "title": "Programming Prescience: Issues in Human Construction of Forecasting Bots",
       "summary": "学术 · ⭐⭐⭐",
       "date": "2026-11-11",
       "category": "学术",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "Guiding Data Allocation for Robust Subpopulation Generalization",
-      "summary": "架构 · ⭐⭐⭐",
-      "date": "2026-11-10",
-      "category": "架构",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "BitDecoding-FP4: Native FP4 KV Cache Decoding via Algorithm-System Co-Design",
-      "summary": "架构 · ⭐⭐⭐",
-      "date": "2026-11-09",
-      "category": "架构",
       "url": "graph.html"
     },
     {
@@ -51,5 +51,5 @@
       "url": "weekly/"
     }
   ],
-  "latest_date": "2026-11-11"
+  "latest_date": "2026-11-12"
 }
