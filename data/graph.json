@@ -1,14 +1,14 @@
 {
   "stats": {
-    "total_nodes": 547,
-    "total_edges": 3126,
+    "total_nodes": 549,
+    "total_edges": 3136,
     "categories": {
       "学术": 4,
       "工具": 73,
       "工程": 93,
       "应用": 28,
       "未分类": 5,
-      "架构": 143,
+      "架构": 145,
       "测试": 1,
       "理论": 49,
       "算法": 49,
@@ -16,6 +16,31 @@
     }
   },
   "nodes": [
+    {
+      "id": "6ca1d4825d1b",
+      "title": "Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations",
+      "category": "架构",
+      "tags": [
+        "Agent",
+        "LLM"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-11-12T08:02:20.618082"
+    },
+    {
+      "id": "544b7ecfe333",
+      "title": "Toward Foundation Detection Models via Example-Based Grounding in EM-DETR",
+      "category": "架构",
+      "tags": [
+        "RAG",
+        "训练",
+        "视觉"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-11-11T21:02:02.203004"
+    },
     {
       "id": "75319d0ba3a0",
       "title": "Programming Prescience: Issues in Human Construction of Forecasting Bots",
@@ -25890,6 +25915,66 @@
       "target": "0b8224ef0636",
       "relation": "similar",
       "weight": 0.6
+    },
+    {
+      "source": "544b7ecfe333",
+      "target": "609f78a5cf88",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "544b7ecfe333",
+      "target": "bcb19a8c867e",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "544b7ecfe333",
+      "target": "8aea9445f3c3",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "544b7ecfe333",
+      "target": "69e4f34ed80c",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "544b7ecfe333",
+      "target": "7f47523e8367",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "6ca1d4825d1b",
+      "target": "075e8a577674",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "6ca1d4825d1b",
+      "target": "7d90bf026363",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "6ca1d4825d1b",
+      "target": "ec3d1646018b",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "6ca1d4825d1b",
+      "target": "a8d020178d61",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "6ca1d4825d1b",
+      "target": "9af1d14c3416",
+      "relation": "similar",
+      "weight": 0.8
     }
   ]
 }
