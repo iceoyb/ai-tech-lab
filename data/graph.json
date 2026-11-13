@@ -1,14 +1,14 @@
 {
   "stats": {
-    "total_nodes": 549,
-    "total_edges": 3136,
+    "total_nodes": 550,
+    "total_edges": 3141,
     "categories": {
       "学术": 4,
       "工具": 73,
       "工程": 93,
       "应用": 28,
       "未分类": 5,
-      "架构": 145,
+      "架构": 146,
       "测试": 1,
       "理论": 49,
       "算法": 49,
@@ -16,6 +16,21 @@
     }
   },
   "nodes": [
+    {
+      "id": "6d95b1e9eeb2",
+      "title": "AutoScaffold: AI-Guided Scaffolding for Reinforcement Learning of Language Models",
+      "category": "架构",
+      "tags": [
+        "LLM",
+        "RAG",
+        "推理",
+        "训练",
+        "评估"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-11-13T08:01:54.893206"
+    },
     {
       "id": "6ca1d4825d1b",
       "title": "Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations",
@@ -25975,6 +25990,36 @@
       "target": "9af1d14c3416",
       "relation": "similar",
       "weight": 0.8
+    },
+    {
+      "source": "6d95b1e9eeb2",
+      "target": "3b877ed7e9bd",
+      "relation": "similar",
+      "weight": 1.5
+    },
+    {
+      "source": "6d95b1e9eeb2",
+      "target": "98d75733915b",
+      "relation": "similar",
+      "weight": 1.5
+    },
+    {
+      "source": "6d95b1e9eeb2",
+      "target": "075e8a577674",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "6d95b1e9eeb2",
+      "target": "3ac3752ed9cd",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "6d95b1e9eeb2",
+      "target": "b009af9b2faf",
+      "relation": "similar",
+      "weight": 1.4
     }
   ]
 }
