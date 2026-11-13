@@ -4,6 +4,14 @@
   "updates": [
     {
       "type": "paper",
+      "title": "AutoScaffold: AI-Guided Scaffolding for Reinforcement Learning of Language Models",
+      "summary": "架构 · ⭐⭐⭐",
+      "date": "2026-11-13",
+      "category": "架构",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
       "title": "Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations",
       "summary": "架构 · ⭐⭐⭐",
       "date": "2026-11-12",
@@ -16,14 +24,6 @@
       "summary": "架构 · ⭐⭐⭐",
       "date": "2026-11-11",
       "category": "架构",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "Programming Prescience: Issues in Human Construction of Forecasting Bots",
-      "summary": "学术 · ⭐⭐⭐",
-      "date": "2026-11-11",
-      "category": "学术",
       "url": "graph.html"
     },
     {
@@ -51,5 +51,5 @@
       "url": "weekly/"
     }
   ],
-  "latest_date": "2026-11-12"
+  "latest_date": "2026-11-13"
 }
