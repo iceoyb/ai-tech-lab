@@ -1,14 +1,14 @@
 {
   "stats": {
-    "total_nodes": 550,
-    "total_edges": 3141,
+    "total_nodes": 551,
+    "total_edges": 3152,
     "categories": {
       "学术": 4,
       "工具": 73,
       "工程": 93,
       "应用": 28,
       "未分类": 5,
-      "架构": 146,
+      "架构": 147,
       "测试": 1,
       "理论": 49,
       "算法": 49,
@@ -16,6 +16,20 @@
     }
   },
   "nodes": [
+    {
+      "id": "667a363d4d54",
+      "title": "Back to Pixels: Lifting Latent Video Diffusion into Pixel Space",
+      "category": "架构",
+      "tags": [
+        "训练",
+        "压缩",
+        "开源",
+        "代码"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-11-13T21:02:16.612577"
+    },
     {
       "id": "6d95b1e9eeb2",
       "title": "AutoScaffold: AI-Guided Scaffolding for Reinforcement Learning of Language Models",
@@ -26020,6 +26034,72 @@
       "target": "b009af9b2faf",
       "relation": "similar",
       "weight": 1.4
+    },
+    {
+      "source": "d7ea3799c8a9",
+      "target": "6d95b1e9eeb2",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "b009af9b2faf",
+      "target": "6d95b1e9eeb2",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "609f78a5cf88",
+      "target": "6d95b1e9eeb2",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "b8874100c4a1",
+      "target": "6d95b1e9eeb2",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "10a372a71033",
+      "target": "6d95b1e9eeb2",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "9476ec992d7b",
+      "target": "6d95b1e9eeb2",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "667a363d4d54",
+      "target": "a85aca035a12",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "667a363d4d54",
+      "target": "f87dd52a1fe1",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "667a363d4d54",
+      "target": "bcb19a8c867e",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "667a363d4d54",
+      "target": "3ddde4f3e76c",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "667a363d4d54",
+      "target": "d9495447df1b",
+      "relation": "similar",
+      "weight": 1.1
     }
   ]
 }
