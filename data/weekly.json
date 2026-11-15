@@ -1,6 +1,17 @@
 {
   "reports": [
     {
+      "week": 46,
+      "year": 2026,
+      "period": "2026-11-08 ~ 2026-11-15",
+      "summary": "新增 9 个知识节点，0 条洞察",
+      "new_nodes": 9,
+      "new_tools": 4,
+      "new_insights": 0,
+      "date": "2026-11-15",
+      "url": "2026-w46.html"
+    },
+    {
       "week": 45,
       "year": 2026,
       "period": "2026-11-01 ~ 2026-11-08",
