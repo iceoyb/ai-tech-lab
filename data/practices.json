@@ -1,6 +1,17 @@
 {
   "practices": [
     {
+      "title": "CoReMem: Cost-Internalizing Memory for Successive Coding Tasks with Prospective Valuation",
+      "summary": "BackgroundBest practice content for CoReMem: Cost-Internalizing Memory for Succe...",
+      "tags": [
+        "架构",
+        "Agent",
+        "代码"
+      ],
+      "date": "2026-11-15",
+      "url": "2026-w46-practice.html"
+    },
+    {
       "title": "XStack: A Benchmark for ML Repo Migration",
       "summary": "BackgroundBest practice content for XStack: A Benchmark for ML Repo Migration is...",
       "tags": [
