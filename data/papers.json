@@ -1,6 +1,18 @@
 {
   "papers": [
     {
+      "title": "CoReMem: Cost-Internalizing Memory for Successive Coding Tasks with Prospective Valuation",
+      "summary": "OverviewPaper review for CoReMem: Cost-Internalizing Memory for Successive Codin...",
+      "tags": [
+        "架构",
+        "Agent",
+        "代码"
+      ],
+      "date": "2026-11-15",
+      "url": "2026-w46-paper.html",
+      "deep_url": "2026-w46-paper-deep.html"
+    },
+    {
       "title": "XStack: A Benchmark for ML Repo Migration",
       "summary": "OverviewPaper review for XStack: A Benchmark for ML Repo Migration is being prep...",
       "tags": [
