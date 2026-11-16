@@ -4,6 +4,14 @@
   "updates": [
     {
       "type": "paper",
+      "title": "Learning When Diffusion Language Models Should Regenerate",
+      "summary": "算法 · ⭐⭐⭐",
+      "date": "2026-11-16",
+      "category": "算法",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
       "title": "CoReMem: Cost-Internalizing Memory for Successive Coding Tasks with Prospective Valuation",
       "summary": "架构 · ⭐⭐⭐",
       "date": "2026-11-15",
@@ -13,14 +21,6 @@
     {
       "type": "paper",
       "title": "Back to Pixels: Lifting Latent Video Diffusion into Pixel Space",
-      "summary": "架构 · ⭐⭐⭐",
-      "date": "2026-11-13",
-      "category": "架构",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "AutoScaffold: AI-Guided Scaffolding for Reinforcement Learning of Language Models",
       "summary": "架构 · ⭐⭐⭐",
       "date": "2026-11-13",
       "category": "架构",
@@ -51,5 +51,5 @@
       "url": "weekly/"
     }
   ],
-  "latest_date": "2026-11-15"
+  "latest_date": "2026-11-16"
 }
