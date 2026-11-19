@@ -4,26 +4,26 @@
   "updates": [
     {
       "type": "paper",
+      "title": "Structure--Residual Inductive Biases for Language Model Pretraining",
+      "summary": "架构 · ⭐⭐⭐",
+      "date": "2026-11-18",
+      "category": "架构",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
+      "title": "🔧 mlabonne/llm-course",
+      "summary": "工具 · ⭐⭐",
+      "date": "2026-11-18",
+      "category": "工具",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
       "title": "Mitigating Catastrophic Forgetting with Physics-Indexed Specialist Memory: the Evolutionary Neuroplastic Agent",
       "summary": "架构 · ⭐⭐⭐",
       "date": "2026-11-17",
       "category": "架构",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "FETTUCCINE: Fast and efficient brain-to-text decoding on mobile devices",
-      "summary": "架构 · ⭐⭐⭐",
-      "date": "2026-11-17",
-      "category": "架构",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "Learning When Diffusion Language Models Should Regenerate",
-      "summary": "算法 · ⭐⭐⭐",
-      "date": "2026-11-16",
-      "category": "算法",
       "url": "graph.html"
     },
     {
@@ -51,5 +51,5 @@
       "url": "weekly/"
     }
   ],
-  "latest_date": "2026-11-17"
+  "latest_date": "2026-11-18"
 }
