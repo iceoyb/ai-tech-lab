@@ -1,14 +1,14 @@
 {
   "stats": {
-    "total_nodes": 555,
-    "total_edges": 3177,
+    "total_nodes": 557,
+    "total_edges": 3187,
     "categories": {
       "学术": 4,
-      "工具": 73,
+      "工具": 74,
       "工程": 93,
       "应用": 28,
       "未分类": 5,
-      "架构": 150,
+      "架构": 151,
       "测试": 1,
       "理论": 49,
       "算法": 50,
@@ -16,6 +16,31 @@
     }
   },
   "nodes": [
+    {
+      "id": "f9a8cab76ed5",
+      "title": "Structure--Residual Inductive Biases for Language Model Pretraining",
+      "category": "架构",
+      "tags": [
+        "LLM",
+        "训练",
+        "开源",
+        "代码"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-11-18T21:01:47.939494"
+    },
+    {
+      "id": "70b79101ba6a",
+      "title": "🔧 mlabonne/llm-course",
+      "category": "工具",
+      "tags": [
+        "LLM"
+      ],
+      "depth": 2,
+      "mastery": 0.0,
+      "created_at": "2026-11-18T12:01:31.401355"
+    },
     {
       "id": "3cad1b7eadc4",
       "title": "Mitigating Catastrophic Forgetting with Physics-Indexed Specialist Memory: the Evolutionary Neuroplastic Agent",
@@ -26303,6 +26328,66 @@
       "target": "6bf7c7e4da77",
       "relation": "similar",
       "weight": 0.8
+    },
+    {
+      "source": "70b79101ba6a",
+      "target": "1f447a7b7e76",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "70b79101ba6a",
+      "target": "a39dfeeaa8e8",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "70b79101ba6a",
+      "target": "7c83f62c1464",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "70b79101ba6a",
+      "target": "05f41476bf87",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "70b79101ba6a",
+      "target": "901e4608b72c",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "f9a8cab76ed5",
+      "target": "a85aca035a12",
+      "relation": "similar",
+      "weight": 1.4
+    },
+    {
+      "source": "f9a8cab76ed5",
+      "target": "bcb19a8c867e",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "f9a8cab76ed5",
+      "target": "3ddde4f3e76c",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "f9a8cab76ed5",
+      "target": "d9495447df1b",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "f9a8cab76ed5",
+      "target": "69e4f34ed80c",
+      "relation": "similar",
+      "weight": 1.1
     }
   ]
 }
