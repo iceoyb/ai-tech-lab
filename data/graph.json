@@ -1,14 +1,14 @@
 {
   "stats": {
-    "total_nodes": 557,
-    "total_edges": 3187,
+    "total_nodes": 558,
+    "total_edges": 3192,
     "categories": {
       "学术": 4,
       "工具": 74,
       "工程": 93,
       "应用": 28,
       "未分类": 5,
-      "架构": 151,
+      "架构": 152,
       "测试": 1,
       "理论": 49,
       "算法": 50,
@@ -16,6 +16,19 @@
     }
   },
   "nodes": [
+    {
+      "id": "ddd70e6ced8c",
+      "title": "Agentic Harness Engineering Beta: Requirement-Centered Evolution of Agent Harnesses",
+      "category": "架构",
+      "tags": [
+        "Agent",
+        "LLM",
+        "评估"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-11-19T21:02:22.960692"
+    },
     {
       "id": "f9a8cab76ed5",
       "title": "Structure--Residual Inductive Biases for Language Model Pretraining",
@@ -26386,6 +26399,36 @@
     {
       "source": "f9a8cab76ed5",
       "target": "69e4f34ed80c",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "ddd70e6ced8c",
+      "target": "075e8a577674",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "ddd70e6ced8c",
+      "target": "ec3d1646018b",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "ddd70e6ced8c",
+      "target": "9af1d14c3416",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "ddd70e6ced8c",
+      "target": "fbca7c1eac6d",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "ddd70e6ced8c",
+      "target": "f4c84a063ed3",
       "relation": "similar",
       "weight": 1.1
     }
