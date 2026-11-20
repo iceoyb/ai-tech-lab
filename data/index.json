@@ -4,6 +4,14 @@
   "updates": [
     {
       "type": "paper",
+      "title": "Agentic Harness Engineering Beta: Requirement-Centered Evolution of Agent Harnesses",
+      "summary": "架构 · ⭐⭐⭐",
+      "date": "2026-11-19",
+      "category": "架构",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
       "title": "Structure--Residual Inductive Biases for Language Model Pretraining",
       "summary": "架构 · ⭐⭐⭐",
       "date": "2026-11-18",
@@ -16,14 +24,6 @@
       "summary": "工具 · ⭐⭐",
       "date": "2026-11-18",
       "category": "工具",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "Mitigating Catastrophic Forgetting with Physics-Indexed Specialist Memory: the Evolutionary Neuroplastic Agent",
-      "summary": "架构 · ⭐⭐⭐",
-      "date": "2026-11-17",
-      "category": "架构",
       "url": "graph.html"
     },
     {
@@ -51,5 +51,5 @@
       "url": "weekly/"
     }
   ],
-  "latest_date": "2026-11-18"
+  "latest_date": "2026-11-19"
 }
