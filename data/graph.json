@@ -1,14 +1,14 @@
 {
   "stats": {
-    "total_nodes": 558,
-    "total_edges": 3192,
+    "total_nodes": 559,
+    "total_edges": 3197,
     "categories": {
       "学术": 4,
       "工具": 74,
       "工程": 93,
       "应用": 28,
       "未分类": 5,
-      "架构": 152,
+      "架构": 153,
       "测试": 1,
       "理论": 49,
       "算法": 50,
@@ -16,6 +16,21 @@
     }
   },
   "nodes": [
+    {
+      "id": "9c0a8a15ebeb",
+      "title": "AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control",
+      "category": "架构",
+      "tags": [
+        "Agent",
+        "LLM",
+        "多模态",
+        "安全",
+        "开源"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-11-21T08:02:42.073607"
+    },
     {
       "id": "ddd70e6ced8c",
       "title": "Agentic Harness Engineering Beta: Requirement-Centered Evolution of Agent Harnesses",
@@ -26429,6 +26444,36 @@
     {
       "source": "ddd70e6ced8c",
       "target": "f4c84a063ed3",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "9c0a8a15ebeb",
+      "target": "7d90bf026363",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "9c0a8a15ebeb",
+      "target": "ec3d1646018b",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "9c0a8a15ebeb",
+      "target": "a8d020178d61",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "9c0a8a15ebeb",
+      "target": "0090962f5141",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "9c0a8a15ebeb",
+      "target": "cd3280b67cf1",
       "relation": "similar",
       "weight": 1.1
     }
