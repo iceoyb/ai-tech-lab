@@ -1,6 +1,19 @@
 {
   "papers": [
     {
+      "title": "AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control",
+      "summary": "OverviewPaper review for AgentRoboCritic: Understanding the Capability of Fronti...",
+      "tags": [
+        "架构",
+        "Agent",
+        "LLM",
+        "多模态"
+      ],
+      "date": "2026-11-22",
+      "url": "2026-w47-paper.html",
+      "deep_url": "2026-w47-paper-deep.html"
+    },
+    {
       "title": "CoReMem: Cost-Internalizing Memory for Successive Coding Tasks with Prospective Valuation",
       "summary": "OverviewPaper review for CoReMem: Cost-Internalizing Memory for Successive Codin...",
       "tags": [
