@@ -1,21 +1,47 @@
 {
   "stats": {
-    "total_nodes": 559,
-    "total_edges": 3197,
+    "total_nodes": 561,
+    "total_edges": 3208,
     "categories": {
       "学术": 4,
       "工具": 74,
       "工程": 93,
       "应用": 28,
       "未分类": 5,
-      "架构": 153,
+      "架构": 154,
       "测试": 1,
       "理论": 49,
-      "算法": 50,
+      "算法": 51,
       "趋势": 102
     }
   },
   "nodes": [
+    {
+      "id": "c57a314c62b5",
+      "title": "RL Post-Training in Diffusion Transformers Is Activation Steering",
+      "category": "架构",
+      "tags": [
+        "训练",
+        "视觉"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-11-23T08:02:30.389998"
+    },
+    {
+      "id": "932fa9edefdc",
+      "title": "Represented but misread: Post-training changes how language models read out what they represent",
+      "category": "算法",
+      "tags": [
+        "LLM",
+        "RAG",
+        "训练",
+        "视觉"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-11-22T21:02:18.064011"
+    },
     {
       "id": "9c0a8a15ebeb",
       "title": "AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control",
@@ -26476,6 +26502,72 @@
       "target": "cd3280b67cf1",
       "relation": "similar",
       "weight": 1.1
+    },
+    {
+      "source": "932fa9edefdc",
+      "target": "609f78a5cf88",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "932fa9edefdc",
+      "target": "8aea9445f3c3",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "932fa9edefdc",
+      "target": "98d75733915b",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "932fa9edefdc",
+      "target": "2007fb053d73",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "932fa9edefdc",
+      "target": "a8d020178d61",
+      "relation": "similar",
+      "weight": 0.9
+    },
+    {
+      "source": "1dea00bf6138",
+      "target": "932fa9edefdc",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "c57a314c62b5",
+      "target": "c5e72d75d764",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "c57a314c62b5",
+      "target": "609f78a5cf88",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "c57a314c62b5",
+      "target": "bcb19a8c867e",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "c57a314c62b5",
+      "target": "8aea9445f3c3",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "c57a314c62b5",
+      "target": "69e4f34ed80c",
+      "relation": "similar",
+      "weight": 0.8
     }
   ]
 }
