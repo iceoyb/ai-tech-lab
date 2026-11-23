@@ -4,25 +4,25 @@
   "updates": [
     {
       "type": "paper",
+      "title": "RL Post-Training in Diffusion Transformers Is Activation Steering",
+      "summary": "架构 · ⭐⭐⭐",
+      "date": "2026-11-23",
+      "category": "架构",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
+      "title": "Represented but misread: Post-training changes how language models read out what they represent",
+      "summary": "算法 · ⭐⭐⭐",
+      "date": "2026-11-22",
+      "category": "算法",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
       "title": "AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control",
       "summary": "架构 · ⭐⭐⭐",
       "date": "2026-11-21",
-      "category": "架构",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "Agentic Harness Engineering Beta: Requirement-Centered Evolution of Agent Harnesses",
-      "summary": "架构 · ⭐⭐⭐",
-      "date": "2026-11-19",
-      "category": "架构",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "Structure--Residual Inductive Biases for Language Model Pretraining",
-      "summary": "架构 · ⭐⭐⭐",
-      "date": "2026-11-18",
       "category": "架构",
       "url": "graph.html"
     },
@@ -51,5 +51,5 @@
       "url": "weekly/"
     }
   ],
-  "latest_date": "2026-11-21"
+  "latest_date": "2026-11-23"
 }
