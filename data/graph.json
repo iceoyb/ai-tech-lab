@@ -1,21 +1,44 @@
 {
   "stats": {
-    "total_nodes": 561,
-    "total_edges": 3208,
+    "total_nodes": 563,
+    "total_edges": 3218,
     "categories": {
       "学术": 4,
       "工具": 74,
       "工程": 93,
       "应用": 28,
       "未分类": 5,
-      "架构": 154,
+      "架构": 155,
       "测试": 1,
       "理论": 49,
-      "算法": 51,
+      "算法": 52,
       "趋势": 102
     }
   },
   "nodes": [
+    {
+      "id": "2c8d7ba63519",
+      "title": "A Methodologically Rigorous Benchmark of Linear Regression,RNN, and LSTM for S&P 500 Forecasting:Identifying Sources of Performance Inflation in Financial DeepLearning",
+      "category": "架构",
+      "tags": [
+        "RAG",
+        "评估"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-11-24T08:01:36.453360"
+    },
+    {
+      "id": "07923f0d545f",
+      "title": "Optimal Linear Regression Without a Variance",
+      "category": "算法",
+      "tags": [
+        "压缩"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-11-23T21:02:44.185006"
+    },
     {
       "id": "c57a314c62b5",
       "title": "RL Post-Training in Diffusion Transformers Is Activation Steering",
@@ -26566,6 +26589,66 @@
     {
       "source": "c57a314c62b5",
       "target": "69e4f34ed80c",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "07923f0d545f",
+      "target": "22e4f9c5ac4c",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "07923f0d545f",
+      "target": "cb1f8abb8c0c",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "07923f0d545f",
+      "target": "ae39e363d520",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "07923f0d545f",
+      "target": "790dff058468",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "07923f0d545f",
+      "target": "1ceb4b14aa77",
+      "relation": "similar",
+      "weight": 0.5
+    },
+    {
+      "source": "2c8d7ba63519",
+      "target": "075e8a577674",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "2c8d7ba63519",
+      "target": "9fcad6929d1f",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "2c8d7ba63519",
+      "target": "ec3d1646018b",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "2c8d7ba63519",
+      "target": "3ac3752ed9cd",
+      "relation": "similar",
+      "weight": 0.8
+    },
+    {
+      "source": "2c8d7ba63519",
+      "target": "ad273050cc12",
       "relation": "similar",
       "weight": 0.8
     }
