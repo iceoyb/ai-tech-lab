@@ -4,25 +4,25 @@
   "updates": [
     {
       "type": "paper",
-      "title": "RL Post-Training in Diffusion Transformers Is Activation Steering",
+      "title": "A Methodologically Rigorous Benchmark of Linear Regression,RNN, and LSTM for S&P 500 Forecasting:Identifying Sources of Performance Inflation in Financial DeepLearning",
       "summary": "架构 · ⭐⭐⭐",
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "category": "架构",
       "url": "graph.html"
     },
     {
       "type": "paper",
-      "title": "Represented but misread: Post-training changes how language models read out what they represent",
+      "title": "Optimal Linear Regression Without a Variance",
       "summary": "算法 · ⭐⭐⭐",
-      "date": "2026-11-22",
+      "date": "2026-11-23",
       "category": "算法",
       "url": "graph.html"
     },
     {
       "type": "paper",
-      "title": "AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control",
+      "title": "RL Post-Training in Diffusion Transformers Is Activation Steering",
       "summary": "架构 · ⭐⭐⭐",
-      "date": "2026-11-21",
+      "date": "2026-11-23",
       "category": "架构",
       "url": "graph.html"
     },
@@ -51,5 +51,5 @@
       "url": "weekly/"
     }
   ],
-  "latest_date": "2026-11-23"
+  "latest_date": "2026-11-24"
 }
