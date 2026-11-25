@@ -1,14 +1,14 @@
 {
   "stats": {
-    "total_nodes": 563,
-    "total_edges": 3218,
+    "total_nodes": 564,
+    "total_edges": 3223,
     "categories": {
       "学术": 4,
       "工具": 74,
       "工程": 93,
       "应用": 28,
       "未分类": 5,
-      "架构": 155,
+      "架构": 156,
       "测试": 1,
       "理论": 49,
       "算法": 52,
@@ -16,6 +16,20 @@
     }
   },
   "nodes": [
+    {
+      "id": "b327ca780ffd",
+      "title": "CO-GRAFT: Attributing Reinforcement Learning Gains in Search Agents via Role-Level Policy Grafting",
+      "category": "架构",
+      "tags": [
+        "Agent",
+        "LLM",
+        "推理",
+        "训练"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-11-24T21:01:40.487414"
+    },
     {
       "id": "2c8d7ba63519",
       "title": "A Methodologically Rigorous Benchmark of Linear Regression,RNN, and LSTM for S&P 500 Forecasting:Identifying Sources of Performance Inflation in Financial DeepLearning",
@@ -26651,6 +26665,36 @@
       "target": "ad273050cc12",
       "relation": "similar",
       "weight": 0.8
+    },
+    {
+      "source": "b327ca780ffd",
+      "target": "075e8a577674",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "b327ca780ffd",
+      "target": "7d90bf026363",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "b327ca780ffd",
+      "target": "7f47523e8367",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "b327ca780ffd",
+      "target": "a8d020178d61",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "b327ca780ffd",
+      "target": "9af1d14c3416",
+      "relation": "similar",
+      "weight": 1.1
     }
   ]
 }
