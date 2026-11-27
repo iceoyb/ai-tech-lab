@@ -1,9 +1,9 @@
 {
   "stats": {
-    "total_nodes": 564,
+    "total_nodes": 565,
     "total_edges": 3223,
     "categories": {
-      "学术": 4,
+      "学术": 5,
       "工具": 74,
       "工程": 93,
       "应用": 28,
@@ -16,6 +16,17 @@
     }
   },
   "nodes": [
+    {
+      "id": "6cb0d4eb26fb",
+      "title": "Tokenisation is not in APX",
+      "category": "学术",
+      "tags": [
+        "压缩"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-11-26T21:02:04.437146"
+    },
     {
       "id": "b327ca780ffd",
       "title": "CO-GRAFT: Attributing Reinforcement Learning Gains in Search Agents via Role-Level Policy Grafting",
