@@ -4,6 +4,14 @@
   "updates": [
     {
       "type": "paper",
+      "title": "Tokenisation is not in APX",
+      "summary": "学术 · ⭐⭐⭐",
+      "date": "2026-11-26",
+      "category": "学术",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
       "title": "CO-GRAFT: Attributing Reinforcement Learning Gains in Search Agents via Role-Level Policy Grafting",
       "summary": "架构 · ⭐⭐⭐",
       "date": "2026-11-24",
@@ -16,14 +24,6 @@
       "summary": "架构 · ⭐⭐⭐",
       "date": "2026-11-24",
       "category": "架构",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "Optimal Linear Regression Without a Variance",
-      "summary": "算法 · ⭐⭐⭐",
-      "date": "2026-11-23",
-      "category": "算法",
       "url": "graph.html"
     },
     {
@@ -51,5 +51,5 @@
       "url": "weekly/"
     }
   ],
-  "latest_date": "2026-11-24"
+  "latest_date": "2026-11-26"
 }
