@@ -1,12 +1,12 @@
 {
   "stats": {
-    "total_nodes": 565,
-    "total_edges": 3223,
+    "total_nodes": 566,
+    "total_edges": 3228,
     "categories": {
       "学术": 5,
       "工具": 74,
       "工程": 93,
-      "应用": 28,
+      "应用": 29,
       "未分类": 5,
       "架构": 156,
       "测试": 1,
@@ -16,6 +16,20 @@
     }
   },
   "nodes": [
+    {
+      "id": "bf0a00c296d3",
+      "title": "Can image generation help visual reasoning? An empirical study",
+      "category": "应用",
+      "tags": [
+        "LLM",
+        "多模态",
+        "推理",
+        "视觉"
+      ],
+      "depth": 3,
+      "mastery": 0.0,
+      "created_at": "2026-11-27T21:02:10.402781"
+    },
     {
       "id": "6cb0d4eb26fb",
       "title": "Tokenisation is not in APX",
@@ -26706,6 +26720,36 @@
       "target": "9af1d14c3416",
       "relation": "similar",
       "weight": 1.1
+    },
+    {
+      "source": "bf0a00c296d3",
+      "target": "17a80736d414",
+      "relation": "similar",
+      "weight": 1.2
+    },
+    {
+      "source": "bf0a00c296d3",
+      "target": "427525240d0e",
+      "relation": "similar",
+      "weight": 1.1
+    },
+    {
+      "source": "bf0a00c296d3",
+      "target": "7d90bf026363",
+      "relation": "similar",
+      "weight": 0.9
+    },
+    {
+      "source": "bf0a00c296d3",
+      "target": "913aa6e22230",
+      "relation": "similar",
+      "weight": 0.9
+    },
+    {
+      "source": "bf0a00c296d3",
+      "target": "1c35733146af",
+      "relation": "similar",
+      "weight": 0.9
     }
   ]
 }
