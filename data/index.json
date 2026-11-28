@@ -4,6 +4,14 @@
   "updates": [
     {
       "type": "paper",
+      "title": "Can image generation help visual reasoning? An empirical study",
+      "summary": "应用 · ⭐⭐⭐",
+      "date": "2026-11-27",
+      "category": "应用",
+      "url": "graph.html"
+    },
+    {
+      "type": "paper",
       "title": "Tokenisation is not in APX",
       "summary": "学术 · ⭐⭐⭐",
       "date": "2026-11-26",
@@ -13,14 +21,6 @@
     {
       "type": "paper",
       "title": "CO-GRAFT: Attributing Reinforcement Learning Gains in Search Agents via Role-Level Policy Grafting",
-      "summary": "架构 · ⭐⭐⭐",
-      "date": "2026-11-24",
-      "category": "架构",
-      "url": "graph.html"
-    },
-    {
-      "type": "paper",
-      "title": "A Methodologically Rigorous Benchmark of Linear Regression,RNN, and LSTM for S&P 500 Forecasting:Identifying Sources of Performance Inflation in Financial DeepLearning",
       "summary": "架构 · ⭐⭐⭐",
       "date": "2026-11-24",
       "category": "架构",
@@ -51,5 +51,5 @@
       "url": "weekly/"
     }
   ],
-  "latest_date": "2026-11-26"
+  "latest_date": "2026-11-27"
 }
